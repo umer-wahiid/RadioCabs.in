@@ -9,9 +9,11 @@ namespace RadioCabs.Models
         Suggestion,
         Compliment
     }
-    [Keyless]
     public class FeedBack
     {
+        [Key]
+        public int FeedId { get; set; }
+
         [Required]
         [StringLength(25)]
         public string Name { get; set; }

@@ -3,9 +3,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace RadioCabs.Models
 {
-    [Keyless]
     public class AdvertiseRegistration
     {
+        [Key]
+        public int AdvId { get; set; }
+
         [StringLength(50, ErrorMessage = "Max 50 Characters Allowed"), MinLength(10, ErrorMessage = "Min 10 Characters Allowed")]
         [Required]
         public string CompanyName { get; set; }
