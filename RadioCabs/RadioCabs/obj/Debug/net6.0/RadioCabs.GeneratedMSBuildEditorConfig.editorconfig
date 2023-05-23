@@ -16,12 +16,36 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\HP\source\repos\RadioCabs.in\RadioCabs\RadioCabs
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/HP/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/HP/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/HP/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/Home/CompanyForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wYW55Rm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/Home/CompanyView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wYW55Vmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/Home/DriverForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEcml2ZXJGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/Home/DriverView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEcml2ZXJWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/Home/Feedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGZWVkYmFjay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/HP/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/Shared/admin_Layout.cshtml]

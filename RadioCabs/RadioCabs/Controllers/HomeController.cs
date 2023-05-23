@@ -18,7 +18,31 @@ namespace RadioCabs.Controllers
 			return View();
 		}
 
-		public IActionResult Privacy()
+		public IActionResult About()
+		{
+			return View();
+		}
+		public IActionResult DriverView()
+		{
+			return View();
+		}
+		public IActionResult DriverForm()
+		{
+			return View();
+		}
+		public IActionResult CompanyView()
+		{
+			return View();
+		}
+		public IActionResult CompanyForm()
+		{
+			return View();
+		}
+		public IActionResult Feedback()
+		{
+			return View();
+		}
+		public IActionResult Contact()
 		{
 			return View();
 		}

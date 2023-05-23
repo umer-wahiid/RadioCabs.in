@@ -1,0 +1,1089 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RadioCabs.bundle.scp.css",
+      "PackagePath": "staticwebassets\\RadioCabs.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\css\\animate.min.css",
+      "PackagePath": "staticwebassets\\web\\css\\animate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\web\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\css\\bootstrap.map",
+      "PackagePath": "staticwebassets\\web\\css\\bootstrap.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\css\\bootstrap\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\web\\css\\bootstrap\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\css\\bootstrap\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\web\\css\\bootstrap\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\css\\bootstrap\\bootstrap.css",
+      "PackagePath": "staticwebassets\\web\\css\\bootstrap\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\web\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\css\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\web\\css\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\css\\linearicons.css",
+      "PackagePath": "staticwebassets\\web\\css\\linearicons.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\web\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\css\\main.css",
+      "PackagePath": "staticwebassets\\web\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\css\\main.map",
+      "PackagePath": "staticwebassets\\web\\css\\main.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\web\\css\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\web\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\fonts\\Linearicons-Free.eot",
+      "PackagePath": "staticwebassets\\web\\fonts\\Linearicons-Free.eot"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\fonts\\Linearicons-Free.svg",
+      "PackagePath": "staticwebassets\\web\\fonts\\Linearicons-Free.svg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\fonts\\Linearicons-Free.ttf",
+      "PackagePath": "staticwebassets\\web\\fonts\\Linearicons-Free.ttf"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\fonts\\Linearicons-Free.woff",
+      "PackagePath": "staticwebassets\\web\\fonts\\Linearicons-Free.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\fonts\\Linearicons-Free.woff2",
+      "PackagePath": "staticwebassets\\web\\fonts\\Linearicons-Free.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\web\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\web\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\web\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\web\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\web\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\Radiocabs.png",
+      "PackagePath": "staticwebassets\\web\\img\\Radiocabs.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\about-img.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\about-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\b1.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\b1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\b2.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\b2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\.DS_Store",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\ads-banner.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\ads-banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\blog-home-banner.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\blog-home-banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\c1.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\c1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\c2.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\c2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\c3.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\c3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\c4.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\c4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\c5.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\c5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\c6.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\c6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\cat-widget1.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\cat-widget1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\cat-widget2.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\cat-widget2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\cat-widget3.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\cat-widget3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\feature-img1.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\feature-img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\feature-img2.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\feature-img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\feature-img3.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\feature-img3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\feature-img4.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\feature-img4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\feature-img5.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\feature-img5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\next.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\next.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\post-img1.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\post-img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\post-img2.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\post-img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\pp1.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\pp1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\pp2.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\pp2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\pp3.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\pp3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\pp4.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\pp4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\prev.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\prev.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\s-img.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\s-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\blog\\user-info.png",
+      "PackagePath": "staticwebassets\\web\\img\\blog\\user-info.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\call-action-bg.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\call-action-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\a.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\a2.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\a2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\d.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\disabled-check.png",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\disabled-check.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\disabled-radio.png",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\disabled-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\f1.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\f1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\f2.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\f2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\f3.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\f3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\f4.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\f4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\f5.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\f5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\f6.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\f6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\f7.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\f7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\f8.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\f8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\g1.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\g1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\g2.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\g2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\g3.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\g3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\g4.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\g4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\g5.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\g5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\g6.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\g6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\g7.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\g7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\g8.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\g8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\primary-check.png",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\primary-check.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\primary-radio.png",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\primary-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\success-check.png",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\success-check.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\success-radio.png",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\success-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\t1.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\t1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\t2.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\t2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\t3.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\t3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\t4.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\t4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\user1.png",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\user1.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\elements\\user2.png",
+      "PackagePath": "staticwebassets\\web\\img\\elements\\user2.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\footer-bottom.png",
+      "PackagePath": "staticwebassets\\web\\img\\footer-bottom.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\g1.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\g1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\g2.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\g2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\g3.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\g3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\g4.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\g4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\g5.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\g5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\g6.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\g6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\header-bg.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\header-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\logo.png",
+      "PackagePath": "staticwebassets\\web\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\menu-top.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\menu-top.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\menu-top.png",
+      "PackagePath": "staticwebassets\\web\\img\\menu-top.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\top-banner.jpg",
+      "PackagePath": "staticwebassets\\web\\img\\top-banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\img\\ui-icons_444444_256x240.png",
+      "PackagePath": "staticwebassets\\web\\img\\ui-icons_444444_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\js\\easing.min.js",
+      "PackagePath": "staticwebassets\\web\\js\\easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\js\\hoverIntent.js",
+      "PackagePath": "staticwebassets\\web\\js\\hoverIntent.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\js\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\web\\js\\jquery-ui.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\js\\jquery.ajaxchimp.min.js",
+      "PackagePath": "staticwebassets\\web\\js\\jquery.ajaxchimp.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\web\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\web\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\js\\mail-script.js",
+      "PackagePath": "staticwebassets\\web\\js\\mail-script.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\js\\main.js",
+      "PackagePath": "staticwebassets\\web\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\js\\superfish.min.js",
+      "PackagePath": "staticwebassets\\web\\js\\superfish.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\js\\vendor\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\web\\js\\vendor\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\js\\vendor\\jquery-2.2.4.min.js",
+      "PackagePath": "staticwebassets\\web\\js\\vendor\\jquery-2.2.4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_alert.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_badge.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_button-group.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_buttons.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_card.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_carousel.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_close.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_close.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_code.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_code.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_custom-forms.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_custom-forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_forms.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_functions.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_grid.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_images.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_images.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_input-group.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_jumbotron.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_jumbotron.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_list-group.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_media.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_media.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_mixins.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_modal.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_nav.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_navbar.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_pagination.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_popover.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_print.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_print.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_progress.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_reboot.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_root.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_tables.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_transitions.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_type.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_type.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_utilities.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\_variables.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_background-variant.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_background-variant.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_badge.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_float.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_float.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_grid-framework.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_grid-framework.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_hover.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_hover.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_nav-divider.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_nav-divider.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_navbar-align.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_navbar-align.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_size.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_size.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_table-row.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_table-row.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_text-emphasis.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_text-emphasis.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_text-hide.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_text-hide.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\mixins\\_visibility.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\mixins\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\utilities\\_align.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\utilities\\_align.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\utilities\\_background.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\utilities\\_background.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\utilities\\_borders.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\utilities\\_borders.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\utilities\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\utilities\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\utilities\\_display.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\utilities\\_display.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\utilities\\_embed.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\utilities\\_embed.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\utilities\\_flex.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\utilities\\_flex.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\utilities\\_float.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\utilities\\_float.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\utilities\\_position.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\utilities\\_position.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\utilities\\_screenreaders.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\utilities\\_screenreaders.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\utilities\\_sizing.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\utilities\\_sizing.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\utilities\\_spacing.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\utilities\\_spacing.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\utilities\\_text.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\utilities\\_text.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\bootstrap\\utilities\\_visibility.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\bootstrap\\utilities\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\main.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\main.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\theme\\_blog.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\theme\\_blog.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\theme\\_contact.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\theme\\_contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\theme\\_elements.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\theme\\_elements.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\theme\\_flexbox.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\theme\\_flexbox.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\theme\\_footer.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\theme\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\theme\\_header.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\theme\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\theme\\_home.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\theme\\_home.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\theme\\_mixins.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\theme\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\theme\\_reset.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\theme\\_reset.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\scss\\theme\\_variables.scss",
+      "PackagePath": "staticwebassets\\web\\scss\\theme\\_variables.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.RadioCabs.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.RadioCabs.props",
+      "PackagePath": "build\\RadioCabs.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.RadioCabs.props",
+      "PackagePath": "buildMultiTargeting\\RadioCabs.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.RadioCabs.props",
+      "PackagePath": "buildTransitive\\RadioCabs.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
