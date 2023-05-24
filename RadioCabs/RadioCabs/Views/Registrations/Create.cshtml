@@ -6,7 +6,6 @@
 }
 
 
-
 <!-- start banner Area -->
 <section class="banner-area relative about-banner" id="home">
 	<div class="overlay overlay-bg"></div>
@@ -23,7 +22,7 @@
 </section>
 <!-- End banner Area -->
 <!-- Start Align Area -->
-<div class="whole-wrap mt-5" >
+<div class="whole-wrap mt-5 mb-5" >
 	<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-8">
@@ -39,8 +38,8 @@
 						<span asp-validation-for="Email" class="text-danger"></span>
 						</div>
 						<div class="mt-10">
-						<input type="text" asp-for="ContactPerson" placeholder="Contact Person" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contact Person'" required class="single-input">
-						<span asp-validation-for="ContactPerson" class="text-danger"></span>
+						<input type="file" asp-for="Profile" placeholder="Profile" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contact Person'" required class="single-input">
+						<span asp-validation-for="Profile" class="text-danger"></span>
 						</div>
 						<div class="input-group-icon mt-10">
 							<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
@@ -56,10 +55,9 @@
 						<span asp-validation-for="TelePhone" class="text-danger"></span>
 						</div>
 						<div class="input-group-icon mt-10">
-							<div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
-						<div class="form-select" asp-for="City" id="default-select">
+							<div class="icon">City</div>
+						<div class="form-select" asp-for="City" >
 							<select asp-for="City">
-									<option >City</option>
 									<option value="Karachi">Karachi</option>
 								<option value="Islamabad">Islamabad</option>
 								<option value="Rawalpindi">Rawalpindi</option>
@@ -72,32 +70,15 @@
 						<span asp-validation-for="City" class="text-danger"></span>
 						</div>
 
-
-						<div class="mt-10">
-						<input type="text" asp-for="PaymentType" placeholder="TelePhone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Payment Type'" required class="single-input">
-						<span asp-validation-for="PaymentType" class="text-danger"></span>
-						</div>
 					<div class="mt-10">
-						<input type="password" asp-for="Password" placeholder="TelePhone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Payment Type'" required class="single-input">
+						<input type="password" asp-for="Password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required class="single-input">
 						<span asp-validation-for="Password" class="text-danger"></span>
 					</div>
 					<div class="mt-10">
-						<input type="password" asp-for="ConfirmPassword" placeholder="TelePhone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Payment Type'" required class="single-input">
+						<input type="password" asp-for="ConfirmPassword" placeholder="Confirm Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'" required class="single-input">
 						<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
 					</div>
 					
-						<div class="input-group-icon mt-10">
-							<div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
-						<div class="form-select" asp-for="RegisterAs" id="default-select">
-							<select asp-for="RegisterAs">
-									<option >Account Type</option>
-									<option value="0">User</option>
-								<option value="1">Company</option>
-								<option value="2">Driver</option>
-								</select>
-							</div>
-						<span asp-validation-for="RegisterAs" class="text-danger"></span>
-						</div>
 					<div class="button-group-area mt-40">
 						<input type="submit" class="genric-btn link circle" value="Submit">
 						<input type="reset" class="genric-btn link circle" value="Reset">
@@ -108,7 +89,6 @@
 	</div>
 </div>
 <!-- End Align Area -->
-
 
 
 
@@ -142,11 +122,6 @@
                 <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ContactPerson" class="control-label"></label>
-                <input asp-for="ContactPerson" class="form-control" />
-                <span asp-validation-for="ContactPerson" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="Address" class="control-label"></label>
                 <input asp-for="Address" class="form-control" />
                 <span asp-validation-for="Address" class="text-danger"></span>
@@ -167,23 +142,18 @@
                 <span asp-validation-for="City" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PaymentType" class="control-label"></label>
-                <input asp-for="PaymentType" class="form-control" />
-                <span asp-validation-for="PaymentType" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="RegisterAs" class="control-label"></label>
-                <input asp-for="RegisterAs" class="form-control" />
-                <span asp-validation-for="RegisterAs" class="text-danger"></span>
+                <label asp-for="Profile" class="control-label"></label>
+                <input asp-for="Profile" class="form-control" />
+                <span asp-validation-for="Profile" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
-</div>
+</div>*@
 
 <div>
     <a asp-action="Index">Back to List</a>
-</div>*@
+</div>
 

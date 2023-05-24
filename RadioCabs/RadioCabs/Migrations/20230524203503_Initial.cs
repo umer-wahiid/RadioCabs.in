@@ -50,7 +50,7 @@ namespace RadioCabs.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Registration",
+                name: "Registrations",
                 columns: table => new
                 {
                     RegistrationId = table.Column<int>(type: "int", nullable: false)
@@ -59,17 +59,15 @@ namespace RadioCabs.Migrations
                     Email = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: false),
                     Password = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     ConfirmPassword = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ContactPerson = table.Column<string>(type: "nvarchar(13)", maxLength: 13, nullable: false),
                     Address = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false),
                     Mobile = table.Column<string>(type: "nvarchar(13)", maxLength: 13, nullable: false),
                     TelePhone = table.Column<string>(type: "nvarchar(13)", maxLength: 13, nullable: false),
                     City = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
-                    PaymentType = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
-                    RegisterAs = table.Column<int>(type: "int", nullable: false)
+                    Profile = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Registration", x => x.RegistrationId);
+                    table.PrimaryKey("PK_Registrations", x => x.RegistrationId);
                 });
 
             migrationBuilder.CreateTable(
@@ -87,9 +85,9 @@ namespace RadioCabs.Migrations
                 {
                     table.PrimaryKey("PK_CompanyRegistrations", x => x.CompanyId);
                     table.ForeignKey(
-                        name: "FK_CompanyRegistrations_Registration_RegistrationId",
+                        name: "FK_CompanyRegistrations_Registrations_RegistrationId",
                         column: x => x.RegistrationId,
-                        principalTable: "Registration",
+                        principalTable: "Registrations",
                         principalColumn: "RegistrationId",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -108,9 +106,9 @@ namespace RadioCabs.Migrations
                 {
                     table.PrimaryKey("PK_DriversRegistrations", x => x.DriverId);
                     table.ForeignKey(
-                        name: "FK_DriversRegistrations_Registration_RegistrationId",
+                        name: "FK_DriversRegistrations_Registrations_RegistrationId",
                         column: x => x.RegistrationId,
-                        principalTable: "Registration",
+                        principalTable: "Registrations",
                         principalColumn: "RegistrationId",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -142,7 +140,7 @@ namespace RadioCabs.Migrations
                 name: "FeedBacks");
 
             migrationBuilder.DropTable(
-                name: "Registration");
+                name: "Registrations");
         }
     }
 }

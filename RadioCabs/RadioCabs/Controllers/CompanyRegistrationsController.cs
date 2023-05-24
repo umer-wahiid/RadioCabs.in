@@ -9,23 +9,23 @@ using RadioCabs.Models;
 
 namespace RadioCabs.Controllers
 {
-    public class CompanyController : Controller
+    public class CompanyRegistrationsController : Controller
     {
         private readonly RCDbContext _context;
 
-        public CompanyController(RCDbContext context)
+        public CompanyRegistrationsController(RCDbContext context)
         {
             _context = context;
         }
 
-        // GET: Company
+        // GET: CompanyRegistrations
         public async Task<IActionResult> Index()
         {
             var rCDbContext = _context.CompanyRegistrations.Include(c => c.Registration);
             return View(await rCDbContext.ToListAsync());
         }
 
-        // GET: Company/Details/5
+        // GET: CompanyRegistrations/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.CompanyRegistrations == null)
@@ -44,14 +44,14 @@ namespace RadioCabs.Controllers
             return View(companyRegistration);
         }
 
-        // GET: Company/Create
+        // GET: CompanyRegistrations/Create
         public IActionResult Create()
         {
             ViewData["RegistrationId"] = new SelectList(_context.Registrations, "RegistrationId", "Address");
             return View();
         }
 
-        // POST: Company/Create
+        // POST: CompanyRegistrations/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -68,7 +68,7 @@ namespace RadioCabs.Controllers
             return View(companyRegistration);
         }
 
-        // GET: Company/Edit/5
+        // GET: CompanyRegistrations/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.CompanyRegistrations == null)
@@ -85,7 +85,7 @@ namespace RadioCabs.Controllers
             return View(companyRegistration);
         }
 
-        // POST: Company/Edit/5
+        // POST: CompanyRegistrations/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -121,7 +121,7 @@ namespace RadioCabs.Controllers
             return View(companyRegistration);
         }
 
-        // GET: Company/Delete/5
+        // GET: CompanyRegistrations/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.CompanyRegistrations == null)
@@ -140,7 +140,7 @@ namespace RadioCabs.Controllers
             return View(companyRegistration);
         }
 
-        // POST: Company/Delete/5
+        // POST: CompanyRegistrations/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

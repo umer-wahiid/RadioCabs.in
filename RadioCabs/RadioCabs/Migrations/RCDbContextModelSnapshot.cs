@@ -199,11 +199,6 @@ namespace RadioCabs.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ContactPerson")
-                        .IsRequired()
-                        .HasMaxLength(13)
-                        .HasColumnType("nvarchar(13)");
-
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasMaxLength(25)
@@ -224,13 +219,10 @@ namespace RadioCabs.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.Property<string>("PaymentType")
+                    b.Property<string>("Profile")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
-
-                    b.Property<int>("RegisterAs")
-                        .HasColumnType("int");
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
 
                     b.Property<string>("TelePhone")
                         .IsRequired()
@@ -239,7 +231,7 @@ namespace RadioCabs.Migrations
 
                     b.HasKey("RegistrationId");
 
-                    b.ToTable("Registration");
+                    b.ToTable("Registrations");
                 });
 
             modelBuilder.Entity("RadioCabs.Models.CompanyRegistration", b =>

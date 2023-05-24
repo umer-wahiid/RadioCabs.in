@@ -10,6 +10,6 @@ namespace RadioCabs.Models
 		public DbSet<DriversRegistration> DriversRegistrations { get; set; }
 		public DbSet<AdvertiseRegistration> AdvertiseRegistrations { get; set; }
 		public DbSet<FeedBack> FeedBacks { get; set; }
-		public DbSet<Registration> Registration { get; set; }
+		public DbSet<Registration> Registrations { get; set; }
 	}
 }

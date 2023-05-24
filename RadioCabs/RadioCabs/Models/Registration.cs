@@ -26,10 +26,6 @@ namespace RadioCabs.Models
         [DataType(DataType.Password)]
         public string ConfirmPassword { get; set; }
 
-        [Required]
-        [StringLength(13)]
-        public string ContactPerson { get; set; }
-
         [StringLength(250)]
         [Required]
         public string Address { get; set; }
@@ -45,12 +41,10 @@ namespace RadioCabs.Models
         [Required]
         [StringLength(20)]
         public string City { get; set; }
-
-        [StringLength(10)]
+        
         [Required]
-        public string PaymentType { get; set; }
+        [StringLength(150)]
+        public string Profile { get; set; }
 
-        [Required]
-        public int RegisterAs { get; set; }
     }
 }

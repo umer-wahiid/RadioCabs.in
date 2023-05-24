@@ -9,23 +9,23 @@ using RadioCabs.Models;
 
 namespace RadioCabs.Controllers
 {
-    public class DriversController : Controller
+    public class DriversRegistrationsController : Controller
     {
         private readonly RCDbContext _context;
 
-        public DriversController(RCDbContext context)
+        public DriversRegistrationsController(RCDbContext context)
         {
             _context = context;
         }
 
-        // GET: Drivers
+        // GET: DriversRegistrations
         public async Task<IActionResult> Index()
         {
             var rCDbContext = _context.DriversRegistrations.Include(d => d.Registration);
             return View(await rCDbContext.ToListAsync());
         }
 
-        // GET: Drivers/Details/5
+        // GET: DriversRegistrations/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.DriversRegistrations == null)
@@ -44,14 +44,14 @@ namespace RadioCabs.Controllers
             return View(driversRegistration);
         }
 
-        // GET: Drivers/Create
+        // GET: DriversRegistrations/Create
         public IActionResult Create()
         {
             ViewData["RegistrationId"] = new SelectList(_context.Registrations, "RegistrationId", "Address");
             return View();
         }
 
-        // POST: Drivers/Create
+        // POST: DriversRegistrations/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -68,7 +68,7 @@ namespace RadioCabs.Controllers
             return View(driversRegistration);
         }
 
-        // GET: Drivers/Edit/5
+        // GET: DriversRegistrations/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.DriversRegistrations == null)
@@ -85,7 +85,7 @@ namespace RadioCabs.Controllers
             return View(driversRegistration);
         }
 
-        // POST: Drivers/Edit/5
+        // POST: DriversRegistrations/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -121,7 +121,7 @@ namespace RadioCabs.Controllers
             return View(driversRegistration);
         }
 
-        // GET: Drivers/Delete/5
+        // GET: DriversRegistrations/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.DriversRegistrations == null)
@@ -140,7 +140,7 @@ namespace RadioCabs.Controllers
             return View(driversRegistration);
         }
 
-        // POST: Drivers/Delete/5
+        // POST: DriversRegistrations/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

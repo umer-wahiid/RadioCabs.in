@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using NuGet.Protocol.Plugins;
 using RadioCabs.Models;
 
 namespace RadioCabs.Controllers
@@ -21,20 +22,20 @@ namespace RadioCabs.Controllers
         // GET: Registrations
         public async Task<IActionResult> Index()
         {
-              return _context.Registration != null ? 
-                          View(await _context.Registration.ToListAsync()) :
+              return _context.Registrations != null ? 
+                          View(await _context.Registrations.ToListAsync()) :
                           Problem("Entity set 'RCDbContext.Registrations'  is null.");
         }
 
         // GET: Registrations/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Registration == null)
+            if (id == null || _context.Registrations == null)
             {
                 return NotFound();
             }
 
-            var registration = await _context.Registration
+            var registration = await _context.Registrations
                 .FirstOrDefaultAsync(m => m.RegistrationId == id);
             if (registration == null)
             {
@@ -55,26 +56,53 @@ namespace RadioCabs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("RegistrationId,Name,Email,Password,ConfirmPassword,ContactPerson,Address,Mobile,TelePhone,City,PaymentType,RegisterAs")] Registration registration)
+        public async Task<IActionResult> Create([Bind("RegistrationId,Name,Email,Password,ConfirmPassword,Address,Mobile,TelePhone,City,Profile")] Registration registration)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(registration);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                //return RedirectToAction(nameof(Index));
+                return RedirectToAction("DriverOrComp", "Home");
             }
             return View(registration);
         }
 
+
+
+        // GET: Registrations/Create
+        public IActionResult UserLogin()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult UserLogin(Registration re)
+        {
+            var x = from a in _context.Registrations where a.Email.Equals(re.Email) && a.Password.Equals(re.Password) select a;
+            if (x.Any())
+            {
+                return RedirectToAction("Index", "Home");
+                //ViewBag.m = "Correct Credentials";
+            }
+            else
+            {
+                ViewBag.m = "Wrong Credentials";
+            }
+            return View();
+        }
+
+
         // GET: Registrations/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Registration == null)
+            if (id == null || _context.Registrations == null)
             {
                 return NotFound();
             }
 
-            var registration = await _context.Registration.FindAsync(id);
+            var registration = await _context.Registrations.FindAsync(id);
             if (registration == null)
             {
                 return NotFound();
@@ -87,7 +115,7 @@ namespace RadioCabs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("RegistrationId,Name,Email,Password,ConfirmPassword,ContactPerson,Address,Mobile,TelePhone,City,PaymentType,RegisterAs")] Registration registration)
+        public async Task<IActionResult> Edit(int id, [Bind("RegistrationId,Name,Email,Password,ConfirmPassword,Address,Mobile,TelePhone,City,Profile")] Registration registration)
         {
             if (id != registration.RegistrationId)
             {
@@ -120,12 +148,12 @@ namespace RadioCabs.Controllers
         // GET: Registrations/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Registration == null)
+            if (id == null || _context.Registrations == null)
             {
                 return NotFound();
             }
 
-            var registration = await _context.Registration
+            var registration = await _context.Registrations
                 .FirstOrDefaultAsync(m => m.RegistrationId == id);
             if (registration == null)
             {
@@ -140,14 +168,14 @@ namespace RadioCabs.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Registration == null)
+            if (_context.Registrations == null)
             {
                 return Problem("Entity set 'RCDbContext.Registrations'  is null.");
             }
-            var registration = await _context.Registration.FindAsync(id);
+            var registration = await _context.Registrations.FindAsync(id);
             if (registration != null)
             {
-                _context.Registration.Remove(registration);
+                _context.Registrations.Remove(registration);
             }
             
             await _context.SaveChangesAsync();
@@ -156,7 +184,7 @@ namespace RadioCabs.Controllers
 
         private bool RegistrationExists(int id)
         {
-          return (_context.Registration?.Any(e => e.RegistrationId == id)).GetValueOrDefault();
+          return (_context.Registrations?.Any(e => e.RegistrationId == id)).GetValueOrDefault();
         }
     }
 }
