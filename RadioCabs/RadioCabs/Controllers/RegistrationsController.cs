@@ -21,20 +21,20 @@ namespace RadioCabs.Controllers
         // GET: Registrations
         public async Task<IActionResult> Index()
         {
-              return _context.Registrations != null ? 
-                          View(await _context.Registrations.ToListAsync()) :
+              return _context.Registration != null ? 
+                          View(await _context.Registration.ToListAsync()) :
                           Problem("Entity set 'RCDbContext.Registrations'  is null.");
         }
 
         // GET: Registrations/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Registrations == null)
+            if (id == null || _context.Registration == null)
             {
                 return NotFound();
             }
 
-            var registration = await _context.Registrations
+            var registration = await _context.Registration
                 .FirstOrDefaultAsync(m => m.RegistrationId == id);
             if (registration == null)
             {
@@ -69,12 +69,12 @@ namespace RadioCabs.Controllers
         // GET: Registrations/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Registrations == null)
+            if (id == null || _context.Registration == null)
             {
                 return NotFound();
             }
 
-            var registration = await _context.Registrations.FindAsync(id);
+            var registration = await _context.Registration.FindAsync(id);
             if (registration == null)
             {
                 return NotFound();
@@ -120,12 +120,12 @@ namespace RadioCabs.Controllers
         // GET: Registrations/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Registrations == null)
+            if (id == null || _context.Registration == null)
             {
                 return NotFound();
             }
 
-            var registration = await _context.Registrations
+            var registration = await _context.Registration
                 .FirstOrDefaultAsync(m => m.RegistrationId == id);
             if (registration == null)
             {
@@ -140,14 +140,14 @@ namespace RadioCabs.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Registrations == null)
+            if (_context.Registration == null)
             {
                 return Problem("Entity set 'RCDbContext.Registrations'  is null.");
             }
-            var registration = await _context.Registrations.FindAsync(id);
+            var registration = await _context.Registration.FindAsync(id);
             if (registration != null)
             {
-                _context.Registrations.Remove(registration);
+                _context.Registration.Remove(registration);
             }
             
             await _context.SaveChangesAsync();
@@ -156,7 +156,7 @@ namespace RadioCabs.Controllers
 
         private bool RegistrationExists(int id)
         {
-          return (_context.Registrations?.Any(e => e.RegistrationId == id)).GetValueOrDefault();
+          return (_context.Registration?.Any(e => e.RegistrationId == id)).GetValueOrDefault();
         }
     }
 }

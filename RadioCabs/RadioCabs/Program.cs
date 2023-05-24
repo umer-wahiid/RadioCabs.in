@@ -26,6 +26,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
 	name: "default",
-	pattern: "{controller=Home}/{action=CompanyView}/{id?}");
+	pattern: "{controller=Registrations}/{action=Create}/{id?}");
 
 app.Run();
