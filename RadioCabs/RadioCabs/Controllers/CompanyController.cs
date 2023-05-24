@@ -21,9 +21,8 @@ namespace RadioCabs.Controllers
         // GET: Company
         public async Task<IActionResult> Index()
         {
-              return _context.CompanyRegistrations != null ? 
-                          View(await _context.CompanyRegistrations.ToListAsync()) :
-                          Problem("Entity set 'RCDbContext.CompanyRegistrations'  is null.");
+            var rCDbContext = _context.CompanyRegistrations.Include(c => c.Registration);
+            return View(await rCDbContext.ToListAsync());
         }
 
         // GET: Company/Details/5
@@ -35,6 +34,7 @@ namespace RadioCabs.Controllers
             }
 
             var companyRegistration = await _context.CompanyRegistrations
+                .Include(c => c.Registration)
                 .FirstOrDefaultAsync(m => m.CompanyId == id);
             if (companyRegistration == null)
             {
@@ -47,6 +47,7 @@ namespace RadioCabs.Controllers
         // GET: Company/Create
         public IActionResult Create()
         {
+            ViewData["RegistrationId"] = new SelectList(_context.Registrations, "RegistrationId", "Address");
             return View();
         }
 
@@ -55,7 +56,7 @@ namespace RadioCabs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CompanyName,CompanyId,Password,ConfirmPassword,ContactPerson,Designation,Address,Mobile,TelePhone,FaxNumber,Email,MembershipType,PaymentType")] CompanyRegistration companyRegistration)
+        public async Task<IActionResult> Create([Bind("CompanyId,Designation,FaxNumber,MembershipType,RegistrationId")] CompanyRegistration companyRegistration)
         {
             if (ModelState.IsValid)
             {
@@ -63,6 +64,7 @@ namespace RadioCabs.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["RegistrationId"] = new SelectList(_context.Registrations, "RegistrationId", "Address", companyRegistration.RegistrationId);
             return View(companyRegistration);
         }
 
@@ -79,6 +81,7 @@ namespace RadioCabs.Controllers
             {
                 return NotFound();
             }
+            ViewData["RegistrationId"] = new SelectList(_context.Registrations, "RegistrationId", "Address", companyRegistration.RegistrationId);
             return View(companyRegistration);
         }
 
@@ -87,7 +90,7 @@ namespace RadioCabs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CompanyName,CompanyId,Password,ConfirmPassword,ContactPerson,Designation,Address,Mobile,TelePhone,FaxNumber,Email,MembershipType,PaymentType")] CompanyRegistration companyRegistration)
+        public async Task<IActionResult> Edit(int id, [Bind("CompanyId,Designation,FaxNumber,MembershipType,RegistrationId")] CompanyRegistration companyRegistration)
         {
             if (id != companyRegistration.CompanyId)
             {
@@ -114,6 +117,7 @@ namespace RadioCabs.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["RegistrationId"] = new SelectList(_context.Registrations, "RegistrationId", "Address", companyRegistration.RegistrationId);
             return View(companyRegistration);
         }
 
@@ -126,6 +130,7 @@ namespace RadioCabs.Controllers
             }
 
             var companyRegistration = await _context.CompanyRegistrations
+                .Include(c => c.Registration)
                 .FirstOrDefaultAsync(m => m.CompanyId == id);
             if (companyRegistration == null)
             {

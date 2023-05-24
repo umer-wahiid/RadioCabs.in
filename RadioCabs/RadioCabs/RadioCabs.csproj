@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Migrations\" />
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="wwwroot\web\" />
   </ItemGroup>

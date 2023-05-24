@@ -21,9 +21,8 @@ namespace RadioCabs.Controllers
         // GET: Drivers
         public async Task<IActionResult> Index()
         {
-              return _context.DriversRegistrations != null ? 
-                          View(await _context.DriversRegistrations.ToListAsync()) :
-                          Problem("Entity set 'RCDbContext.DriversRegistrations'  is null.");
+            var rCDbContext = _context.DriversRegistrations.Include(d => d.Registration);
+            return View(await rCDbContext.ToListAsync());
         }
 
         // GET: Drivers/Details/5
@@ -35,6 +34,7 @@ namespace RadioCabs.Controllers
             }
 
             var driversRegistration = await _context.DriversRegistrations
+                .Include(d => d.Registration)
                 .FirstOrDefaultAsync(m => m.DriverId == id);
             if (driversRegistration == null)
             {
@@ -47,6 +47,7 @@ namespace RadioCabs.Controllers
         // GET: Drivers/Create
         public IActionResult Create()
         {
+            ViewData["RegistrationId"] = new SelectList(_context.Registrations, "RegistrationId", "Address");
             return View();
         }
 
@@ -55,7 +56,7 @@ namespace RadioCabs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("DriverName,DriverId,Password,ConfirmPassword,ContactPerson,Address,City,Mobile,TelePhone,Email,Experience,Destination,PaymentType")] DriversRegistration driversRegistration)
+        public async Task<IActionResult> Create([Bind("DriverId,Experience,Description,RegistrationId")] DriversRegistration driversRegistration)
         {
             if (ModelState.IsValid)
             {
@@ -63,6 +64,7 @@ namespace RadioCabs.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["RegistrationId"] = new SelectList(_context.Registrations, "RegistrationId", "Address", driversRegistration.RegistrationId);
             return View(driversRegistration);
         }
 
@@ -79,6 +81,7 @@ namespace RadioCabs.Controllers
             {
                 return NotFound();
             }
+            ViewData["RegistrationId"] = new SelectList(_context.Registrations, "RegistrationId", "Address", driversRegistration.RegistrationId);
             return View(driversRegistration);
         }
 
@@ -87,7 +90,7 @@ namespace RadioCabs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("DriverName,DriverId,Password,ConfirmPassword,ContactPerson,Address,City,Mobile,TelePhone,Email,Experience,Destination,PaymentType")] DriversRegistration driversRegistration)
+        public async Task<IActionResult> Edit(int id, [Bind("DriverId,Experience,Description,RegistrationId")] DriversRegistration driversRegistration)
         {
             if (id != driversRegistration.DriverId)
             {
@@ -114,6 +117,7 @@ namespace RadioCabs.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["RegistrationId"] = new SelectList(_context.Registrations, "RegistrationId", "Address", driversRegistration.RegistrationId);
             return View(driversRegistration);
         }
 
@@ -126,6 +130,7 @@ namespace RadioCabs.Controllers
             }
 
             var driversRegistration = await _context.DriversRegistrations
+                .Include(d => d.Registration)
                 .FirstOrDefaultAsync(m => m.DriverId == id);
             if (driversRegistration == null)
             {
