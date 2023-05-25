@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -83,6 +84,11 @@ namespace RadioCabs.Controllers
             var x = from a in _context.Registrations where a.Email.Equals(re.Email) && a.Password.Equals(re.Password) select a;
             if (x.Any())
             {
+				Registration reg = _context.Registrations.Where(c => c.Email == re.Email).FirstOrDefault();
+
+				HttpContext.Session.SetString("E", re.Email);
+                HttpContext.Session.SetString("N", reg.Name);
+                HttpContext.Session.SetString("P", reg.Profile);
                 return RedirectToAction("Index", "Home");
                 //ViewBag.m = "Correct Credentials";
             }
@@ -94,8 +100,16 @@ namespace RadioCabs.Controllers
         }
 
 
-        // GET: Registrations/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+		public async Task<IActionResult> UserLogout()
+		{
+			await HttpContext.SignOutAsync();
+
+			return RedirectToAction("Index", "Home");
+		}
+
+
+		// GET: Registrations/Edit/5
+		public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Registrations == null)
             {

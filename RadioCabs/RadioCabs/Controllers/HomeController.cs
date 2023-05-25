@@ -15,6 +15,12 @@ namespace RadioCabs.Controllers
 
 		public IActionResult Index()
 		{
+			var e = HttpContext.Session.GetString("E");
+			var n = HttpContext.Session.GetString("N");
+			var p = HttpContext.Session.GetString("P");
+			ViewBag.a = e;
+			ViewBag.b = n;
+			ViewBag.c = p;
 			return View();
 		}
 
