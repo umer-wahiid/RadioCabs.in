@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using RadioCabs.Models;
 using System.Diagnostics;
 
@@ -6,14 +7,21 @@ namespace RadioCabs.Controllers
 {
 	public class HomeController : Controller
 	{
-		private readonly ILogger<HomeController> _logger;
+		//private readonly ILogger<HomeController> _logger;
 
-		public HomeController(ILogger<HomeController> logger)
-		{
-			_logger = logger;
-		}
+		//public HomeController(ILogger<HomeController> logger)
+		//{
+		//	_logger = logger;
+		//}
 
-		public IActionResult Index()
+        private readonly RCDbContext _context;
+
+        public HomeController(RCDbContext context)
+        {
+            _context = context;
+        }
+
+        public IActionResult Index()
 		{
 			var e = HttpContext.Session.GetString("E");
 			var n = HttpContext.Session.GetString("N");
@@ -54,6 +62,26 @@ namespace RadioCabs.Controllers
 		}
 		
 		public IActionResult Login()
+		{
+			return View();
+		}
+        public async Task<IActionResult> Profile(int? id)
+        {
+            if (id == null || _context.Registrations == null)
+            {
+                return NotFound();
+            }
+
+            var registration = await _context.Registrations
+                .FirstOrDefaultAsync(m => m.RegistrationId == id);
+            if (registration == null)
+            {
+                return NotFound();
+            }
+
+            return View();
+        }
+        public IActionResult EditProfile()
 		{
 			return View();
 		}

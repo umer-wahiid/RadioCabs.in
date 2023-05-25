@@ -98,7 +98,14 @@
 						}
 						else
 						{
-							<li><a asp-area="" asp-controller="Registrations" asp-action="UserLogout">Logout</a></li>
+							<li class="menu-has-children">
+								<a>@ViewBag.b</a>
+								<ul>
+									<li><a asp-area="" asp-controller="Home" asp-action="Profile">Profile</a></li>
+									<li><a asp-area="" asp-controller="Registrations" asp-action="UserLogout">Logout</a></li>
+								</ul>
+							</li>
+							@*<li><a asp-area="" asp-controller="Registrations" asp-action="UserLogout">Logout</a></li>*@
 						}
 					</ul>
 				</nav><!-- #nav-menu-container -->

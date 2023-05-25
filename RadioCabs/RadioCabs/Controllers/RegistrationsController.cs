@@ -14,10 +14,12 @@ namespace RadioCabs.Controllers
     public class RegistrationsController : Controller
     {
         private readonly RCDbContext _context;
+        IWebHostEnvironment iw;
 
-        public RegistrationsController(RCDbContext context)
+        public RegistrationsController(RCDbContext context, IWebHostEnvironment iw)
         {
             _context = context;
+            iw = iw;
         }
 
         // GET: Registrations
@@ -57,14 +59,29 @@ namespace RadioCabs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("RegistrationId,Name,Email,Password,ConfirmPassword,Address,Mobile,TelePhone,City,Profile")] Registration registration)
+        public async Task<IActionResult> Create(Registration registration, IFormFile img)
         {
-            if (ModelState.IsValid)
+            if (img != null)
             {
-                _context.Add(registration);
-                await _context.SaveChangesAsync();
-                //return RedirectToAction(nameof(Index));
-                return RedirectToAction("DriverOrComp", "Home");
+                string ext = Path.GetExtension(img.FileName);
+                if (ext == ".jpg" || ext == "gif")
+                {
+                    string d = Path.Combine(iw.WebRootPath, "Image");
+                    var fname = Path.GetFileName(img.FileName);
+                    string filepath = Path.Combine(d, fname);
+                    using (var fs = new FileStream(filepath, FileMode.Create))
+                    {
+                        await img.CopyToAsync(fs);
+                    }
+                    registration.Profile = @"Image/" + fname;
+                    _context.Add(registration);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ViewBag.m = "Wrong Picture Format";
+                }
             }
             return View(registration);
         }

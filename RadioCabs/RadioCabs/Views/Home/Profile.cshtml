@@ -1,0 +1,42 @@
+﻿@model RadioCabs.Models.Registration
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<h1 class="heading" style="margin-top: 50px;"><span>Profile</span></h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <form style="width: 400px;" action="" method="POST" enctype="multipart/form-data">
+                        <table class="table" style="margin-top: 40px; width: 90vh; font-size: 15px; margin-left: -150px;">
+                            <tr>
+                            <th>Name :</th>
+                            <td style="height: 5vh; font-size:15px;">' . $_SESSION["name"] . '</td>
+                        </tr>
+                        <tr>
+                            <th>Email :</th>
+                            <td style="height: 5vh; font-size:15px;">' . $_SESSION["email"] . '</td>
+                        </tr>
+                        <tr>
+                            <th>Contact :</th>
+                            <td style="height: 5vh; font-size:15px;">' . $_SESSION["contact"] . '</td>
+                        </tr>
+                        <tr>
+                            <th>Address :</th>
+                            <td style="height: 5vh; font-size:15px;">' . $_SESSION["address"] . '</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td><a href="edit.php" class="form-control btn btn-success" value="Edit Profile" style="height: 5vh; font-size:15px;">Edit Profile</a></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col-3">
+                <img src="' . $_SESSION["image"] . '" class="rounded-circle" style="width:270px;height:270px;margin-top:15px;margin-left:50px;" alt="">
+            </div>
+        </div>
+    </div>
+
+
