@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RadioCabs.Models;
 
@@ -10,9 +11,11 @@ using RadioCabs.Models;
 namespace RadioCabs.Migrations
 {
     [DbContext(typeof(RCDbContext))]
-    partial class RCDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230526195405_addLogo")]
+    partial class addLogo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -9,23 +9,24 @@ using RadioCabs.Models;
 
 namespace RadioCabs.Controllers
 {
-    public class CompanyRegistrationsController : Controller
+    public class CompanyController : Controller
     {
         private readonly RCDbContext _context;
 
-        public CompanyRegistrationsController(RCDbContext context)
+        public CompanyController(RCDbContext context)
         {
             _context = context;
         }
 
-        // GET: CompanyRegistrations
+        // GET: Company
         public async Task<IActionResult> Index()
         {
-            var rCDbContext = _context.CompanyRegistrations.Include(c => c.Registration);
-            return View(await rCDbContext.ToListAsync());
+              return _context.CompanyRegistrations != null ? 
+                          View(await _context.CompanyRegistrations.ToListAsync()) :
+                          Problem("Entity set 'RCDbContext.CompanyRegistrations'  is null.");
         }
 
-        // GET: CompanyRegistrations/Details/5
+        // GET: Company/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.CompanyRegistrations == null)
@@ -34,7 +35,6 @@ namespace RadioCabs.Controllers
             }
 
             var companyRegistration = await _context.CompanyRegistrations
-                .Include(c => c.Registration)
                 .FirstOrDefaultAsync(m => m.CompanyId == id);
             if (companyRegistration == null)
             {
@@ -44,19 +44,18 @@ namespace RadioCabs.Controllers
             return View(companyRegistration);
         }
 
-        // GET: CompanyRegistrations/Create
+        // GET: Company/Create
         public IActionResult Create()
         {
-            ViewData["RegistrationId"] = new SelectList(_context.Registrations, "RegistrationId", "Address");
             return View();
         }
 
-        // POST: CompanyRegistrations/Create
+        // POST: Company/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CompanyId,Designation,FaxNumber,MembershipType,RegistrationId")] CompanyRegistration companyRegistration)
+        public async Task<IActionResult> Create([Bind("CompanyId,CompanyName,Password,ContactPerson,Designation,Address,Mobile,Telephone,FaxNumber,Email,MembershipType,PaymentType,LogoImage")] CompanyRegistration companyRegistration)
         {
             if (ModelState.IsValid)
             {
@@ -64,11 +63,10 @@ namespace RadioCabs.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["RegistrationId"] = new SelectList(_context.Registrations, "RegistrationId", "Address", companyRegistration.RegistrationId);
             return View(companyRegistration);
         }
 
-        // GET: CompanyRegistrations/Edit/5
+        // GET: Company/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.CompanyRegistrations == null)
@@ -81,16 +79,15 @@ namespace RadioCabs.Controllers
             {
                 return NotFound();
             }
-            ViewData["RegistrationId"] = new SelectList(_context.Registrations, "RegistrationId", "Address", companyRegistration.RegistrationId);
             return View(companyRegistration);
         }
 
-        // POST: CompanyRegistrations/Edit/5
+        // POST: Company/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CompanyId,Designation,FaxNumber,MembershipType,RegistrationId")] CompanyRegistration companyRegistration)
+        public async Task<IActionResult> Edit(int id, [Bind("CompanyId,CompanyName,Password,ContactPerson,Designation,Address,Mobile,Telephone,FaxNumber,Email,MembershipType,PaymentType,LogoImage")] CompanyRegistration companyRegistration)
         {
             if (id != companyRegistration.CompanyId)
             {
@@ -117,11 +114,10 @@ namespace RadioCabs.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["RegistrationId"] = new SelectList(_context.Registrations, "RegistrationId", "Address", companyRegistration.RegistrationId);
             return View(companyRegistration);
         }
 
-        // GET: CompanyRegistrations/Delete/5
+        // GET: Company/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.CompanyRegistrations == null)
@@ -130,7 +126,6 @@ namespace RadioCabs.Controllers
             }
 
             var companyRegistration = await _context.CompanyRegistrations
-                .Include(c => c.Registration)
                 .FirstOrDefaultAsync(m => m.CompanyId == id);
             if (companyRegistration == null)
             {
@@ -140,7 +135,7 @@ namespace RadioCabs.Controllers
             return View(companyRegistration);
         }
 
-        // POST: CompanyRegistrations/Delete/5
+        // POST: Company/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

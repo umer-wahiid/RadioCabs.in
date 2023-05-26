@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RadioCabs.Models;
 
@@ -10,9 +11,11 @@ using RadioCabs.Models;
 namespace RadioCabs.Migrations
 {
     [DbContext(typeof(RCDbContext))]
-    partial class RCDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230526192148_addColumns")]
+    partial class addColumns
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -119,11 +122,6 @@ namespace RadioCabs.Migrations
                     b.Property<string>("FaxNumber")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LogoImage")
-                        .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
 
                     b.Property<int>("MembershipType")
                         .HasColumnType("int");

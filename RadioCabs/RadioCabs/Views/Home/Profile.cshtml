@@ -3,39 +3,66 @@
     ViewData["Title"] = "Profile";
 }
 
-<h1 class="heading" style="margin-top: 50px;"><span>Profile</span></h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-8">
-                    <form style="width: 400px;" action="" method="POST" enctype="multipart/form-data">
-                        <table class="table" style="margin-top: 40px; width: 90vh; font-size: 15px; margin-left: -150px;">
-                            <tr>
-                            <th>@Html.DisplayNameFor(model => model.Name) :</th>
-                        <td style="height: 5vh; font-size:15px;">@Html.DisplayFor(model => model.Name)</td>
-                        </tr>
-                        <tr>
-                            <th>Email :</th>
-                        <td style="height: 5vh; font-size:15px;">@Html.DisplayFor(model => model.Email)</td>
-                        </tr>
-                        <tr>
-                            <th>Contact :</th>
-                            <td style="height: 5vh; font-size:15px;">' . $_SESSION["contact"] . '</td>
-                        </tr>
-                        <tr>
-                            <th>Address :</th>
-                            <td style="height: 5vh; font-size:15px;">' . $_SESSION["address"] . '</td>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><a asp-action="Edit" asp-route-id="@Model?.RegistrationId" class="form-control btn btn-success" value="Edit Profile" style="height: 5vh; font-size:15px;">Manage Your Profile</a></td>
-                        </tr>
-                    </table>
-                </form>
-            </div>
-            <div class="col-3">
-                <img src="' . $_SESSION["image"] . '" class="rounded-circle" style="width:270px;height:270px;margin-top:15px;margin-left:50px;" alt="">
+<!-- start banner Area -->
+<section class="banner-area relative about-banner" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    Manage Your Profile
+                </h1>
+                <p class="text-white link-nav"><a asp-area="" asp-controller="Home" asp-action="Index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="elements.html"> Elements</a></p>
             </div>
         </div>
     </div>
+</section>
+<!-- End banner Area -->
 
 
+<div class="container">
+    <h1 class="heading" style="margin-top: 135px; margin-left=130px;"><span>Profile</span></h1>
+    <div class="row">
+        <div class="col-8">
+                <form style="width: 400px;" action="" method="POST" enctype="multipart/form-data">
+                    <table class="table" style="margin-top: 45px; width: 112vh; font-size: 15px; margin-left: 135px; margin-bottom: 55px;">
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.Name) :</th>
+                            <td style="height: 5vh; font-size:15px;">@Html.DisplayFor(model => model.Name)</td>
+                        </tr>
+                        <tr>
+                        <th>@Html.DisplayNameFor(model => model.Email) :</th>
+                            <td style="height: 5vh; font-size:15px;">@Html.DisplayFor(model => model.Email)</td>
+                        </tr>
+                        <tr>
+                        <th>@Html.DisplayNameFor(model => model.Password) :</th>
+                        <td style="height: 5vh; font-size:15px;">@Html.DisplayFor(model => model.Password)</td>
+                        </tr>
+                        <tr>
+                        <th>@Html.DisplayNameFor(model => model.Address) :</th>
+                        <td style="height: 5vh; font-size:15px;">@Html.DisplayFor(model => model.Address)</td>
+                        </tr>
+                        <tr>
+                        <th>@Html.DisplayNameFor(model => model.Mobile) :</th>
+                        <td style="height: 5vh; font-size:15px;">@Html.DisplayFor(model => model.Mobile)</td>
+                        </tr>
+                        <tr>
+                        <th>@Html.DisplayNameFor(model => model.TelePhone) :</th>
+                        <td style="height: 5vh; font-size:15px;">@Html.DisplayFor(model => model.TelePhone)</td>
+                        </tr>
+                        <tr>
+                        <th>@Html.DisplayNameFor(model => model.City) :</th>
+                        <td style="height: 5vh; font-size:15px;">@Html.DisplayFor(model => model.City)</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                        <td><a asp-action="EditProfile" asp-route-id="@Model?.RegistrationId" class="primary-btn text-uppercase" value="Edit Profile" style="height: 5vh; font-size:15px;">Manage Your Profile</a></td>
+                        </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div class="col-3">
+        <img src="~/@Html.DisplayFor(model => model.Profile)" class="rounded-circle" style="width:270px;height:270px;margin-top:-800px;margin-left:755px;" alt="">
+    </div>
+</div>

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using RadioCabs.Models;
 using System.Diagnostics;
@@ -15,10 +16,12 @@ namespace RadioCabs.Controllers
 		//}
 
         private readonly RCDbContext _context;
+        IWebHostEnvironment iw;
 
-        public HomeController(RCDbContext context)
+        public HomeController(RCDbContext context, IWebHostEnvironment i)
         {
             _context = context;
+            iw = i;
         }
 
         public IActionResult Index()
@@ -56,7 +59,18 @@ namespace RadioCabs.Controllers
 		{
 			return View();
 		}
-		public IActionResult Feedback()
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CompanyForm(CompanyRegistration companyRegistration)
+        {
+            _context.Add(companyRegistration);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+
+            return View(companyRegistration);
+        }
+
+        public IActionResult Feedback()
 		{
 			return View();
 		}
@@ -102,12 +116,114 @@ namespace RadioCabs.Controllers
             return View(registration);
         }
 
-        public IActionResult EditProfile()
-		{
-			return View();
-		}
-		
-		public IActionResult DriverOrComp()
+        //      public IActionResult EditProfile()
+        //{
+        //	return View();
+        //}
+
+        public async Task<IActionResult> EditProfile(int? id)
+        {
+            if (id == null || _context.Registrations == null)
+            {
+                return NotFound();
+            }
+
+            var registration = await _context.Registrations.FindAsync(id);
+            if (registration == null)
+            {
+                return NotFound();
+            }
+            return View(registration);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public async Task<IActionResult> EditProfile(int id, Registration registration, IFormFile image)
+        {
+            if (image != null)
+            {
+                string ext = Path.GetExtension(image.FileName);
+                if (ext == ".jpg" || ext == ".png")
+                {
+                    string d = Path.Combine(iw.WebRootPath, "Image");
+                    var fname = Path.GetFileName(image.FileName);
+                    string filepath = Path.Combine(d, fname);
+                    using (var fs = new FileStream(filepath, FileMode.Create))
+                    {
+                        await image.CopyToAsync(fs);
+                    }
+                    registration.Profile = @"Image/" + fname;
+                    _context.Update(registration);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ViewBag.m = "Wrong Picture Format";
+                }
+            }
+            return View(registration);
+        }
+
+
+        //public async Task<IActionResult> EditProfile(int id, Registration registration, IFormFile image)
+        //{
+        //    if (id != registration.RegistrationId)
+        //    {
+
+        //        return NotFound();
+        //    }
+
+        //    if (ModelState.IsValid)
+        //    {
+        //        try
+        //        {
+        //            if (image != null)
+        //            {
+        //                string ext = Path.GetExtension(image.FileName);
+        //                if (ext == ".jpg" || ext == ".png")
+        //                {
+        //                    string d = Path.Combine(iw.WebRootPath, "Image");
+        //                    var fname = Path.GetFileName(image.FileName);
+        //                    string filepath = Path.Combine(d, fname);
+        //                    using (var fs = new FileStream(filepath, FileMode.Create))
+        //                    {
+        //                        await image.CopyToAsync(fs);
+        //                    }
+        //                    registration.Profile = @"Image/" + fname;
+        //                    _context.Update(registration);
+        //                    await _context.SaveChangesAsync();
+        //                    return RedirectToAction(nameof(Index));
+        //                }
+        //                else
+        //                {
+        //                    ViewBag.m = "Wrong Picture Format";
+        //                }
+        //            }
+        //        }
+        //        catch (DbUpdateConcurrencyException)
+        //        {
+        //            if (!RegistrationExists(registration.RegistrationId))
+        //            {
+        //                return NotFound();
+        //            }
+        //            else
+        //            {
+        //                throw;
+        //            }
+        //        }
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    return View(registration);
+        //}
+
+        private bool RegistrationExists(int registrationId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IActionResult DriverOrComp()
 		{
 			return View();
 		}

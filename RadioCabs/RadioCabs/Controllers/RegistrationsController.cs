@@ -16,10 +16,10 @@ namespace RadioCabs.Controllers
         private readonly RCDbContext _context;
         IWebHostEnvironment iw;
 
-        public RegistrationsController(RCDbContext context, IWebHostEnvironment iw)
+        public RegistrationsController(RCDbContext context, IWebHostEnvironment i)
         {
             _context = context;
-            iw = iw;
+            iw = i;
         }
 
         // GET: Registrations
@@ -59,19 +59,19 @@ namespace RadioCabs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Registration registration, IFormFile img)
+        public async Task<IActionResult> Create(Registration registration, IFormFile image)
         {
-            if (img != null)
+            if (image != null)
             {
-                string ext = Path.GetExtension(img.FileName);
-                if (ext == ".jpg" || ext == "gif")
+                string ext = Path.GetExtension(image.FileName);
+                if (ext == ".jpg" || ext == ".png")
                 {
                     string d = Path.Combine(iw.WebRootPath, "Image");
-                    var fname = Path.GetFileName(img.FileName);
+                    var fname = Path.GetFileName(image.FileName);
                     string filepath = Path.Combine(d, fname);
                     using (var fs = new FileStream(filepath, FileMode.Create))
                     {
-                        await img.CopyToAsync(fs);
+                        await image.CopyToAsync(fs);
                     }
                     registration.Profile = @"Image/" + fname;
                     _context.Add(registration);

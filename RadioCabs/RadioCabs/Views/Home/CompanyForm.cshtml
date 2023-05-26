@@ -1,8 +1,142 @@
-﻿
+﻿@model RadioCabs.Models.CompanyRegistration
+
 @{
     ViewData["Title"] = "CompanyForm";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>CompanyForm</h1>
+<!-- start banner Area -->
+<section class="banner-area relative about-banner" id="home">
+	<div class="overlay overlay-bg"></div>
+	<div class="container">
+		<div class="row d-flex align-items-center justify-content-center">
+			<div class="about-content col-lg-12">
+				<h1 class="text-white">
+					Register Your Self
+				</h1>
+				<p class="text-white link-nav"><a asp-area="" asp-controller="Home" asp-action="Index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="elements.html"> Elements</a></p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End banner Area -->
+@*<!-- Start Align Area -->
+<div class="whole-wrap mt-5 mb-5" >
+	<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-8">
+					<h3 class="mb-30">Registeration Farm</h3>
+					<form asp-action="Create" method="post" enctype="multipart/form-data">
+					<div class="text-danger"></div>
+						<div class="mt-10">
+							<input type="text" asp-for="CompanyName" placeholder="Your Company Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Company Name'" required class="single-input">
+							<span asp-validation-for="CompanyName" class="text-danger"></span>
+						</div>
+						<div class="mt-10">
+						<input type="password" asp-for="Password" placeholder="Your Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" required class="single-input">
+						<span asp-validation-for="Password" class="text-danger"></span>
+						</div>
+						<div class="mt-10">
+						<input type="file" name="image" required class="single-input">
+						<span asp-validation-for="Profile" class="text-danger"></span>
+						</div>
+						<div class="input-group-icon mt-10">
+							<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
+						<input type="text" asp-for="ContactPerson" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'" required class="single-input">
+						<span asp-validation-for="ContactPerson" class="text-danger"></span>
+						</div>
+						<div class="mt-10">
+						<input type="text" asp-for="Mobile" placeholder="Mobile Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mobile'" required class="single-input">
+						<span asp-validation-for="Mobile" class="text-danger"></span>
+						</div>
+						<div class="mt-10">
+						<input type="text" asp-for="TelePhone" placeholder="TelePhone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telephone'" required class="single-input">
+						<span asp-validation-for="TelePhone" class="text-danger"></span>
+						</div>
+						
+						</div>
 
+					<div class="mt-10">
+						<input type="password" asp-for="Password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required class="single-input">
+						<span asp-validation-for="Password" class="text-danger"></span>
+					</div>
+					<div class="mt-10">
+						<input type="password" asp-for="ConfirmPassword" placeholder="Confirm Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'" required class="single-input">
+						<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+					</div>
+
+					<div class="button-group-area mt-40">
+						<input type="submit" class="genric-btn link circle" value="Submit">
+						<input type="reset" class="genric-btn link circle" value="Reset">
+					</div>
+					</form>
+				</div>
+		</div>
+	</div>
+</div>
+<!-- End Align Area -->*@
+
+
+<div class="whole-wrap mt-5 mb-5" >
+	<div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8">
+                    <h3 class="mb-30">Registeration Farm</h3>
+                <form asp-action="CompanyForm" method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="mt-10">
+						<input asp-for="CompanyName" placeholder="Your Company Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Company Name'" class="single-input" />
+                        <span asp-validation-for="CompanyName" class="text-danger"></span>
+                    </div>
+                    <div class="mt-10">
+						<input asp-for="Password" placeholder="Your Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Password'" class="single-input" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="mt-10">
+						<input asp-for="ContactPerson" placeholder="Your Contact Person" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Contact Person'" class="single-input" />
+                        <span asp-validation-for="ContactPerson" class="text-danger"></span>
+                    </div>
+                    <div class="mt-10">
+						<input asp-for="Designation" placeholder="Your Designation" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Designation'" class="single-input" />
+                        <span asp-validation-for="Designation" class="text-danger"></span>
+                    </div>
+                    <div class="mt-10">
+						<input asp-for="Address" placeholder="Your Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Address'" class="single-input" />
+                        <span asp-validation-for="Address" class="text-danger"></span>
+                    </div>
+                    <div class="mt-10">
+						<input asp-for="Mobile" placeholder="Your Mobile" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Mobile'" class="single-input" />
+                        <span asp-validation-for="Mobile" class="text-danger"></span>
+                    </div>
+                    <div class="mt-10">
+						<input asp-for="Telephone" placeholder="Your Telephone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Telephone'" class="single-input" />
+                        <span asp-validation-for="Telephone" class="text-danger"></span>
+                    </div>
+                    <div class="mt-10">
+						<input asp-for="FaxNumber" placeholder="Your Fax Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Fax Number'" class="single-input" />
+                        <span asp-validation-for="FaxNumber" class="text-danger"></span>
+                    </div>
+                    <div class="mt-10">
+						<input asp-for="Email" placeholder="Your Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email'" class="single-input" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="mt-10">
+						<select asp-for="MembershipType" placeholder="Your MemberShip Type" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your MemberShip Type'" class="single-input"></select>
+                        <span asp-validation-for="MembershipType" class="text-danger"></span>
+                    </div>
+                    <div class="mt-10">
+						<input asp-for="PaymentType" placeholder="Your Payment Type" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Payment Type'" class="single-input" />
+                        <span asp-validation-for="PaymentType" class="text-danger"></span>
+                    </div>
+                    <div class="mt-10">
+                        <input type="file" asp-for="LogoImage" class="single-input" />
+                        <span asp-validation-for="LogoImage" class="text-danger"></span>
+                    </div>
+                    <div class="button-group-area mt-40">
+						<input type="submit" class="genric-btn link circle" value="Submit">
+						<input type="reset" class="genric-btn link circle" value="Reset">
+					</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

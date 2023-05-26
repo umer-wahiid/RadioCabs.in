@@ -27,8 +27,8 @@
 			<div class="row">
 				<div class="col-lg-8 col-md-8">
 					<h3 class="mb-30">Registeration Farm</h3>
-					<form  asp-action="Create" method="post" enctype="multipart/form-data">
-					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<form asp-action="Create" method="post" enctype="multipart/form-data">
+					<div class="text-danger"></div>
 						<div class="mt-10">
 							<input type="text" asp-for="Name" placeholder="Your Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Full Name'" required class="single-input">
 							<span asp-validation-for="Name" class="text-danger"></span>
@@ -38,7 +38,7 @@
 						<span asp-validation-for="Email" class="text-danger"></span>
 						</div>
 						<div class="mt-10">
-						<input type="file" name="img" placeholder="Profile" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contact Person'" required class="single-input">
+						<input type="file" name="image" required class="single-input">
 						<span asp-validation-for="Profile" class="text-danger"></span>
 						</div>
 						<div class="input-group-icon mt-10">
