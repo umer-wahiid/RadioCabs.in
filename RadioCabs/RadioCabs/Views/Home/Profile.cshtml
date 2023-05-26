@@ -1,5 +1,4 @@
 ﻿@model RadioCabs.Models.Registration
-
 @{
     ViewData["Title"] = "Profile";
 }
@@ -16,7 +15,7 @@
                         </tr>
                         <tr>
                             <th>Email :</th>
-                            <td style="height: 5vh; font-size:15px;">' . $_SESSION["email"] . '</td>
+                        <td style="height: 5vh; font-size:15px;">@Html.DisplayFor(model => model.Email)</td>
                         </tr>
                         <tr>
                             <th>Contact :</th>

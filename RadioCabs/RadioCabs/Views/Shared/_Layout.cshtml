@@ -102,7 +102,7 @@
 							<li class="menu-has-children">
 								<a>My Account</a>
 								<ul>
-									<li><a asp-area="" asp-controller="Home" asp-action="Profile" asp-route-id="@Model?.RegistrationId">Profile</a></li>
+									<li><a asp-area="" asp-action="Profile" asp-route-id="@ViewBag.id">Profile</a></li>
 									<li><a asp-area="" asp-controller="Registrations" asp-action="UserLogout">Logout</a></li>
 								</ul>
 							</li>

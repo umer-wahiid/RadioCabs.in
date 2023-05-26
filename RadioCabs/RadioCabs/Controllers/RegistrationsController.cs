@@ -103,11 +103,13 @@ namespace RadioCabs.Controllers
             {
 				Registration reg = _context.Registrations.Where(c => c.Email == re.Email).FirstOrDefault();
 
+
 				HttpContext.Session.SetString("E", re.Email);
+				HttpContext.Session.SetInt32("ID",  reg.RegistrationId);
                 HttpContext.Session.SetString("N", reg.Name);
                 HttpContext.Session.SetString("P", reg.Profile);
-                int registrationId = reg.RegistrationId; // Replace with your registration ID value
-                HttpContext.Session.SetString("A", registrationId.ToString());
+                //int registrationId = reg.RegistrationId;
+                //HttpContext.Session.SetString("ID", registrationId.ToString());
                 return RedirectToAction("Index", "Home");
                 //ViewBag.m = "Correct Credentials";
             }
