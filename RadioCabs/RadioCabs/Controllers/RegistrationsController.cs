@@ -106,6 +106,8 @@ namespace RadioCabs.Controllers
 				HttpContext.Session.SetString("E", re.Email);
                 HttpContext.Session.SetString("N", reg.Name);
                 HttpContext.Session.SetString("P", reg.Profile);
+                int registrationId = reg.RegistrationId; // Replace with your registration ID value
+                HttpContext.Session.SetString("A", registrationId.ToString());
                 return RedirectToAction("Index", "Home");
                 //ViewBag.m = "Correct Credentials";
             }

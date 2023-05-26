@@ -11,8 +11,8 @@
                     <form style="width: 400px;" action="" method="POST" enctype="multipart/form-data">
                         <table class="table" style="margin-top: 40px; width: 90vh; font-size: 15px; margin-left: -150px;">
                             <tr>
-                            <th>Name :</th>
-                            <td style="height: 5vh; font-size:15px;">' . $_SESSION["name"] . '</td>
+                            <th>@Html.DisplayNameFor(model => model.Name) :</th>
+                        <td style="height: 5vh; font-size:15px;">@Html.DisplayFor(model => model.Name)</td>
                         </tr>
                         <tr>
                             <th>Email :</th>
@@ -28,7 +28,7 @@
                         </tr>
                         <tr>
                             <th></th>
-                            <td><a href="edit.php" class="form-control btn btn-success" value="Edit Profile" style="height: 5vh; font-size:15px;">Edit Profile</a></td>
+                            <td><a asp-action="Edit" asp-route-id="@Model?.RegistrationId" class="form-control btn btn-success" value="Edit Profile" style="height: 5vh; font-size:15px;">Manage Your Profile</a></td>
                         </tr>
                     </table>
                 </form>

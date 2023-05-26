@@ -26,9 +26,11 @@ namespace RadioCabs.Controllers
 			var e = HttpContext.Session.GetString("E");
 			var n = HttpContext.Session.GetString("N");
 			var p = HttpContext.Session.GetString("P");
+			var a = HttpContext.Session.GetString("A");
 			ViewBag.a = e;
 			ViewBag.b = n;
 			ViewBag.c = p;
+			ViewBag.d = a;
 			return View();
 		}
 
@@ -65,22 +67,26 @@ namespace RadioCabs.Controllers
 		{
 			return View();
 		}
-        public async Task<IActionResult> Profile(int? id)
-        {
-            if (id == null || _context.Registrations == null)
-            {
-                return NotFound();
-            }
+        //public async Task<IActionResult> Profile(int? id)
+        //{
+        //    if (id == null || _context.Registrations == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            var registration = await _context.Registrations
-                .FirstOrDefaultAsync(m => m.RegistrationId == id);
-            if (registration == null)
-            {
-                return NotFound();
-            }
+        //    var registration = await _context.Registrations
+        //        .FirstOrDefaultAsync(m => m.RegistrationId == id);
+        //    if (registration == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return View();
-        }
+        //    return View();
+        //}
+		public IActionResult Profile()
+		{
+			return View();
+		}
         public IActionResult EditProfile()
 		{
 			return View();
