@@ -5,6 +5,22 @@
       "PackagePath": "staticwebassets\\RadioCabs.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\17993669206703036.jpg",
+      "PackagePath": "staticwebassets\\Image\\17993669206703036.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\Ammar.jpg",
+      "PackagePath": "staticwebassets\\Image\\Ammar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\Ansari's.png",
+      "PackagePath": "staticwebassets\\Image\\Ansari's.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\abad.png",
+      "PackagePath": "staticwebassets\\Image\\abad.png"
+    },
+    {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

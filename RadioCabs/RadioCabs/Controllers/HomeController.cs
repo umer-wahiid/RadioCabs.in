@@ -83,22 +83,7 @@ namespace RadioCabs.Controllers
 		{
 			return View();
 		}
-        //public async Task<IActionResult> Profile(int? id)
-        //{
-        //    if (id == null || _context.Registrations == null)
-        //    {
-        //        return NotFound();
-        //    }
 
-        //    var registration = await _context.Registrations
-        //        .FirstOrDefaultAsync(m => m.RegistrationId == id);
-        //    if (registration == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    return View();
-        //}
 		public async Task<IActionResult> Profile(int? id)
         {
             if (id == null || _context.Registrations == null)
@@ -225,7 +210,15 @@ namespace RadioCabs.Controllers
 
         public IActionResult DriverOrComp()
 		{
-			return View();
+            var e = HttpContext.Session.GetString("E");
+            if (e != null)
+            {
+			    return View();
+            }
+            else
+            {
+                return RedirectToAction("Index", "Home");
+            }
 		}
 
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

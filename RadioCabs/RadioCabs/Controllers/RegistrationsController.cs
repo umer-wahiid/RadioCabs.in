@@ -76,7 +76,7 @@ namespace RadioCabs.Controllers
                     registration.Profile = @"Image/" + fname;
                     _context.Add(registration);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
+                    return RedirectToAction("DriverOrComp", "Home");
                 }
                 else
                 {
