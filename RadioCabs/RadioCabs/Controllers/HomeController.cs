@@ -53,7 +53,7 @@ namespace RadioCabs.Controllers
 		}
 		public IActionResult CompanyView()
 		{
-			return View();
+			return View(_context.CompanyRegistrations.ToList());
 		}
 		public IActionResult CompanyForm()
 		{
