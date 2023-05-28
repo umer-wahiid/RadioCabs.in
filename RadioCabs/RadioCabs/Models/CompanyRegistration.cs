@@ -18,11 +18,6 @@ namespace RadioCabs.Models
         [Display(Name = "Company Name")]
         public string CompanyName { get; set; }
 
-        [StringLength(25), MinLength(8)]
-        [Required]
-        [DataType(DataType.Password)]
-        public string Password { get; set; }
-
         [StringLength(13),MinLength(11)]
         [Required]
         [Display(Name = "Contact Person")]
@@ -44,6 +39,7 @@ namespace RadioCabs.Models
         [Required]
         public string Telephone { get; set; }
         public string FaxNumber { get; set; }
+
         [Required]
         [DataType(DataType.EmailAddress)]
         [StringLength(50)]
@@ -60,5 +56,7 @@ namespace RadioCabs.Models
         [Required]
         [StringLength(1000)]
         public string LogoImage { get; set; }
+
+        public int UserId { get; set; }
     }
 }

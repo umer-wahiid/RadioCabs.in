@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace RadioCabs.Models
@@ -46,5 +47,7 @@ namespace RadioCabs.Models
         [StringLength(150)]
         public string Profile { get; set; }
 
+        [DefaultValue(1)]
+        public int RoleId { get; set; }
     }
 }
