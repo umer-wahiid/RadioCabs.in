@@ -63,6 +63,20 @@ namespace RadioCabs.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CompanyForm(CompanyRegistration companyRegistration, IFormFile image)
         {
+            var id = HttpContext.Session.GetInt32("ID");
+            var e = HttpContext.Session.GetString("E");
+            var n = HttpContext.Session.GetString("N");
+            var p = HttpContext.Session.GetString("P");
+            var m = HttpContext.Session.GetString("M");
+            var t = HttpContext.Session.GetString("T");
+            var a = HttpContext.Session.GetString("A");
+            ViewBag.id = id;
+            ViewBag.a = e;
+            ViewBag.b = n;
+            ViewBag.c = p;
+            ViewBag.mo = m;
+            ViewBag.t = t;
+            ViewBag.ad = a;
             if (image != null)
             {
                 string ext = Path.GetExtension(image.FileName);

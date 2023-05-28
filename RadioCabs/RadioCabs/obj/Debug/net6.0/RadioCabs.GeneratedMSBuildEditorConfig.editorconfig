@@ -15,6 +15,46 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\imran\source\repos\RadioCabs.in\RadioCabs\RadioCabs
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/imran/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/CompanyRegistrations/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVJlZ2lzdHJhdGlvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/imran/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/CompanyRegistrations/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVJlZ2lzdHJhdGlvbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/imran/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/CompanyRegistrations/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVJlZ2lzdHJhdGlvbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/imran/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/CompanyRegistrations/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVJlZ2lzdHJhdGlvbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/imran/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/CompanyRegistrations/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVJlZ2lzdHJhdGlvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/imran/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/DriversRegistrations/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyc1JlZ2lzdHJhdGlvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/imran/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/DriversRegistrations/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyc1JlZ2lzdHJhdGlvbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/imran/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/DriversRegistrations/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyc1JlZ2lzdHJhdGlvbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/imran/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/DriversRegistrations/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyc1JlZ2lzdHJhdGlvbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/imran/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/DriversRegistrations/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyc1JlZ2lzdHJhdGlvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/imran/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -53,6 +93,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/imran/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/Home/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/imran/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/Registrations/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/imran/source/repos/RadioCabs.in/RadioCabs/RadioCabs/Views/Registrations/Delete.cshtml]

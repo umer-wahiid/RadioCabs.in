@@ -88,10 +88,6 @@
                         <span asp-validation-for="CompanyName" class="text-danger"></span>
                     </div>
                     <div class="mt-10">
-						<input asp-for="Password" placeholder="Your Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Password'" class="single-input" />
-                        <span asp-validation-for="Password" class="text-danger"></span>
-                    </div>
-                    <div class="mt-10">
 						<input asp-for="ContactPerson" placeholder="Your Contact Person" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Contact Person'" class="single-input" />
                         <span asp-validation-for="ContactPerson" class="text-danger"></span>
                     </div>
@@ -100,15 +96,15 @@
                         <span asp-validation-for="Designation" class="text-danger"></span>
                     </div>
                     <div class="mt-10">
-						<input asp-for="Address" placeholder="Your Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Address'" class="single-input" />
+						<input asp-for="Address" placeholder="Your Address" value="ViewBag.ad" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Address'" class="single-input" />
                         <span asp-validation-for="Address" class="text-danger"></span>
                     </div>
                     <div class="mt-10">
-						<input asp-for="Mobile" placeholder="Your Mobile" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Mobile'" class="single-input" />
+						<input asp-for="Mobile" placeholder="Your Mobile" value="ViewBag.mo" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Mobile'" class="single-input" />
                         <span asp-validation-for="Mobile" class="text-danger"></span>
                     </div>
                     <div class="mt-10">
-						<input asp-for="Telephone" placeholder="Your Telephone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Telephone'" class="single-input" />
+						<input asp-for="Telephone" placeholder="Your Telephone" value="ViewBag.t" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Telephone'" class="single-input" />
                         <span asp-validation-for="Telephone" class="text-danger"></span>
                     </div>
                     <div class="mt-10">
@@ -116,7 +112,7 @@
                         <span asp-validation-for="FaxNumber" class="text-danger"></span>
                     </div>
                     <div class="mt-10">
-						<input asp-for="Email" placeholder="Your Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email'" class="single-input" />
+						<input asp-for="Email" placeholder="Your Email" value="ViewBag.a" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email'" class="single-input" />
                         <span asp-validation-for="Email" class="text-danger"></span>
                     </div>
                     <div class="mt-10">
@@ -131,6 +127,10 @@
                         <input type="file" name="image" class="single-input" />
                         <span asp-validation-for="LogoImage" class="text-danger"></span>
                     </div>
+					<div class="mt-10">
+						<input type="hidden" value="ViewBag.id" class="single-input" />
+						<span asp-validation-for="PaymentType" class="text-danger"></span>
+					</div>
                     <div class="button-group-area mt-40">
 						<input type="submit" class="btn btn-warning genric-btn link circle" value="Submit">
 						<input type="reset" class="btn btn-warning genric-btn link circle" value="Reset">
