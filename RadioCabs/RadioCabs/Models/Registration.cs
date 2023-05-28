@@ -47,7 +47,8 @@ namespace RadioCabs.Models
         [StringLength(150)]
         public string Profile { get; set; }
 
-        [DefaultValue(1)]
+        [Required]
+        [DefaultValue("1")]
         public int RoleId { get; set; }
     }
 }
