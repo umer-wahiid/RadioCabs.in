@@ -1,0 +1,61 @@
+﻿@model RadioCabs.Models.Services
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/admin_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Services</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HService1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HService1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DService1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DService1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HService2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HService2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DService2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DService2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HService3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HService3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DService3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DService3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.ServicesId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

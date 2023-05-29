@@ -125,6 +125,16 @@
 						</select>
 						<span asp-validation-for="MembershipType" class="text-danger"></span>
 					</div>
+					<div class="mt-10">
+						<select asp-for="City" class="form-control">
+							<option value="">-- Select City --</option>
+							@foreach (var item in Enum.GetValues(typeof(City)))
+							{
+								<option value="@item">@item</option>
+							}
+						</select>
+						<span asp-validation-for="City" class="text-danger"></span>
+					</div>
                     <div class="mt-10">
 						<input type="text" asp-for="PaymentType" placeholder="Your Payment Type" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Payment Type'" class="single-input" />
                         <span asp-validation-for="PaymentType" class="text-danger"></span>
@@ -132,6 +142,10 @@
                     <div class="mt-10">
                         <input type="file" name="image" class="single-input" />
                         <span asp-validation-for="LogoImage" class="text-danger"></span>
+                    </div>
+					<div class="mt-10">
+						<textarea asp-for="Description" placeholder="Your Description" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Description'" class="single-input"></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
                     </div>
 					<div class="mt-10">
 						<input type="hidden" asp-for="UserId" type="hidden" value="@ViewBag.id" class="single-input" />

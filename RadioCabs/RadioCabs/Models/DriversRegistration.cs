@@ -23,7 +23,7 @@ namespace RadioCabs.Models
 
         [Required]
         [StringLength(20)]
-        public string City { get; set; }
+        public City City { get; set; }
 
         [StringLength(13), MinLength(11)]
         [Required]
@@ -49,5 +49,8 @@ namespace RadioCabs.Models
         [Required]
         [Display(Name = "Payment Type")]
         public string PaymentType { get; set; }
+
+        [Required]
+        public int UserId { get; set; }
     }
 }

@@ -8,6 +8,20 @@ namespace RadioCabs.Models
         Basic,
         Free
     }
+    public enum City
+    {
+        Karachi,
+        Lahore,
+        Islamabad,
+        Quetta,
+        Peshawar,
+        Multan,
+        Gujaranwala,
+        Hyderabad,
+        Faisalabad,
+        Gujarat,
+        NawabShah
+    }
     public class CompanyRegistration
     {
         [Key]
@@ -18,7 +32,7 @@ namespace RadioCabs.Models
         [Display(Name = "Company Name")]
         public string CompanyName { get; set; }
 
-        [StringLength(13),MinLength(11)]
+        [StringLength(25)]
         [Required]
         [Display(Name = "Contact Person")]
         public string ContactPerson { get; set; }
@@ -38,6 +52,9 @@ namespace RadioCabs.Models
         [StringLength(13), MinLength(11)]
         [Required]
         public string Telephone { get; set; }
+
+        [Required]
+        [Display(Name = "Fax Number")]
         public string FaxNumber { get; set; }
 
         [Required]
@@ -54,9 +71,18 @@ namespace RadioCabs.Models
         public string PaymentType { get; set; }
 
         [Required]
+        public City City { get; set; }
+
+        [Required]
         [StringLength(1000)]
+        public string Description { get; set; }
+
+        [Required]
+        [StringLength(1000)]
+        [Display(Name = "Logo Image")]
         public string LogoImage { get; set; }
 
+        [Required]
         public int UserId { get; set; }
     }
 }

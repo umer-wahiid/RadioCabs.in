@@ -55,7 +55,7 @@ namespace RadioCabs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("DriverId,DriverName,ContactPerson,Address,City,Mobile,Telephone,Email,Experience,Description,PaymentType")] DriversRegistration driversRegistration)
+        public async Task<IActionResult> Create([Bind("DriverId,DriverName,ContactPerson,Address,City,Mobile,Telephone,Email,Experience,Description,PaymentType,UserId")] DriversRegistration driversRegistration)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace RadioCabs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("DriverId,DriverName,ContactPerson,Address,City,Mobile,Telephone,Email,Experience,Description,PaymentType")] DriversRegistration driversRegistration)
+        public async Task<IActionResult> Edit(int id, [Bind("DriverId,DriverName,ContactPerson,Address,City,Mobile,Telephone,Email,Experience,Description,PaymentType,UserId")] DriversRegistration driversRegistration)
         {
             if (id != driversRegistration.DriverId)
             {

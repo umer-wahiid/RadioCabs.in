@@ -22,9 +22,10 @@ namespace RadioCabs.Models
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Compare("Password")]
+        [Compare("Password",ErrorMessage = "Password Not Match")]
         [Required]
         [DataType(DataType.Password)]
+        [MaxLength(20, ErrorMessage = "Max 20 Characters Allowed"),MinLength(8, ErrorMessage = "Min 8 Characters Allowed")]
         public string ConfirmPassword { get; set; }
 
         [StringLength(250)]

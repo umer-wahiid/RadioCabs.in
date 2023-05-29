@@ -1,0 +1,61 @@
+﻿@model RadioCabs.Models.Services
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/admin_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Services</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="HService1" class="control-label"></label>
+                <input asp-for="HService1" class="form-control" />
+                <span asp-validation-for="HService1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DService1" class="control-label"></label>
+                <input asp-for="DService1" class="form-control" />
+                <span asp-validation-for="DService1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HService2" class="control-label"></label>
+                <input asp-for="HService2" class="form-control" />
+                <span asp-validation-for="HService2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DService2" class="control-label"></label>
+                <input asp-for="DService2" class="form-control" />
+                <span asp-validation-for="DService2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HService3" class="control-label"></label>
+                <input asp-for="HService3" class="form-control" />
+                <span asp-validation-for="HService3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DService3" class="control-label"></label>
+                <input asp-for="DService3" class="form-control" />
+                <span asp-validation-for="DService3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label"></label>
+                <input asp-for="UserId" class="form-control" />
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

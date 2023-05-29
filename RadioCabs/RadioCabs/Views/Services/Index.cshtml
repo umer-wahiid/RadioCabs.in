@@ -1,0 +1,72 @@
+﻿@model IEnumerable<RadioCabs.Models.Services>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/admin_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HService1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DService1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HService2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DService2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HService3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DService3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HService1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DService1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HService2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DService2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HService3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DService3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ServicesId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ServicesId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ServicesId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

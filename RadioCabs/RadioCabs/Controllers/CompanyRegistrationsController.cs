@@ -55,7 +55,7 @@ namespace RadioCabs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CompanyId,CompanyName,ContactPerson,Designation,Address,Mobile,Telephone,FaxNumber,Email,MembershipType,PaymentType,LogoImage,UserId")] CompanyRegistration companyRegistration)
+        public async Task<IActionResult> Create([Bind("CompanyId,CompanyName,ContactPerson,Designation,Address,Mobile,Telephone,FaxNumber,Email,MembershipType,PaymentType,City,Description,LogoImage,UserId")] CompanyRegistration companyRegistration)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace RadioCabs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CompanyId,CompanyName,ContactPerson,Designation,Address,Mobile,Telephone,FaxNumber,Email,MembershipType,PaymentType,LogoImage,UserId")] CompanyRegistration companyRegistration)
+        public async Task<IActionResult> Edit(int id, [Bind("CompanyId,CompanyName,ContactPerson,Designation,Address,Mobile,Telephone,FaxNumber,Email,MembershipType,PaymentType,City,Description,LogoImage,UserId")] CompanyRegistration companyRegistration)
         {
             if (id != companyRegistration.CompanyId)
             {
