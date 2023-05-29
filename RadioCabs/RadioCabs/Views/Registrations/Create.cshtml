@@ -28,62 +28,61 @@
 				<div class="col-lg-8 col-md-8">
 					<h3 class="mb-30">Registeration Farm</h3>
 					<form asp-action="Create" method="post" enctype="multipart/form-data">
-					                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
 						<div class="mt-10">
 							<input type="text" asp-for="Name" placeholder="Your Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Full Name'" required class="single-input">
 							<span asp-validation-for="Name" class="text-danger"></span>
 						</div>
 						<div class="mt-10">
-						<input type="email" asp-for="Email" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" required class="single-input">
-						<span asp-validation-for="Email" class="text-danger"></span>
+							<input type="email" asp-for="Email" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" required class="single-input">
+							<span asp-validation-for="Email" class="text-danger"></span>
 						</div>
 						<div class="mt-10">
-						<input type="file" name="image" required class="single-input">
-						<span asp-validation-for="Profile" class="text-danger"></span>
+							<input type="file" name="image" required class="single-input">
+							<span asp-validation-for="Profile" class="text-danger"></span>
 						</div>
 						<div class="input-group-icon mt-10">
 							<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
-						<input type="text" asp-for="Address" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'" required class="single-input">
-						<span asp-validation-for="Address" class="text-danger"></span>
+							<input type="text" asp-for="Address" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'" required class="single-input">
+							<span asp-validation-for="Address" class="text-danger"></span>
 						</div>
 						<div class="mt-10">
-						<input type="text" asp-for="Mobile" placeholder="Mobile Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mobile'" required class="single-input">
-						<span asp-validation-for="Mobile" class="text-danger"></span>
+							<input type="text" asp-for="Mobile" placeholder="Mobile Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mobile'" required class="single-input">
+							<span asp-validation-for="Mobile" class="text-danger"></span>
 						</div>
 						<div class="mt-10">
-						<input type="text" asp-for="TelePhone" placeholder="TelePhone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telephone'" required class="single-input">
-						<span asp-validation-for="TelePhone" class="text-danger"></span>
+							<input type="text" asp-for="TelePhone" placeholder="TelePhone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telephone'" required class="single-input">
+							<span asp-validation-for="TelePhone" class="text-danger"></span>
 						</div>
-						<div class="input-group-icon mt-10">
-							<div class="icon">City</div>
-						<div class="form-select" asp-for="City" >
-							<select asp-for="City">
+						<div class="mt-10">
+							@*<div class="form-select" asp-for="City" >*@
+								<select asp-for="City" class="form-control">
+									<option value="">--Select City--</option>
 									<option value="Karachi">Karachi</option>
-								<option value="Islamabad">Islamabad</option>
-								<option value="Rawalpindi">Rawalpindi</option>
-								<option value="Hyderabad">Hyderabad</option>
-								<option value="Multan">Multan</option>
-								<option value="Lahore">Lahore</option>
-								<option value="Quetta">Quetta</option>
+									<option value="Islamabad">Islamabad</option>
+									<option value="Rawalpindi">Rawalpindi</option>
+									<option value="Hyderabad">Hyderabad</option>
+									<option value="Multan">Multan</option>
+									<option value="Lahore">Lahore</option>
+									<option value="Quetta">Quetta</option>
 								</select>
-							</div>
-						<span asp-validation-for="City" class="text-danger"></span>
+							@*</div>*@
+							<span asp-validation-for="City" class="text-danger"></span>
 						</div>
-
-					<div class="mt-10">
-						<input type="password" asp-for="Password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required class="single-input">
-						<span asp-validation-for="Password" class="text-danger"></span>
-					</div>
-					<div class="mt-10">
-						<input type="password" asp-for="ConfirmPassword" placeholder="Confirm Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'" required class="single-input">
-						<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-					</div>
+						<div class="mt-10">
+							<input type="password" asp-for="Password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required class="single-input">
+							<span asp-validation-for="Password" class="text-danger"></span>
+						</div>
+						<div class="mt-10">
+							<input type="password" asp-for="ConfirmPassword" placeholder="Confirm Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'" required class="single-input">
+							<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+						</div>
 					
-					<div class="button-group-area mt-40">
-						<input type="submit" class="btn btn-warning genric-btn link circle" value="Submit">
-						<input type="reset" class="genric-btn link circle" value="Reset">
-					</div>
+						<div class="button-group-area mt-40">
+							<input type="submit" class="btn btn-warning genric-btn link circle" value="Submit">
+							<input type="reset" class="genric-btn link circle" value="Reset">
+						</div>
 					</form>
 				</div>
 		</div>

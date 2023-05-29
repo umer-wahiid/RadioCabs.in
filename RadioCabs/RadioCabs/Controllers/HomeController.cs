@@ -53,30 +53,55 @@ namespace RadioCabs.Controllers
 		}
 		public IActionResult CompanyView()
 		{
-			return View(_context.CompanyRegistrations.ToList());
-		}
+            var CompanyRegistration = _context.CompanyRegistrations;
+            return View(CompanyRegistration.ToList());
+            //return View();
+        }
+        public IActionResult Company()
+		{
+            var id = HttpContext.Session.GetInt32("ID");
+			CompanyRegistration reg = _context.CompanyRegistrations.Where(c => c.UserId == id).FirstOrDefault();
+			var CompanyRegistration = _context.CompanyRegistrations.ToList();
+
+            var ViewModel = new CompanyViewModel
+            {
+                CompanyRegistrations = CompanyRegistration,
+                CompanyRegistration = reg
+            };
+            //return View(CompanyRegistration.ToList());
+            return View(ViewModel);
+        }
 		public IActionResult CompanyForm()
 		{
-			return View();
+			var id = HttpContext.Session.GetInt32("ID");
+
+			if (id!=null)
+            {
+                var e = HttpContext.Session.GetString("E");
+                var n = HttpContext.Session.GetString("N");
+                var p = HttpContext.Session.GetString("P");
+                var m = HttpContext.Session.GetString("M");
+                var t = HttpContext.Session.GetString("T");
+                var ad = HttpContext.Session.GetString("A");
+                ViewBag.id = id;
+                ViewBag.e = e;
+                ViewBag.n = n;
+                ViewBag.p = p;
+                ViewBag.m = m;
+                ViewBag.t = t;
+                ViewBag.ad = ad;
+			    return View();
+            }
+            else
+            {
+                return RedirectToAction("UserLogin", "Registrations");
+            }
+
 		}
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CompanyForm(CompanyRegistration companyRegistration, IFormFile image)
         {
-            var id = HttpContext.Session.GetInt32("ID");
-            var e = HttpContext.Session.GetString("E");
-            var n = HttpContext.Session.GetString("N");
-            var p = HttpContext.Session.GetString("P");
-            var m = HttpContext.Session.GetString("M");
-            var t = HttpContext.Session.GetString("T");
-            var a = HttpContext.Session.GetString("A");
-            ViewBag.id = id;
-            ViewBag.a = e;
-            ViewBag.b = n;
-            ViewBag.c = p;
-            ViewBag.mo = m;
-            ViewBag.t = t;
-            ViewBag.ad = a;
             if (image != null)
             {
                 string ext = Path.GetExtension(image.FileName);
@@ -184,57 +209,6 @@ namespace RadioCabs.Controllers
         }
 
 
-        //public async Task<IActionResult> EditProfile(int id, Registration registration, IFormFile image)
-        //{
-        //    if (id != registration.RegistrationId)
-        //    {
-
-        //        return NotFound();
-        //    }
-
-        //    if (ModelState.IsValid)
-        //    {
-        //        try
-        //        {
-        //            if (image != null)
-        //            {
-        //                string ext = Path.GetExtension(image.FileName);
-        //                if (ext == ".jpg" || ext == ".png")
-        //                {
-        //                    string d = Path.Combine(iw.WebRootPath, "Image");
-        //                    var fname = Path.GetFileName(image.FileName);
-        //                    string filepath = Path.Combine(d, fname);
-        //                    using (var fs = new FileStream(filepath, FileMode.Create))
-        //                    {
-        //                        await image.CopyToAsync(fs);
-        //                    }
-        //                    registration.Profile = @"Image/" + fname;
-        //                    _context.Update(registration);
-        //                    await _context.SaveChangesAsync();
-        //                    return RedirectToAction(nameof(Index));
-        //                }
-        //                else
-        //                {
-        //                    ViewBag.m = "Wrong Picture Format";
-        //                }
-        //            }
-        //        }
-        //        catch (DbUpdateConcurrencyException)
-        //        {
-        //            if (!RegistrationExists(registration.RegistrationId))
-        //            {
-        //                return NotFound();
-        //            }
-        //            else
-        //            {
-        //                throw;
-        //            }
-        //        }
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    return View(registration);
-        //}
-
         private bool RegistrationExists(int registrationId)
         {
             throw new NotImplementedException();
@@ -242,15 +216,15 @@ namespace RadioCabs.Controllers
 
         public IActionResult DriverOrComp()
 		{
-            var e = HttpContext.Session.GetString("E");
-            if (e != null)
-            {
+            //var e = HttpContext.Session.GetString("E");
+            //if (e != null)
+            //{
 			    return View();
-            }
-            else
-            {
-                return RedirectToAction("Index", "Home");
-            }
+            //}
+            //else
+            //{
+            //    return RedirectToAction("Index", "Home");
+            //}
 		}
 
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

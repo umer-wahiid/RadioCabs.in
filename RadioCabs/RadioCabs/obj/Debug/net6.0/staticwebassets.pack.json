@@ -5,8 +5,20 @@
       "PackagePath": "staticwebassets\\RadioCabs.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\1680248527612_pxfy06_2_0.jpg",
+      "PackagePath": "staticwebassets\\Image\\1680248527612_pxfy06_2_0.jpg"
+    },
+    {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\17993669206703036.jpg",
       "PackagePath": "staticwebassets\\Image\\17993669206703036.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\340490177_180083421539757_1517230450057413380_n.jpg",
+      "PackagePath": "staticwebassets\\Image\\340490177_180083421539757_1517230450057413380_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\ASF Housing Scheme S.jpg",
+      "PackagePath": "staticwebassets\\Image\\ASF Housing Scheme S.jpg"
     },
     {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\Ammar.jpg",
@@ -17,8 +29,1196 @@
       "PackagePath": "staticwebassets\\Image\\Ansari's.png"
     },
     {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\HT.png",
+      "PackagePath": "staticwebassets\\Image\\HT.png"
+    },
+    {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\abad.png",
       "PackagePath": "staticwebassets\\Image\\abad.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\images.jpg",
+      "PackagePath": "staticwebassets\\Image\\images.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\css\\amanda.css",
+      "PackagePath": "staticwebassets\\admin\\css\\amanda.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\css\\amanda.min.css",
+      "PackagePath": "staticwebassets\\admin\\css\\amanda.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\img\\img1.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\img\\img10.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\img10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\img\\img11.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\img11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\img\\img12.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\img12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\img\\img2.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\img\\img23.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\img23.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\img\\img24.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\img24.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\img\\img25.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\img25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\img\\img26.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\img26.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\img\\img27.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\img27.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\img\\img3.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\img3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\img\\img4.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\img4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\img\\img5.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\img5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\img\\img6.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\img6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\img\\img7.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\img7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\img\\img8.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\img8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\img\\img9.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\img9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\js\\ResizeSensor.js",
+      "PackagePath": "staticwebassets\\admin\\js\\ResizeSensor.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\js\\amanda.js",
+      "PackagePath": "staticwebassets\\admin\\js\\amanda.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\js\\chart.chartjs.js",
+      "PackagePath": "staticwebassets\\admin\\js\\chart.chartjs.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\js\\chart.flot.js",
+      "PackagePath": "staticwebassets\\admin\\js\\chart.flot.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\js\\chart.morris.js",
+      "PackagePath": "staticwebassets\\admin\\js\\chart.morris.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\js\\chart.rickshaw.js",
+      "PackagePath": "staticwebassets\\admin\\js\\chart.rickshaw.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\js\\chart.sparkline.js",
+      "PackagePath": "staticwebassets\\admin\\js\\chart.sparkline.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\js\\dashboard.js",
+      "PackagePath": "staticwebassets\\admin\\js\\dashboard.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\js\\jquery.vmap.sampledata.js",
+      "PackagePath": "staticwebassets\\admin\\js\\jquery.vmap.sampledata.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\js\\map.apple.js",
+      "PackagePath": "staticwebassets\\admin\\js\\map.apple.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\js\\map.bluewater.js",
+      "PackagePath": "staticwebassets\\admin\\js\\map.bluewater.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\js\\map.mapbox.js",
+      "PackagePath": "staticwebassets\\admin\\js\\map.mapbox.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\js\\map.shadesofgray.js",
+      "PackagePath": "staticwebassets\\admin\\js\\map.shadesofgray.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\js\\map.shiftworker.js",
+      "PackagePath": "staticwebassets\\admin\\js\\map.shiftworker.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\js\\widgets.js",
+      "PackagePath": "staticwebassets\\admin\\js\\widgets.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\Flot\\jquery.flot.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\Flot\\jquery.flot.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\Flot\\jquery.flot.pie.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\Flot\\jquery.flot.pie.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\Flot\\jquery.flot.resize.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\Flot\\jquery.flot.resize.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\Ionicons\\css\\ionicons.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\Ionicons\\css\\ionicons.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\Ionicons\\fonts\\ionicons.eot",
+      "PackagePath": "staticwebassets\\admin\\lib\\Ionicons\\fonts\\ionicons.eot"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\Ionicons\\fonts\\ionicons.svg",
+      "PackagePath": "staticwebassets\\admin\\lib\\Ionicons\\fonts\\ionicons.svg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\Ionicons\\fonts\\ionicons.ttf",
+      "PackagePath": "staticwebassets\\admin\\lib\\Ionicons\\fonts\\ionicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\Ionicons\\fonts\\ionicons.woff",
+      "PackagePath": "staticwebassets\\admin\\lib\\Ionicons\\fonts\\ionicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\SpinKit\\spinkit.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\SpinKit\\spinkit.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\animate.css\\animate.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\animate.css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\bootstrap\\bootstrap.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\bootstrap\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\chart.js\\Chart.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\chart.js\\Chart.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\d3\\d3.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\d3\\d3.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\datatables-responsive\\dataTables.responsive.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\datatables-responsive\\dataTables.responsive.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\datatables-responsive\\responsive.dataTables.scss",
+      "PackagePath": "staticwebassets\\admin\\lib\\datatables-responsive\\responsive.dataTables.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\datatables\\jquery.dataTables.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\datatables\\jquery.dataTables.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\datatables\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\datatables\\jquery.dataTables.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\datatables\\sort_asc.png",
+      "PackagePath": "staticwebassets\\admin\\lib\\datatables\\sort_asc.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\datatables\\sort_asc_disabled.png",
+      "PackagePath": "staticwebassets\\admin\\lib\\datatables\\sort_asc_disabled.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\datatables\\sort_both.png",
+      "PackagePath": "staticwebassets\\admin\\lib\\datatables\\sort_both.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\datatables\\sort_desc.png",
+      "PackagePath": "staticwebassets\\admin\\lib\\datatables\\sort_desc.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\datatables\\sort_desc_disabled.png",
+      "PackagePath": "staticwebassets\\admin\\lib\\datatables\\sort_desc_disabled.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\eve-raphael\\eve.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\eve-raphael\\eve.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\flot-spline\\jquery.flot.spline.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\flot-spline\\jquery.flot.spline.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\font-awesome\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\font-awesome\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\font-awesome\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\admin\\lib\\font-awesome\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\font-awesome\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\admin\\lib\\font-awesome\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\font-awesome\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\admin\\lib\\font-awesome\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\font-awesome\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\admin\\lib\\font-awesome\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\admin\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\gmaps\\gmaps.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\gmaps\\gmaps.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\highlightjs\\default.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\highlightjs\\default.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\highlightjs\\github.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\highlightjs\\github.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\highlightjs\\highlight.pack.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\highlightjs\\highlight.pack.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jquery-toggles\\toggles-full.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery-toggles\\toggles-full.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jquery-toggles\\toggles.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery-toggles\\toggles.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jquery-ui\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery-ui\\jquery-ui.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jquery.sparkline.bower\\jquery.sparkline.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery.sparkline.bower\\jquery.sparkline.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jquery.steps\\jquery.steps.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery.steps\\jquery.steps.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jquery.steps\\jquery.steps.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery.steps\\jquery.steps.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\jquery.vmap.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\jquery.vmap.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\jquery.vmap.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\jquery.vmap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\jqvmap.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\jqvmap.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\jqvmap.min.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\jqvmap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\continents\\jquery.vmap.africa.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\continents\\jquery.vmap.africa.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\continents\\jquery.vmap.asia.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\continents\\jquery.vmap.asia.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\continents\\jquery.vmap.australia.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\continents\\jquery.vmap.australia.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\continents\\jquery.vmap.europe.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\continents\\jquery.vmap.europe.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\continents\\jquery.vmap.north-america.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\continents\\jquery.vmap.north-america.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\continents\\jquery.vmap.south-america.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\continents\\jquery.vmap.south-america.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\jquery.vmap.algeria.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\jquery.vmap.algeria.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\jquery.vmap.argentina.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\jquery.vmap.argentina.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\jquery.vmap.brazil.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\jquery.vmap.brazil.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\jquery.vmap.canada.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\jquery.vmap.canada.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\jquery.vmap.europe.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\jquery.vmap.europe.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\jquery.vmap.france.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\jquery.vmap.france.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\jquery.vmap.germany.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\jquery.vmap.germany.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\jquery.vmap.greece.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\jquery.vmap.greece.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\jquery.vmap.iran.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\jquery.vmap.iran.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\jquery.vmap.iraq.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\jquery.vmap.iraq.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\jquery.vmap.russia.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\jquery.vmap.russia.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\jquery.vmap.tunisia.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\jquery.vmap.tunisia.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\jquery.vmap.turkey.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\jquery.vmap.turkey.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\jquery.vmap.usa.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\jquery.vmap.usa.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\jqvmap\\maps\\jquery.vmap.world.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jqvmap\\maps\\jquery.vmap.world.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\medium-editor\\default.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\medium-editor\\default.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\medium-editor\\medium-editor.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\medium-editor\\medium-editor.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\medium-editor\\medium-editor.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\medium-editor\\medium-editor.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\mocha\\mocha.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\mocha\\mocha.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\morris.js\\morris.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\morris.js\\morris.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\morris.js\\morris.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\morris.js\\morris.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\parsleyjs\\parsley.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\parsleyjs\\parsley.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\perfect-scrollbar\\css\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\perfect-scrollbar\\css\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\perfect-scrollbar\\css\\perfect-scrollbar.min.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\perfect-scrollbar\\css\\perfect-scrollbar.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\perfect-scrollbar\\js\\perfect-scrollbar.jquery.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\perfect-scrollbar\\js\\perfect-scrollbar.jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\perfect-scrollbar\\js\\perfect-scrollbar.jquery.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\perfect-scrollbar\\js\\perfect-scrollbar.jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\perfect-scrollbar\\js\\perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\perfect-scrollbar\\js\\perfect-scrollbar.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\perfect-scrollbar\\js\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\perfect-scrollbar\\js\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\popper.js\\popper.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\popper.js\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\raphael\\raphael.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\raphael\\raphael.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\rickshaw\\rickshaw.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\rickshaw\\rickshaw.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\rickshaw\\rickshaw.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\rickshaw\\rickshaw.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\rickshaw\\rickshaw.min.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\rickshaw\\rickshaw.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\rickshaw\\rickshaw.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\rickshaw\\rickshaw.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\select2\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\select2\\css\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\select2\\js\\select2.full.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\select2\\js\\select2.full.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\select2\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\select2\\js\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\.bower.json",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\.bower.json"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\.gitignore",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\.gitignore"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\Changelog.txt",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\Changelog.txt"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\Makefile",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\README.md",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\dist\\.gitignore",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\dist\\.gitignore"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\index.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\minheader.txt",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\minheader.txt"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\sparkline.jquery.json",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\sparkline.jquery.json"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\base.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\base.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\chart-bar.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\chart-bar.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\chart-box.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\chart-box.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\chart-bullet.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\chart-bullet.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\chart-discrete.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\chart-discrete.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\chart-line.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\chart-line.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\chart-pie.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\chart-pie.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\chart-tristate.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\chart-tristate.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\defaults.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\defaults.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\footer.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\footer.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\header.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\header.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\interact.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\interact.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\rangemap.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\rangemap.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\simpledraw.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\simpledraw.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\utils.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\utils.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\vcanvas-base.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\vcanvas-base.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\vcanvas-canvas.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\vcanvas-canvas.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\src\\vcanvas-vml.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\src\\vcanvas-vml.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\sparklinejs\\version.txt",
+      "PackagePath": "staticwebassets\\admin\\lib\\sparklinejs\\version.txt"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\spectrum\\spectrum.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\spectrum\\spectrum.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\spectrum\\spectrum.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\spectrum\\spectrum.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\font\\summernote.eot",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\font\\summernote.eot"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\font\\summernote.ttf",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\font\\summernote.ttf"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\font\\summernote.woff",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\font\\summernote.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-ar-AR.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-ar-AR.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-ar-AR.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-ar-AR.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-bg-BG.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-bg-BG.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-bg-BG.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-bg-BG.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-ca-ES.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-ca-ES.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-ca-ES.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-ca-ES.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-cs-CZ.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-cs-CZ.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-cs-CZ.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-cs-CZ.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-da-DK.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-da-DK.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-da-DK.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-da-DK.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-de-DE.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-de-DE.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-de-DE.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-de-DE.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-el-GR.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-el-GR.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-el-GR.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-el-GR.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-es-ES.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-es-ES.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-es-ES.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-es-ES.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-es-EU.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-es-EU.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-es-EU.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-es-EU.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-fa-IR.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-fa-IR.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-fa-IR.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-fa-IR.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-fi-FI.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-fi-FI.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-fi-FI.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-fi-FI.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-fr-FR.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-fr-FR.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-fr-FR.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-fr-FR.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-gl-ES.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-gl-ES.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-gl-ES.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-gl-ES.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-he-IL.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-he-IL.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-he-IL.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-he-IL.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-hr-HR.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-hr-HR.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-hr-HR.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-hr-HR.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-hu-HU.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-hu-HU.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-hu-HU.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-hu-HU.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-id-ID.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-id-ID.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-id-ID.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-id-ID.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-it-IT.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-it-IT.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-it-IT.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-it-IT.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-ja-JP.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-ja-JP.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-ja-JP.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-ja-JP.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-ko-KR.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-ko-KR.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-ko-KR.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-ko-KR.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-lt-LT.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-lt-LT.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-lt-LT.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-lt-LT.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-lt-LV.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-lt-LV.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-lt-LV.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-lt-LV.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-mn-MN.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-mn-MN.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-mn-MN.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-mn-MN.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-nb-NO.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-nb-NO.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-nb-NO.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-nb-NO.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-nl-NL.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-nl-NL.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-nl-NL.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-nl-NL.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-pl-PL.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-pl-PL.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-pl-PL.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-pl-PL.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-pt-BR.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-pt-BR.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-pt-BR.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-pt-BR.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-pt-PT.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-pt-PT.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-pt-PT.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-pt-PT.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-ro-RO.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-ro-RO.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-ro-RO.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-ro-RO.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-ru-RU.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-ru-RU.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-ru-RU.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-ru-RU.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-sk-SK.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-sk-SK.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-sk-SK.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-sk-SK.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-sl-SI.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-sl-SI.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-sl-SI.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-sl-SI.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-sr-RS-Latin.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-sr-RS-Latin.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-sr-RS-Latin.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-sr-RS-Latin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-sr-RS.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-sr-RS.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-sr-RS.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-sr-RS.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-sv-SE.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-sv-SE.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-sv-SE.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-sv-SE.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-ta-IN.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-ta-IN.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-ta-IN.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-ta-IN.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-th-TH.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-th-TH.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-th-TH.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-th-TH.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-tr-TR.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-tr-TR.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-tr-TR.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-tr-TR.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-uk-UA.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-uk-UA.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-uk-UA.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-uk-UA.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-vi-VN.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-vi-VN.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-vi-VN.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-vi-VN.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-zh-CN.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-zh-CN.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-zh-CN.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-zh-CN.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-zh-TW.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-zh-TW.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\lang\\summernote-zh-TW.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\lang\\summernote-zh-TW.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\summernote-bs4.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\summernote-bs4.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\summernote-bs4.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\summernote-bs4.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\summernote-bs4.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\summernote-bs4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\summernote-lite.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\summernote-lite.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\summernote-lite.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\summernote-lite.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\summernote.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\summernote.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\summernote.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\summernote.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\summernote.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\summernote.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\_app.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\_app.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\_pages.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\_pages.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\amanda.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\amanda.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\bootstrap\\_alerts.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\bootstrap\\_alerts.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\bootstrap\\_buttons.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\bootstrap\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\bootstrap\\_card.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\bootstrap\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\bootstrap\\_custom-forms.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\bootstrap\\_custom-forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\bootstrap\\_custom.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\bootstrap\\_custom.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\bootstrap\\_form-layouts.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\bootstrap\\_form-layouts.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\bootstrap\\_forms.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\bootstrap\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\bootstrap\\_modal.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\bootstrap\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\bootstrap\\_nav.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\bootstrap\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\bootstrap\\_pagination.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\bootstrap\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\bootstrap\\_popover.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\bootstrap\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\bootstrap\\_progress.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\bootstrap\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\bootstrap\\_tables.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\bootstrap\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\bootstrap\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\bootstrap\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\bootstrap\\_variables.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\bootstrap\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\lib\\_datatables.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\lib\\_datatables.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\lib\\_flot.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\lib\\_flot.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\lib\\_jquery-steps.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\lib\\_jquery-steps.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\lib\\_jquery-ui.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\lib\\_jquery-ui.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\lib\\_jqvmap.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\lib\\_jqvmap.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\lib\\_medium-editor.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\lib\\_medium-editor.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\lib\\_mixins.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\lib\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\lib\\_morris.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\lib\\_morris.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\lib\\_parsley.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\lib\\_parsley.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\lib\\_perfect-scrollbar.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\lib\\_perfect-scrollbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\lib\\_rickshaw.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\lib\\_rickshaw.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\lib\\_select2.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\lib\\_select2.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\lib\\_sparkline.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\lib\\_sparkline.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\lib\\_spectrum.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\lib\\_spectrum.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\lib\\_summernote.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\lib\\_summernote.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\lib\\_toggles.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\lib\\_toggles.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\util\\_background.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\util\\_background.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\util\\_border.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\util\\_border.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\util\\_height.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\util\\_height.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\util\\_hover.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\util\\_hover.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\util\\_margin.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\util\\_margin.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\util\\_misc.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\util\\_misc.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\util\\_padding.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\util\\_padding.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\util\\_position.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\util\\_position.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\util\\_typography.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\util\\_typography.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\util\\_width.scss",
+      "PackagePath": "staticwebassets\\admin\\scss\\util\\_width.scss"
     },
     {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\css\\site.css",

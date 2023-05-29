@@ -23,6 +23,7 @@
   <ItemGroup>
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="wwwroot\Image\" />
+    <Folder Include="wwwroot\admin\" />
     <Folder Include="wwwroot\web\" />
   </ItemGroup>
 

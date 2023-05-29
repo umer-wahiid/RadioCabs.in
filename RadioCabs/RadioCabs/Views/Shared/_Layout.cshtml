@@ -1,4 +1,5 @@
-﻿@model RadioCabs.Models.Registration
+﻿@*@model RadioCabs.Models.Registration*@
+@*@model RadioCabs.Models.Registration*@
 @using RadioCabs.Models;
 @using Microsoft.AspNetCore.Http;
 @*<!DOCTYPE html>
@@ -79,15 +80,15 @@
 						<li><a asp-area="" asp-controller="Home" asp-action="DriverView">Drivers</a></li>
 						@*<li><a asp-area="" asp-controller="Home" asp-action="CompanyForm">Company</a></li>*@
 						<li class="menu-has-children">
-							<a asp-area="" asp-controller="Home" asp-action="CompanyView">Services</a>
+							<a asp-area="" asp-controller="Home" asp-action="Company">Cab's Companies</a>
 							<ul>
-								<li><a asp-area="" asp-controller="Home" asp-action="CompanyView">Karachi</a></li>
-								<li><a asp-area="" asp-controller="Home" asp-action="CompanyView">Hyderabad</a></li>
+								<li><a asp-area="" asp-controller="Home" asp-action="Company">Karachi</a></li>
+								<li><a asp-area="" asp-controller="Home" asp-action="Company">Hyderabad</a></li>
 								<li class="menu-has-children">
-									<a asp-area="" asp-controller="Home" asp-action="CompanyView">Multan</a>
+									<a asp-area="" asp-controller="Home" asp-action="Company">Multan</a>
 									<ul>
-										<li><a asp-area="" asp-controller="Home" asp-action="CompanyView">Company One</a></li>
-										<li><a asp-area="" asp-controller="Home" asp-action="CompanyView">Company Two</a></li>
+										<li><a asp-area="" asp-controller="Home" asp-action="Company">Company One</a></li>
+										<li><a asp-area="" asp-controller="Home" asp-action="Company">Company Two</a></li>
 									</ul>
 								</li>
 							</ul>
