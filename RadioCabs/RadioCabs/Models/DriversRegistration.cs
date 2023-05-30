@@ -7,12 +7,12 @@ namespace RadioCabs.Models
         [Key]
         public int DriverId { get; set; }
 
-        [StringLength(50), MinLength(10)]
+        [StringLength(50)]
         [Required]
         [Display(Name = "Driver Name")]
         public string DriverName { get; set; }
 
-        [StringLength(13), MinLength(11)]
+        [StringLength(25)]
         [Required]
         [Display(Name = "Contact Person")]
         public string ContactPerson { get; set; }
@@ -24,11 +24,11 @@ namespace RadioCabs.Models
         [Required]
         public City City { get; set; }
 
-        [StringLength(13), MinLength(11)]
+        [StringLength(11), MinLength(11)]
         [Required]
         public string Mobile { get; set; }
 
-        [StringLength(13), MinLength(11)]
+        [StringLength(11), MinLength(11)]
         [Required]
         public string Telephone { get; set; }
 
@@ -38,7 +38,7 @@ namespace RadioCabs.Models
         public string Email { get; set; }
 
         [Required]
-        [StringLength(20)]
+        [StringLength(200)]
         public string Experience { get; set; }
 
         [Required]
@@ -47,7 +47,7 @@ namespace RadioCabs.Models
 
         [Required]
         [Display(Name = "Payment Type")]
-        public string PaymentType { get; set; }
+        public PaymentType PaymentType { get; set; }
 
         [Required]
         [StringLength(1000)]

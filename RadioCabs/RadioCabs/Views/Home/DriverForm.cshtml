@@ -67,7 +67,13 @@
 						<span asp-validation-for="City" class="text-danger"></span>
 					</div>
 					<div class="mt-10">
-						<input type="text" asp-for="PaymentType" placeholder="Your Payment Type" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Payment Type'" class="single-input" />
+						<select asp-for="PaymentType" class="form-control">
+							<option value="">-- Select Payment Type --</option>
+							@foreach (var item in Enum.GetValues(typeof(PaymentType)))
+							{
+								<option value="@item">@item</option>
+							}
+						</select>
 						<span asp-validation-for="PaymentType" class="text-danger"></span>
 					</div>
 					<div class="mt-10">

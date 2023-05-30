@@ -22,12 +22,18 @@ namespace RadioCabs.Models
         Gujarat,
         NawabShah
     }
+
+    public enum PaymentType
+    {
+        Monthly,
+        Quarterly
+    }
     public class CompanyRegistration
     {
         [Key]
         public int CompanyId { get; set; }
 
-        [StringLength(50),MinLength(10)]
+        [StringLength(50)]
         [Required]
         [Display(Name = "Company Name")]
         public string CompanyName { get; set; }
@@ -45,11 +51,11 @@ namespace RadioCabs.Models
         [Required]
         public string Address { get; set; }
 
-        [StringLength(13), MinLength(11)]
+        [StringLength(11), MinLength(11)]
         [Required]
         public string Mobile { get; set; }
 
-        [StringLength(13), MinLength(11)]
+        [StringLength(11), MinLength(11)]
         [Required]
         public string Telephone { get; set; }
 
@@ -68,7 +74,7 @@ namespace RadioCabs.Models
 
         [Required]
         [Display(Name = "Payment Type")]
-        public string PaymentType { get; set; }
+        public PaymentType PaymentType { get; set; }
 
         [Required]
         public City City { get; set; }

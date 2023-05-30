@@ -8,7 +8,7 @@ namespace RadioCabs.Models
     {
         public int RegistrationId { get; set; }
 
-        [StringLength(50, ErrorMessage = "Max 50 Characters Allowed"), MinLength(10, ErrorMessage = "Min 10 Characters Allowed")]
+        [StringLength(25, ErrorMessage = "Max 25 Characters Allowed")]
         [Required]
         public string Name { get; set; }
 
@@ -26,6 +26,7 @@ namespace RadioCabs.Models
         [DataType(DataType.Password)]
         [Compare("Password",ErrorMessage = "Password Not Match")]
         [MaxLength(20, ErrorMessage = "Max 20 Characters Allowed"),MinLength(8, ErrorMessage = "Min 8 Characters Allowed")]
+        [Display(Name = "Confirm Password")]
         public string ConfirmPassword { get; set; }
 
         [StringLength(250)]
@@ -33,15 +34,14 @@ namespace RadioCabs.Models
         public string Address { get; set; }
 
         [Required]
-        [StringLength(11)]
+        [StringLength(11), MinLength(11)]
         public string Mobile { get; set; }
 
         [Required]
-        [StringLength(11)]
+        [StringLength(11), MinLength(11)]
         public string TelePhone { get; set; }
 
         [Required]
-        [StringLength(20)]
         public string City { get; set; }
         
         [Required]

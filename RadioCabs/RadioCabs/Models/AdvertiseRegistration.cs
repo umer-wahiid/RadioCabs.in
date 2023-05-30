@@ -25,11 +25,11 @@ namespace RadioCabs.Models
         public string Address { get; set; }
 
         [Required]
-        [StringLength(13)]
+        [StringLength(11), MinLength(11)]
         public string Mobile { get; set; }
 
         [Required]
-        [StringLength(13)]
+        [StringLength(13), MinLength(11)]
         public string TelePhone { get; set; }
 
         public string FaxNumber { get; set; }

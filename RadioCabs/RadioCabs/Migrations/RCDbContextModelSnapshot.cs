@@ -65,8 +65,8 @@ namespace RadioCabs.Migrations
 
                     b.Property<string>("Mobile")
                         .IsRequired()
-                        .HasMaxLength(13)
-                        .HasColumnType("nvarchar(13)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<string>("PaymentType")
                         .IsRequired()
@@ -138,17 +138,16 @@ namespace RadioCabs.Migrations
 
                     b.Property<string>("Mobile")
                         .IsRequired()
-                        .HasMaxLength(13)
-                        .HasColumnType("nvarchar(13)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
-                    b.Property<string>("PaymentType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("PaymentType")
+                        .HasColumnType("int");
 
                     b.Property<string>("Telephone")
                         .IsRequired()
-                        .HasMaxLength(13)
-                        .HasColumnType("nvarchar(13)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
@@ -176,8 +175,8 @@ namespace RadioCabs.Migrations
 
                     b.Property<string>("ContactPerson")
                         .IsRequired()
-                        .HasMaxLength(13)
-                        .HasColumnType("nvarchar(13)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -201,22 +200,21 @@ namespace RadioCabs.Migrations
 
                     b.Property<string>("Experience")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("Mobile")
                         .IsRequired()
-                        .HasMaxLength(13)
-                        .HasColumnType("nvarchar(13)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
-                    b.Property<string>("PaymentType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("PaymentType")
+                        .HasColumnType("int");
 
                     b.Property<string>("Telephone")
                         .IsRequired()
-                        .HasMaxLength(13)
-                        .HasColumnType("nvarchar(13)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
@@ -277,8 +275,7 @@ namespace RadioCabs.Migrations
 
                     b.Property<string>("City")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConfirmPassword")
                         .IsRequired()
@@ -292,13 +289,13 @@ namespace RadioCabs.Migrations
 
                     b.Property<string>("Mobile")
                         .IsRequired()
-                        .HasMaxLength(13)
-                        .HasColumnType("nvarchar(13)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.Property<string>("Password")
                         .IsRequired()
@@ -315,8 +312,8 @@ namespace RadioCabs.Migrations
 
                     b.Property<string>("TelePhone")
                         .IsRequired()
-                        .HasMaxLength(13)
-                        .HasColumnType("nvarchar(13)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.HasKey("RegistrationId");
 
