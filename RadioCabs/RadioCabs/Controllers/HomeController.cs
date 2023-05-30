@@ -26,16 +26,16 @@ namespace RadioCabs.Controllers
 
         public IActionResult Index()
 		{
-			var id = HttpContext.Session.GetInt32("ID");
-			var e = HttpContext.Session.GetString("E");
-			var n = HttpContext.Session.GetString("N");
-			var p = HttpContext.Session.GetString("P");
-			var a = HttpContext.Session.GetString("A");
-			ViewBag.id = id;
-			ViewBag.a = e;
-			ViewBag.b = n;
-			ViewBag.c = p;
-			ViewBag.d = a;
+			//var id = HttpContext.Session.GetInt32("ID");
+			//var e = HttpContext.Session.GetString("E");
+			//var n = HttpContext.Session.GetString("N");
+			//var p = HttpContext.Session.GetString("P");
+			//var a = HttpContext.Session.GetString("A");
+			//ViewBag.id = id;
+			//ViewBag.a = e;
+			//ViewBag.b = n;
+			//ViewBag.c = p;
+			//ViewBag.d = a;
 			return View();
 		}
 
@@ -43,9 +43,9 @@ namespace RadioCabs.Controllers
 		{
 			return View();
 		}
-		public IActionResult DriverView()
+
+		public IActionResult Driver()
 		{
-            //var driversRegistrations = _context.DriversRegistrations.ToList();
             return View(_context.DriversRegistrations.ToList());
         }
 		public IActionResult DriverForm()
@@ -106,17 +106,18 @@ namespace RadioCabs.Controllers
         }
         public IActionResult Company()
 		{
-            var id = HttpContext.Session.GetInt32("ID");
-			CompanyRegistration reg = _context.CompanyRegistrations.Where(c => c.UserId == id).FirstOrDefault();
-			var CompanyRegistration = _context.CompanyRegistrations.ToList();
+   //         var id = HttpContext.Session.GetInt32("ID");
+			//CompanyRegistration reg = _context.CompanyRegistrations.Where(c => c.UserId == id).FirstOrDefault();
+			//var CompanyRegistration = _context.CompanyRegistrations.ToList();
 
-            var ViewModel = new CompanyViewModel
-            {
-                CompanyRegistrations = CompanyRegistration,
-                CompanyRegistration = reg
-            };
-            //return View(CompanyRegistration.ToList());
-            return View(ViewModel);
+   //         var ViewModel = new CompanyViewModel
+   //         {
+   //             CompanyRegistrations = CompanyRegistration,
+   //             CompanyRegistration = reg
+   //         };
+
+			//return View(ViewModel);
+			return View(_context.CompanyRegistrations.ToList());
         }
 		public IActionResult CompanyForm()
 		{
@@ -174,6 +175,41 @@ namespace RadioCabs.Controllers
             return View(companyRegistration);
         }
 
+        public async Task<IActionResult> CompanyDetail(int id)
+        {
+            if (id == null || _context.CompanyRegistrations == null)
+            {
+                return NotFound();
+            }
+
+            var companyRegistration = await _context.CompanyRegistrations
+                .FirstOrDefaultAsync(m => m.CompanyId == id);
+            if (companyRegistration == null)
+            {
+                return NotFound();
+            }
+
+            return View(companyRegistration);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         public IActionResult Feedback()
 		{
 			return View();
@@ -188,15 +224,12 @@ namespace RadioCabs.Controllers
 			return View();
 		}
 
-		public async Task<IActionResult> Profile(int? id)
+		public async Task<IActionResult> Profile()
         {
-            if (id == null || _context.Registrations == null)
-            {
-                return NotFound();
-            }
 
+            var v = HttpContext.Session.GetInt32("ID");
             var registration = await _context.Registrations
-                .FirstOrDefaultAsync(m => m.RegistrationId == id);
+                .FirstOrDefaultAsync(m => m.RegistrationId == v);
             if (registration == null)
             {
                 return NotFound();

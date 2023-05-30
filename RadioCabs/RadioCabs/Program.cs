@@ -17,13 +17,6 @@ builder.Services.AddSession(options =>
 	options.Cookie.IsEssential = true;
 });
 
-//builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-//.AddCookie(options =>
-//{
-//	options.LoginPath = "/Account/Login";
-//	options.LogoutPath = "/Registrations/UserLogout";
-//});
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

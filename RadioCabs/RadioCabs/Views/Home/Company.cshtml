@@ -1,9 +1,11 @@
-﻿@*@model IEnumerable<RadioCabs.Models.CompanyRegistration>*@
-@model CompanyViewModel
+﻿@model IEnumerable<RadioCabs.Models.CompanyRegistration>
+@*@model CompanyViewModel*@
 
 @{
     ViewData["Title"] = "Company";
     Layout = "~/Views/Shared/_Layout.cshtml";
+	var v = Context.Session.GetInt32("ID");
+	var x = from a in Model where a.UserId == v select a;
 }
 
 <!-- start banner Area -->
@@ -30,9 +32,9 @@
 		</div>
 
 		<div class="row section-title">
-			@if (Model.CompanyRegistration != null)
+			@if (x.Any())
 			{
-				<h3><a asp-controller="Home" asp-action="CompanyForm" class="btn btn-warning genric-btn circle">Manage Your Company</a></h3>
+				<h3><a asp-controller="Admin" asp-action="Index" class="btn btn-warning genric-btn circle">Manage Your Company</a></h3>
 			}
 			else
 			{
@@ -41,7 +43,7 @@
 		</div>
 
 		<div class="row">
-			@foreach (var item in Model.CompanyRegistrations)
+			@foreach (var item in Model)
 			{
 				<div class="col-lg-4">
 					<div class="single-latest-blog">
@@ -49,7 +51,7 @@
 							<img class="img-fluid" src="~/@item.LogoImage" alt="">
 						</div>
 						<ul class="tags">
-							<li><a href="#">Details</a></li>
+							<li><a asp-controller="Home" asp-action="CompanyDetail" asp-route-id="@item.CompanyId">Details</a></li>
 							<li><a href="#">Book Now !</a></li>
 						</ul>
 						<a href="#">

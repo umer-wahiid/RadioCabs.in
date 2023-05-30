@@ -25,6 +25,33 @@ namespace RadioCabs.Controllers
                           View(await _context.CompanyRegistrations.ToListAsync()) :
                           Problem("Entity set 'RCDbContext.CompanyRegistrations'  is null.");
         }
+		//public async Task<IActionResult> Visitor()
+  //      {
+		//	List<Visitor> visit = HttpContext.Session.GetJson<List<Visitor>>("Visit") ?? new List<Visitor>();
+		//	return View(visit);
+		//}
+
+		//public async Task<IActionResult> Add(Visitor vis,int id)
+		//{
+  //          var userid = HttpContext.Session.GetInt32("ID");
+		//	Registration registration = await _context.Registrations.FindAsync(userid);
+
+		//	List<Visitor> visit = HttpContext.Session.GetJson<List<Visitor>>("Visit") ?? new List<Visitor>();
+
+		//	Visitor visitor = visit.Where(c => c.VisitorId == userid).FirstOrDefault();
+
+		//		visit.Add(new Visitor(registration));
+		//	HttpContext.Session.SetJson("Visit", visit);
+			
+  //          await _context.Visitors.SaveChangesAsync();
+
+
+
+		//	return Redirect(Request.Headers["Referer"].ToString());
+		//}
+
+
+
 
         // GET: CompanyRegistrations/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -69,6 +96,9 @@ namespace RadioCabs.Controllers
         // GET: CompanyRegistrations/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            //var v = HttpContext.Session.GetInt32("ID");
+            //var x = from a in _context.CompanyRegistrations where a.UserId == v select a;
+            //CompanyRegistration Compreg = _context.CompanyRegistrations.Where(c => c.CompanyId == v).FirstOrDefault();
             if (id == null || _context.CompanyRegistrations == null)
             {
                 return NotFound();

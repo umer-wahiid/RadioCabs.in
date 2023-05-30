@@ -16,15 +16,15 @@ namespace RadioCabs.Models
         [DataType(DataType.EmailAddress)]
         [Required]
         public string Email { get; set; }
-
-        [StringLength(20, ErrorMessage = "Max 20 Characters Allowed"), MinLength(8, ErrorMessage = "Min 8 Characters Allowed")]
+        
         [Required]
+        [MaxLength(20, ErrorMessage = "Max 20 Characters Allowed"),MinLength(8, ErrorMessage = "Min 8 Characters Allowed")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Compare("Password",ErrorMessage = "Password Not Match")]
         [Required]
         [DataType(DataType.Password)]
+        [Compare("Password",ErrorMessage = "Password Not Match")]
         [MaxLength(20, ErrorMessage = "Max 20 Characters Allowed"),MinLength(8, ErrorMessage = "Min 8 Characters Allowed")]
         public string ConfirmPassword { get; set; }
 
@@ -33,11 +33,11 @@ namespace RadioCabs.Models
         public string Address { get; set; }
 
         [Required]
-        [StringLength(13)]
+        [StringLength(11)]
         public string Mobile { get; set; }
 
         [Required]
-        [StringLength(13)]
+        [StringLength(11)]
         public string TelePhone { get; set; }
 
         [Required]

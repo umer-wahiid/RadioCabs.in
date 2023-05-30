@@ -109,8 +109,8 @@ namespace RadioCabs.Migrations
                     Password = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     ConfirmPassword = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     Address = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false),
-                    Mobile = table.Column<string>(type: "nvarchar(13)", maxLength: 13, nullable: false),
-                    TelePhone = table.Column<string>(type: "nvarchar(13)", maxLength: 13, nullable: false),
+                    Mobile = table.Column<string>(type: "nvarchar(11)", maxLength: 11, nullable: false),
+                    TelePhone = table.Column<string>(type: "nvarchar(11)", maxLength: 11, nullable: false),
                     City = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     Profile = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
                     RoleId = table.Column<int>(type: "int", nullable: false)
