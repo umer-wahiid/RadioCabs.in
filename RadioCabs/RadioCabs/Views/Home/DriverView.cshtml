@@ -1,8 +1,140 @@
-﻿
+﻿@model IEnumerable<RadioCabs.Models.DriversRegistration>
+@using RadioCabs.Models
+
 @{
     ViewData["Title"] = "DriverView";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>DriverView</h1>
+<!-- start banner Area -->
+<section class="banner-area relative about-banner" id="home">
+	<div class="overlay overlay-bg"></div>
+	<div class="container">
+		<div class="row d-flex align-items-center justify-content-center">
+			<div class="about-content col-lg-12">
+				<h1 class="text-white">
+					Register Your Company
+				</h1>
+				<p class="text-white link-nav"><a asp-area="" asp-controller="Home" asp-action="Index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="elements.html"> Elements</a></p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End banner Area -->
+
+<!-- Start reviews Area -->
+<section class="reviews-area section-gap">
+	<div class="container">
+		<div class="row section-title">
+			<h1>Drivers</h1>
+			<p>Who are in extremely love with eco friendly system.</p>
+		</div>
+		@*<div class="row section-title">
+			@if (Model.DriverRegistration != null)
+			{
+				<h3><a asp-controller="Home" asp-action="DriverForm" class="btn btn-warning genric-btn circle">Manage Driver</a></h3>
+			}
+			else
+			{
+				<h3><a asp-controller="Home" asp-action="DriverForm" class="btn btn-warning genric-btn circle">Register ss Driver</a></h3>
+			}
+		</div>*@
+		<div class="row">
+			@foreach (var item in Model)
+			{
+			<div class="col-lg-4 col-md-6">
+				<div class="single-review">
+					<h4>@item.DriverName</h4>
+					<p>
+						@item.Description
+					</p>
+					<div class="star">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					</div>
+				</div>
+			</div>
+			}
+			@*<div class="col-lg-4 col-md-6">
+				<div class="single-review">
+					<h4>Chad Herrera</h4>
+					<p>
+						Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
+					</p>
+					<div class="star">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="single-review">
+					<h4>Andre Gonzalez</h4>
+					<p>
+						Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
+					</p>
+					<div class="star">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="single-review">
+					<h4>Jon Banks</h4>
+					<p>
+						Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
+					</p>
+					<div class="star">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="single-review">
+					<h4>Landon Houston</h4>
+					<p>
+						Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
+					</p>
+					<div class="star">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="single-review">
+					<h4>Nelle Wade</h4>
+					<p>
+						Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
+					</p>
+					<div class="star">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					</div>
+				</div>
+			</div>*@
+		</div>
+	</div>
+</section>
+<!-- End reviews Area -->
 

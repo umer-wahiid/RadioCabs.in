@@ -45,17 +45,64 @@ namespace RadioCabs.Controllers
 		}
 		public IActionResult DriverView()
 		{
-			return View();
-		}
+            //var driversRegistrations = _context.DriversRegistrations.ToList();
+            return View(_context.DriversRegistrations.ToList());
+        }
 		public IActionResult DriverForm()
 		{
-			return View();
+            var id = HttpContext.Session.GetInt32("ID");
+
+            if (id != null)
+            {
+                var e = HttpContext.Session.GetString("E");
+                var n = HttpContext.Session.GetString("N");
+                var p = HttpContext.Session.GetString("P");
+                var m = HttpContext.Session.GetString("M");
+                var t = HttpContext.Session.GetString("T");
+                var ad = HttpContext.Session.GetString("A");
+                ViewBag.id = id;
+                ViewBag.e = e;
+                ViewBag.n = n;
+                ViewBag.p = p;
+                ViewBag.m = m;
+                ViewBag.t = t;
+                ViewBag.ad = ad;
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("UserLogin", "Registrations");
+            }
 		}
-		public IActionResult CompanyView()
-		{
-            var CompanyRegistration = _context.CompanyRegistrations;
-            return View(CompanyRegistration.ToList());
-            //return View();
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DriverForm(DriversRegistration driversRegistration, IFormFile image)
+        {
+            if (image != null)
+            {
+                string ext = Path.GetExtension(image.FileName);
+                if (ext == ".jpg" || ext == ".png")
+                {
+                    string d = Path.Combine(iw.WebRootPath, "Image");
+                    var fname = Path.GetFileName(image.FileName);
+                    string filepath = Path.Combine(d, fname);
+                    using (var fs = new FileStream(filepath, FileMode.Create))
+                    {
+                        await image.CopyToAsync(fs);
+                    }
+                    driversRegistration.DriverImg = @"Image/" + fname;
+                    _context.Add(driversRegistration);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    ViewBag.m = "Wrong Picture Format";
+                }
+            }
+
+            return View(driversRegistration);
         }
         public IActionResult Company()
 		{

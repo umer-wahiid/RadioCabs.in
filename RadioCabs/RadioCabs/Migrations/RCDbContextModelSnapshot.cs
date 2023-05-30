@@ -172,7 +172,6 @@ namespace RadioCabs.Migrations
                         .HasColumnType("nvarchar(150)");
 
                     b.Property<int>("City")
-                        .HasMaxLength(20)
                         .HasColumnType("int");
 
                     b.Property<string>("ContactPerson")
@@ -184,6 +183,11 @@ namespace RadioCabs.Migrations
                         .IsRequired()
                         .HasMaxLength(300)
                         .HasColumnType("nvarchar(300)");
+
+                    b.Property<string>("DriverImg")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
 
                     b.Property<string>("DriverName")
                         .IsRequired()
