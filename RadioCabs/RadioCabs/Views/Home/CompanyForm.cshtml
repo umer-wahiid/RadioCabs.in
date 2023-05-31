@@ -79,13 +79,15 @@
 						<span asp-validation-for="City" class="text-danger"></span>
 					</div>
                     <div class="mt-10">
-						<select asp-for="PaymentType" class="form-control">
+						<select id="type" asp-for="PaymentType" class="form-control">
 							<option value="">-- Select Payment Type --</option>
 							@foreach (var item in Enum.GetValues(typeof(PaymentType)))
 							{
 								<option value="@item">@item</option>
 							}
 						</select>
+						<p id="Mon">$. 8.00</p>
+						<p id="Qua">$. 25.00</p>
                         <span asp-validation-for="PaymentType" class="text-danger"></span>
                     </div>
                     <div class="mt-10">
@@ -109,3 +111,32 @@
         </div>
     </div>
 </div>
+
+<script>
+	$(document).ready(function () {
+		// Hide the paragraph initially
+		$('#Mon').hide();
+		$('#Qua').hide();
+
+		// Attach the change event handler to the select element
+		$('#type').change(function () {
+			var selectedOption = $(this).val();
+
+			if (selectedOption === 'Monthly') {
+				$('#Mon').show(); // Show the paragraph
+				$('#Qua').hide(); // Show the paragraph
+			}
+			else if (selectedOption === 'Quarterly') {
+				$('#Mon').hide(); // Show the paragraph
+				$('#Qua').show(); // Show the paragraph
+			}
+			else if (selectedOption === '') {
+				$('#Mon').hide(); // Show the paragraph
+				$('#Qua').hide(); // Show the paragraph
+			}
+			else {
+				$('#type').hide(); // Hide the paragraph
+			}
+		});
+	});
+</script>
