@@ -24,11 +24,11 @@ namespace RadioCabs.Models
         [Required]
         public City City { get; set; }
 
-        [StringLength(11), MinLength(11)]
+        [MaxLength(11, ErrorMessage = "Only 11 Numbers Are Allowed"), MinLength(11, ErrorMessage = "Only 11 Numbers Are Allowed")]
         [Required]
         public string Mobile { get; set; }
 
-        [StringLength(11), MinLength(11)]
+        [MaxLength(11, ErrorMessage = "Only 11 Numbers Are Allowed"), MinLength(11, ErrorMessage = "Only 11 Numbers Are Allowed")]
         [Required]
         public string Telephone { get; set; }
 

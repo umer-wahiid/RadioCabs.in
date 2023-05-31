@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
@@ -12,21 +13,21 @@ namespace RadioCabs.Models
         [Required]
         public string Name { get; set; }
 
+        [Required]
         [StringLength(25)]
         [DataType(DataType.EmailAddress)]
-        [Required]
         public string Email { get; set; }
         
         [Required]
-        [MaxLength(20, ErrorMessage = "Max 20 Characters Allowed"),MinLength(8, ErrorMessage = "Min 8 Characters Allowed")]
         [DataType(DataType.Password)]
+        [MaxLength(20, ErrorMessage = "Max 20 Characters Allowed"),MinLength(8, ErrorMessage = "Min 8 Characters Allowed")]
         public string Password { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
-        [Compare("Password",ErrorMessage = "Password Not Match")]
         [MaxLength(20, ErrorMessage = "Max 20 Characters Allowed"),MinLength(8, ErrorMessage = "Min 8 Characters Allowed")]
         [Display(Name = "Confirm Password")]
+        [Compare("Password",ErrorMessage = "Password Not Match")]
         public string ConfirmPassword { get; set; }
 
         [StringLength(250)]
@@ -34,11 +35,12 @@ namespace RadioCabs.Models
         public string Address { get; set; }
 
         [Required]
-        [StringLength(11), MinLength(11)]
+        [MaxLength(11, ErrorMessage = "Only 11 Numbers Are Allowed"), MinLength(11, ErrorMessage = "Only 11 Numbers Are Allowed")]
         public string Mobile { get; set; }
 
+
         [Required]
-        [StringLength(11), MinLength(11)]
+        [MaxLength(11, ErrorMessage = "Only 11 Numbers Are Allowed"), MinLength(11, ErrorMessage = "Only 11 Numbers Are Allowed")]
         public string TelePhone { get; set; }
 
         [Required]
@@ -49,7 +51,7 @@ namespace RadioCabs.Models
         public string Profile { get; set; }
 
         [Required]
-        [DefaultValue("1")]
-        public int RoleId { get; set; }
+        [DefaultValue(1)]
+        public int RoleId { get ; set; }
     }
 }

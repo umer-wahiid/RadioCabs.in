@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using NuGet.Protocol.Plugins;
 using RadioCabs.Models;
 
 namespace RadioCabs.Controllers
@@ -25,9 +23,9 @@ namespace RadioCabs.Controllers
         // GET: Registrations
         public async Task<IActionResult> Index()
         {
-              return _context.Registrations != null ? 
-                          View(await _context.Registrations.ToListAsync()) :
-                          Problem("Entity set 'RCDbContext.Registrations'  is null.");
+            return _context.Registrations != null ?
+                        View(await _context.Registrations.ToListAsync()) :
+                        Problem("Entity set 'RCDbContext.Registrations'  is null.");
         }
 
         // GET: Registrations/Details/5
@@ -76,7 +74,7 @@ namespace RadioCabs.Controllers
                     registration.Profile = @"Image/" + fname;
                     _context.Add(registration);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction("DriverOrComp", "Home");
+                    return RedirectToAction(nameof(UserLogin));
                 }
                 else
                 {
@@ -101,35 +99,29 @@ namespace RadioCabs.Controllers
             var x = from a in _context.Registrations where a.Email.Equals(re.Email) && a.Password.Equals(re.Password) select a;
             if (x.Any())
             {
-				Registration reg = _context.Registrations.Where(c => c.Email == re.Email).FirstOrDefault();
+                Registration reg = _context.Registrations.Where(c => c.Email == re.Email).FirstOrDefault();
 
                 if (reg.RoleId == 1)
                 {
-				    HttpContext.Session.SetString("E", re.Email);
-				    HttpContext.Session.SetInt32("ID",  reg.RegistrationId);
+                    HttpContext.Session.SetString("E", re.Email);
+                    HttpContext.Session.SetInt32("ID", reg.RegistrationId);
                     HttpContext.Session.SetString("N", reg.Name);
                     HttpContext.Session.SetString("M", reg.Mobile);
                     HttpContext.Session.SetString("T", reg.TelePhone);
                     HttpContext.Session.SetString("A", reg.Address);
                     HttpContext.Session.SetString("P", reg.Profile);
-                    //int registrationId = reg.RegistrationId;
-                    //HttpContext.Session.SetString("ID", registrationId.ToString());
                     return RedirectToAction("Index", "Home");
-                    //ViewBag.m = "Correct Credentials";
                 }
                 else if (reg.RoleId == 0)
                 {
-				    HttpContext.Session.SetString("E", re.Email);
-				    HttpContext.Session.SetInt32("ID",  reg.RegistrationId);
+                    HttpContext.Session.SetString("E", re.Email);
+                    HttpContext.Session.SetInt32("ID", reg.RegistrationId);
                     HttpContext.Session.SetString("N", reg.Name);
                     HttpContext.Session.SetString("M", reg.Mobile);
                     HttpContext.Session.SetString("T", reg.TelePhone);
                     HttpContext.Session.SetString("A", reg.Address);
                     HttpContext.Session.SetString("P", reg.Profile);
-                    //int registrationId = reg.RegistrationId;
-                    //HttpContext.Session.SetString("ID", registrationId.ToString());
                     return RedirectToAction("Index", "Home");
-                    //ViewBag.m = "Correct Credentials";
                 }
                 else
                 {
@@ -144,16 +136,16 @@ namespace RadioCabs.Controllers
         }
 
 
-		public async Task<IActionResult> UserLogout()
-		{
-			 HttpContext.Session.Clear();
+        public async Task<IActionResult> UserLogout()
+        {
+            HttpContext.Session.Clear();
 
-			return RedirectToAction("Index", "Home");
-		}
+            return RedirectToAction("Index", "Home");
+        }
 
 
-		// GET: Registrations/Edit/5
-		public async Task<IActionResult> Edit(int? id)
+        // GET: Registrations/Edit/5
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Registrations == null)
             {
@@ -235,14 +227,14 @@ namespace RadioCabs.Controllers
             {
                 _context.Registrations.Remove(registration);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool RegistrationExists(int id)
         {
-          return (_context.Registrations?.Any(e => e.RegistrationId == id)).GetValueOrDefault();
+            return (_context.Registrations?.Any(e => e.RegistrationId == id)).GetValueOrDefault();
         }
     }
 }

@@ -51,16 +51,17 @@ namespace RadioCabs.Models
         [Required]
         public string Address { get; set; }
 
-        [StringLength(11), MinLength(11)]
+        [MaxLength(11, ErrorMessage = "Only 11 Numbers Are Allowed"), MinLength(11, ErrorMessage = "Only 11 Numbers Are Allowed")]
         [Required]
         public string Mobile { get; set; }
 
-        [StringLength(11), MinLength(11)]
+        [MaxLength(11, ErrorMessage = "Only 11 Numbers Are Allowed"), MinLength(11, ErrorMessage = "Only 11 Numbers Are Allowed")]
         [Required]
         public string Telephone { get; set; }
 
         [Required]
         [Display(Name = "Fax Number")]
+        [MaxLength(10, ErrorMessage = "Only 10 Numbers Are Allowed"), MinLength(10, ErrorMessage = "Only 10 Numbers Are Allowed")]
         public string FaxNumber { get; set; }
 
         [Required]

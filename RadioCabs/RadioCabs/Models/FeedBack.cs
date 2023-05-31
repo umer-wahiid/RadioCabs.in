@@ -19,7 +19,7 @@ namespace RadioCabs.Models
         public string Name { get; set; }
 
         [Required]
-        [StringLength(13)]
+        [MaxLength(11, ErrorMessage = "Only 11 Numbers Are Allowed"), MinLength(11, ErrorMessage = "Only 11 Numbers Are Allowed")]
         public string MobileNo { get; set; }
 
         [StringLength(25)]

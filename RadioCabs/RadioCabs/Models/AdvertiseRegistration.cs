@@ -25,13 +25,15 @@ namespace RadioCabs.Models
         public string Address { get; set; }
 
         [Required]
-        [StringLength(11), MinLength(11)]
+        [MaxLength(11, ErrorMessage = "Only 11 Numbers Are Allowed"), MinLength(11, ErrorMessage = "Only 11 Numbers Are Allowed")]
         public string Mobile { get; set; }
 
         [Required]
-        [StringLength(13), MinLength(11)]
+        [MaxLength(11, ErrorMessage = "Only 11 Numbers Are Allowed"), MinLength(11, ErrorMessage = "Only 11 Numbers Are Allowed")]
         public string TelePhone { get; set; }
 
+        [Required]
+        [MaxLength(10, ErrorMessage = "Only 10 Numbers Are Allowed"), MinLength(10, ErrorMessage = "Only 10 Numbers Are Allowed")]
         public string FaxNumber { get; set; }
 
         [StringLength(25)]
@@ -46,5 +48,8 @@ namespace RadioCabs.Models
         [StringLength(10)]
         [Required]
         public string PaymentType { get; set; }
+
+        [Required]
+        public int UserId { get; set; }
     }
 }

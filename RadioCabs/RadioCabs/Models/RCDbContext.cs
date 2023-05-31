@@ -12,5 +12,6 @@ namespace RadioCabs.Models
 		public DbSet<FeedBack> FeedBacks { get; set; }
 		public DbSet<Registration> Registrations { get; set; }
 		public DbSet<Services> Services { get; set; }
+		public DbSet<Visitor> Visitors { get; set; }
 	}
 }
