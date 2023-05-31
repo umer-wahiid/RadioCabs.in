@@ -22,166 +22,122 @@
 
         <div class="card pd-20 pd-sm-40">
             <h6 class="card-body-title">Edit Detail</h6>
-
-            <div class="form-layout">
+            <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="CompanyId" />
+                <div class="form-layout">
                 <div class="row mg-b-25">
                     <div class="col-lg-4">
                         <div class="form-group">
-                            <label class="form-control-label">Firstname: <span class="tx-danger">*</span></label>
-                            <input class="form-control" type="text" name="firstname" value="John Paul" placeholder="Enter firstname">
+                            <label class="form-control-label">CompanyName: <span class="tx-danger">*</span></label>
+                            <input class="form-control" asp-for="CompanyName">
                         </div>
                     </div><!-- col-4 -->
                     <div class="col-lg-4">
                         <div class="form-group">
-                            <label class="form-control-label">Lastname: <span class="tx-danger">*</span></label>
-                            <input class="form-control" type="text" name="lastname" value="McDoe" placeholder="Enter lastname">
+                            <label class="form-control-label">ContactPerson: <span class="tx-danger">*</span></label>
+                            <input class="form-control" asp-for="ContactPerson">
+                        </div>
+                    </div><!-- col-4 -->
+                     <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="form-control-label">Logo Image: <span class="tx-danger">*</span></label>
+                            <input type="file" class="form-control" asp-for="LogoImage">
+                        </div>
+                    </div><!-- col-4 -->
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="form-control-label">Fax Numebr: <span class="tx-danger">*</span></label>
+                            <input class="form-control" asp-for="FaxNumber">
+                        </div>
+                    </div><!-- col-4 -->
+                     <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="form-control-label">Mobile: <span class="tx-danger">*</span></label>
+                            <input class="form-control" asp-for="Mobile">
+                        </div>
+                    </div><!-- col-4 -->
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="form-control-label">Telephone: <span class="tx-danger">*</span></label>
+                            <input class="form-control" asp-for="Telephone">
+                        </div>
+                    </div><!-- col-4 -->
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="form-control-label">Designation: <span class="tx-danger">*</span></label>
+                            <input class="form-control" type="text" asp-for="Designation">
+                        </div>
+                    </div><!-- col-4 -->
+                    <div class="col-lg-4">
+                        <div class="form-group mg-b-10-force">
+                            <label class="form-control-label">Payment Type: <span class="tx-danger">*</span></label>
+                            <select asp-for="PaymentType" class="form-control">
+                                <option value="">-- Select Payment Type --</option>
+                                @foreach (var item in Enum.GetValues(typeof(PaymentType)))
+                                {
+                                    <option value="@item">@item</option>
+                                }
+                            </select>
+                        </div>
+                    </div><!-- col-4 -->
+                     <div class="col-lg-4">
+                        <div class="form-group mg-b-10-force">
+                            <label class="form-control-label">Membership Type: <span class="tx-danger">*</span></label>
+                            <select asp-for="MembershipType" class="form-control">
+                                <option value="">-- Select Membership Type --</option>
+                                @foreach (var item in Enum.GetValues(typeof(MembershipType)))
+                                {
+                                    <option value="@item">@item</option>
+                                }
+                            </select>
                         </div>
                     </div><!-- col-4 -->
                     <div class="col-lg-4">
                         <div class="form-group">
                             <label class="form-control-label">Email address: <span class="tx-danger">*</span></label>
-                            <input class="form-control" type="text" name="email" value="johnpaul@yourdomain.com" placeholder="Enter email address">
+                            <input class="form-control" asp-for="Email" >
+                        </div>
+                    </div><!-- col-4 -->
+                    <div class="col-lg-4">
+                        <div class="form-group mg-b-10-force">
+                            <label class="form-control-label">city: <span class="tx-danger">*</span></label>
+                            <select asp-for="City" class="form-control select2">
+                                <option value="">-- Select City --</option>
+                                @foreach (var item in Enum.GetValues(typeof(City)))
+                                {
+                                    <option value="@item">@item</option>
+                                }
+                            </select>
                         </div>
                     </div><!-- col-4 -->
                     <div class="col-lg-8">
                         <div class="form-group mg-b-10-force">
-                            <label class="form-control-label">Mail Address: <span class="tx-danger">*</span></label>
-                            <input class="form-control" type="text" name="address" value="Market St. San Francisco" placeholder="Enter address">
+                            <label class="form-control-label">Address: <span class="tx-danger">*</span></label>
+                            <input class="form-control" asp-for="Address">
                         </div>
                     </div><!-- col-8 -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-8">
                         <div class="form-group mg-b-10-force">
-                            <label class="form-control-label">Country: <span class="tx-danger">*</span></label>
-                            <select class="form-control select2" data-placeholder="Choose country">
-                                <option label="Choose country"></option>
-                                <option value="USA">United States of America</option>
-                                <option value="UK">United Kingdom</option>
-                                <option value="China">China</option>
-                                <option value="Japan">Japan</option>
-                            </select>
+                            <label class="form-control-label">Description: <span class="tx-danger">*</span></label>
+                            <textarea asp-for="Description" class="form-control"></textarea>
                         </div>
-                    </div><!-- col-4 -->
+                    </div><!-- col-8 -->
+                    
+                    <input type="hidden" asp-for="UserId" class="form-control" />
                 </div><!-- row -->
 
                 <div class="form-layout-footer">
                     <button class="btn btn-info mg-r-5">Submit Form</button>
-                    <button class="btn btn-secondary">Cancel</button>
+                    <input type="reset" class="btn btn-secondary" value="Reset">
+                    @*<button class="btn btn-secondary">Cancel</button>*@
                 </div><!-- form-layout-footer -->
             </div><!-- form-layout -->
+            </form>
         </div><!-- card -->
         
     </div><!-- am-pagebody -->
         
         
-        
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h1>Edit</h1>
-
-<h4>CompanyRegistration</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="CompanyId" />
-            <div class="form-group">
-                <label asp-for="CompanyName" class="control-label"></label>
-                <input asp-for="CompanyName" class="form-control" />
-                <span asp-validation-for="CompanyName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ContactPerson" class="control-label"></label>
-                <input asp-for="ContactPerson" class="form-control" />
-                <span asp-validation-for="ContactPerson" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Designation" class="control-label"></label>
-                <input asp-for="Designation" class="form-control" />
-                <span asp-validation-for="Designation" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Address" class="control-label"></label>
-                <input asp-for="Address" class="form-control" />
-                <span asp-validation-for="Address" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Mobile" class="control-label"></label>
-                <input asp-for="Mobile" class="form-control" />
-                <span asp-validation-for="Mobile" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Telephone" class="control-label"></label>
-                <input asp-for="Telephone" class="form-control" />
-                <span asp-validation-for="Telephone" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FaxNumber" class="control-label"></label>
-                <input asp-for="FaxNumber" class="form-control" />
-                <span asp-validation-for="FaxNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MembershipType" class="control-label"></label>
-                <select asp-for="MembershipType" class="form-control"></select>
-                <span asp-validation-for="MembershipType" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PaymentType" class="control-label"></label>
-                <select asp-for="PaymentType" class="form-control"></select>
-                <span asp-validation-for="PaymentType" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="City" class="control-label"></label>
-                <select asp-for="City" class="form-control"></select>
-                <span asp-validation-for="City" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
-                <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="LogoImage" class="control-label"></label>
-                <input asp-for="LogoImage" class="form-control" />
-                <span asp-validation-for="LogoImage" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UserId" class="control-label"></label>
-                <input asp-for="UserId" class="form-control" />
-                <span asp-validation-for="UserId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
