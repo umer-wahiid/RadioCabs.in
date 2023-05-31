@@ -65,7 +65,7 @@
 						@if (Context.Session.GetString("N") != null)
 						{
 							<li class="menu-has-children">
-								<a>My Account</a>
+								<a asp-area="" asp-controller="Home" asp-action="Profile">My Account</a>
 								<ul>
 									<li><a asp-area="" asp-action="Profile">Profile</a></li>
 									<li><a asp-area="" asp-controller="Registrations" asp-action="UserLogout">Logout</a></li>

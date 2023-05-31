@@ -26,16 +26,6 @@ namespace RadioCabs.Controllers
 
         public IActionResult Index()
 		{
-			//var id = HttpContext.Session.GetInt32("ID");
-			//var e = HttpContext.Session.GetString("E");
-			//var n = HttpContext.Session.GetString("N");
-			//var p = HttpContext.Session.GetString("P");
-			//var a = HttpContext.Session.GetString("A");
-			//ViewBag.id = id;
-			//ViewBag.a = e;
-			//ViewBag.b = n;
-			//ViewBag.c = p;
-			//ViewBag.d = a;
 			return View();
 		}
 
@@ -177,21 +167,20 @@ namespace RadioCabs.Controllers
 
         public async Task<IActionResult> CompanyDetail(int id)
         {
-            if (id == null || _context.CompanyRegistrations == null)
-            {
-                return NotFound();
-            }
-
-            var companyRegistration = await _context.CompanyRegistrations
+			var companyRegistration = await _context.CompanyRegistrations
                 .FirstOrDefaultAsync(m => m.CompanyId == id);
-            if (companyRegistration == null)
-            {
-                return NotFound();
-            }
+            
+            var registration = await _context.Registrations.FirstOrDefaultAsync(m => m.RegistrationId == companyRegistration.UserId);
 
-            return View(companyRegistration);
+			var ViewModel = new CompanyDetailVM
+			{
+				CompData = companyRegistration,
+				RegData = registration,
+			};
+			return View(ViewModel);
         }
 
+            //return View(companyRegistration);
 
 
 

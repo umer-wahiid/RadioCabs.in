@@ -110,6 +110,7 @@ namespace RadioCabs.Controllers
                     HttpContext.Session.SetString("T", reg.TelePhone);
                     HttpContext.Session.SetString("A", reg.Address);
                     HttpContext.Session.SetString("P", reg.Profile);
+                    HttpContext.Session.SetString("C", reg.City);
                     return RedirectToAction("Index", "Home");
                 }
                 else if (reg.RoleId == 0)
@@ -121,6 +122,7 @@ namespace RadioCabs.Controllers
                     HttpContext.Session.SetString("T", reg.TelePhone);
                     HttpContext.Session.SetString("A", reg.Address);
                     HttpContext.Session.SetString("P", reg.Profile);
+                    HttpContext.Session.SetString("C", reg.City);
                     return RedirectToAction("Index", "Home");
                 }
                 else
