@@ -27,6 +27,14 @@ namespace RadioCabs.Controllers
                           View(await _context.CompanyRegistrations.ToListAsync()) :
                           Problem("Entity set 'RCDbContext.CompanyRegistrations'  is null.");
         }
+        
+        public async Task<IActionResult> visitor()
+        {
+            var user = HttpContext.Session.GetInt32("ID");
+              return _context.Visitors != null ? 
+                          View(await _context.CompanyRegistrations.Where(u=>u.UserId==user).ToListAsync()) :
+                          Problem("Entity set 'RCDbContext.CompanyRegistrations'  is null.");
+        }
 
         // GET: CompanyRegistrations/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -98,7 +106,7 @@ namespace RadioCabs.Controllers
             if (image != null)
             {
                 string ext = Path.GetExtension(image.FileName);
-                if (ext == ".jpg" || ext == ".png")
+                if (ext == ".jpg" || ext == ".png" || ext == ".jpeg")
                 {
                     string d = Path.Combine(iw.WebRootPath, "Image");
                     var fname = Path.GetFileName(image.FileName);

@@ -37,12 +37,24 @@
       "PackagePath": "staticwebassets\\Image\\HT.png"
     },
     {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\TShirt.jpg",
+      "PackagePath": "staticwebassets\\Image\\TShirt.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\Web to App 3.jpg",
+      "PackagePath": "staticwebassets\\Image\\Web to App 3.jpg"
+    },
+    {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\abad.png",
       "PackagePath": "staticwebassets\\Image\\abad.png"
     },
     {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\images.jpg",
       "PackagePath": "staticwebassets\\Image\\images.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\profile pi.jpg",
+      "PackagePath": "staticwebassets\\Image\\profile pi.jpg"
     },
     {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\css\\amanda.css",

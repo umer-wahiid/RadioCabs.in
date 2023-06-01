@@ -31,42 +31,49 @@
                         <div class="form-group">
                             <label class="form-control-label">CompanyName: <span class="tx-danger">*</span></label>
                             <input class="form-control" asp-for="CompanyName">
+                            <span asp-validation-for="CompanyName" class="text-danger"></span>
                         </div>
                     </div><!-- col-4 -->
                     <div class="col-lg-4">
                         <div class="form-group">
                             <label class="form-control-label">ContactPerson: <span class="tx-danger">*</span></label>
                             <input class="form-control" asp-for="ContactPerson">
-                        </div>
-                    </div><!-- col-4 -->
-                     <div class="col-lg-4">
-                        <div class="form-group">
-                            <label class="form-control-label">Logo Image: <span class="tx-danger">*</span></label>
-                            <input type="file" class="form-control" asp-for="LogoImage">
-                        </div>
-                    </div><!-- col-4 -->
-                    <div class="col-lg-4">
-                        <div class="form-group">
-                            <label class="form-control-label">Fax Numebr: <span class="tx-danger">*</span></label>
-                            <input class="form-control" asp-for="FaxNumber">
-                        </div>
-                    </div><!-- col-4 -->
-                     <div class="col-lg-4">
-                        <div class="form-group">
-                            <label class="form-control-label">Mobile: <span class="tx-danger">*</span></label>
-                            <input class="form-control" asp-for="Mobile">
-                        </div>
-                    </div><!-- col-4 -->
-                    <div class="col-lg-4">
-                        <div class="form-group">
-                            <label class="form-control-label">Telephone: <span class="tx-danger">*</span></label>
-                            <input class="form-control" asp-for="Telephone">
+                            <span asp-validation-for="ContactPerson" class="text-danger"></span>
                         </div>
                     </div><!-- col-4 -->
                     <div class="col-lg-4">
                         <div class="form-group">
                             <label class="form-control-label">Designation: <span class="tx-danger">*</span></label>
                             <input class="form-control" type="text" asp-for="Designation">
+                            <span asp-validation-for="Designation" class="text-danger"></span>
+                        </div>
+                    </div><!-- col-4 -->
+                     <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="form-control-label">Logo Image: <span class="tx-danger">*</span></label>
+                            <input type="file" name="image" class="form-control">
+                            <span asp-validation-for="LogoImage" class="text-danger"></span>
+                        </div>
+                    </div><!-- col-4 -->
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="form-control-label">Fax Numebr: <span class="tx-danger">*</span></label>
+                            <input class="form-control" asp-for="FaxNumber">
+                            <span asp-validation-for="FaxNumber" class="text-danger"></span>
+                        </div>
+                    </div><!-- col-4 -->
+                     <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="form-control-label">Mobile: <span class="tx-danger">*</span></label>
+                            <input class="form-control" asp-for="Mobile">
+                            <span asp-validation-for="Mobile" class="text-danger"></span>
+                        </div>
+                    </div><!-- col-4 -->
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="form-control-label">Telephone: <span class="tx-danger">*</span></label>
+                            <input class="form-control" asp-for="Telephone">
+                            <span asp-validation-for="Telephone" class="text-danger"></span>
                         </div>
                     </div><!-- col-4 -->
                     <div class="col-lg-4">
@@ -79,6 +86,7 @@
                                     <option value="@item">@item</option>
                                 }
                             </select>
+                            <span asp-validation-for="PaymentType" class="text-danger"></span>
                         </div>
                     </div><!-- col-4 -->
                      <div class="col-lg-4">
@@ -91,12 +99,14 @@
                                     <option value="@item">@item</option>
                                 }
                             </select>
+                            <span asp-validation-for="MembershipType" class="text-danger"></span>
                         </div>
                     </div><!-- col-4 -->
                     <div class="col-lg-4">
                         <div class="form-group">
                             <label class="form-control-label">Email address: <span class="tx-danger">*</span></label>
                             <input class="form-control" asp-for="Email" >
+                            <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
                     </div><!-- col-4 -->
                     <div class="col-lg-4">
@@ -109,26 +119,29 @@
                                     <option value="@item">@item</option>
                                 }
                             </select>
+                            <span asp-validation-for="City" class="text-danger"></span>
                         </div>
                     </div><!-- col-4 -->
                     <div class="col-lg-8">
                         <div class="form-group mg-b-10-force">
                             <label class="form-control-label">Address: <span class="tx-danger">*</span></label>
                             <input class="form-control" asp-for="Address">
+                            <span asp-validation-for="Address" class="text-danger"></span>
                         </div>
                     </div><!-- col-8 -->
                     <div class="col-lg-8">
                         <div class="form-group mg-b-10-force">
                             <label class="form-control-label">Description: <span class="tx-danger">*</span></label>
                             <textarea asp-for="Description" class="form-control"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
                         </div>
                     </div><!-- col-8 -->
-                    
-                    <input type="hidden" asp-for="UserId" class="form-control" />
                 </div><!-- row -->
+                            <input type="hidden" class="form-control" asp-for="UserId">
 
                 <div class="form-layout-footer">
-                    <button class="btn btn-info mg-r-5">Submit Form</button>
+                    @*<button class="btn btn-info mg-r-5">Submit Form</button>*@
+                    <input type="submit" class="btn btn-info mg-r-5" value="Submit">
                     <input type="reset" class="btn btn-secondary" value="Reset">
                     @*<button class="btn btn-secondary">Cancel</button>*@
                 </div><!-- form-layout-footer -->
