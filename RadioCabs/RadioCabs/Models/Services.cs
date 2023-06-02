@@ -32,7 +32,7 @@ namespace RadioCabs.Models
         public string HService3 { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(500)]
         [Display(Name = "Service 3 Description")]
         public string DService3 { get; set; }
 

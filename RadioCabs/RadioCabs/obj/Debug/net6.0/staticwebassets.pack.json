@@ -57,6 +57,22 @@
       "PackagePath": "staticwebassets\\Image\\profile pi.jpg"
     },
     {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\Gruntfile.js",
+      "PackagePath": "staticwebassets\\admin\\Gruntfile.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\LICENSE",
+      "PackagePath": "staticwebassets\\admin"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\README.md",
+      "PackagePath": "staticwebassets\\admin\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\bower.json",
+      "PackagePath": "staticwebassets\\admin\\bower.json"
+    },
+    {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\css\\amanda.css",
       "PackagePath": "staticwebassets\\admin\\css\\amanda.css"
     },
@@ -1051,6 +1067,10 @@
     {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\lib\\summernote\\summernote.min.js",
       "PackagePath": "staticwebassets\\admin\\lib\\summernote\\summernote.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\package.json",
+      "PackagePath": "staticwebassets\\admin\\package.json"
     },
     {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\scss\\_app.scss",

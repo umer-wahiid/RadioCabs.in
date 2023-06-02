@@ -168,10 +168,12 @@ namespace RadioCabs.Controllers
         public async Task<IActionResult> CompanyDetail(int id, Visitor visitor)
         {
             var use = HttpContext.Session.GetInt32("ID");
-            if(use!= null)
+            if(use!=null)
             {
           	    var register = await _context.Registrations
                     .FirstOrDefaultAsync(m => m.RegistrationId == use);
+                //visitor.VisitorId = 1;
+                visitor.VisitorName= register.Name;
                 visitor.VisitorProfile= register.Profile;
                 visitor.VisitorEmail= register.Email;
                 visitor.VisitorCity= register.City;
@@ -179,8 +181,10 @@ namespace RadioCabs.Controllers
                 visitor.VisitDate= DateTime.Now;
                 visitor.Compid = id;
                 _context.Add(visitor);
+                await _context.SaveChangesAsync();
             }
-			var companyRegistration = await _context.CompanyRegistrations
+
+            var companyRegistration = await _context.CompanyRegistrations
                 .FirstOrDefaultAsync(m => m.CompanyId == id);
             var registration = await _context.Registrations.FirstOrDefaultAsync(m => m.RegistrationId == companyRegistration.UserId);
 
@@ -189,15 +193,6 @@ namespace RadioCabs.Controllers
 				CompData = companyRegistration,
 				RegData = registration,
 			};
-
-
-
-
-
-
-
-
-
 
             return View(ViewModel);
         }

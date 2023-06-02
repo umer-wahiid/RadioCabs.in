@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RadioCabs.Models;
 
 namespace RadioCabs.Controllers
 {
@@ -8,7 +9,8 @@ namespace RadioCabs.Controllers
 		// GET: AdminController
 		public ActionResult Index()
 		{
-			return View();
+            //int count = Visitor.AsEnumerable().Count(row => row.Field<int>("company ") == 2);
+            return View();
 		}
 
 		// GET: AdminController/Details/5

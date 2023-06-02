@@ -12,10 +12,11 @@ namespace RadioCabs.Controllers
     public class ServicesController : Controller
     {
         private readonly RCDbContext _context;
-
-        public ServicesController(RCDbContext context)
+        IWebHostEnvironment iw;
+        public ServicesController(RCDbContext context, IWebHostEnvironment i)
         {
             _context = context;
+            iw = i;
         }
 
         // GET: Services
@@ -55,10 +56,13 @@ namespace RadioCabs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ServicesId,HService1,DService1,HService2,DService2,HService3,DService3,UserId")] Services services)
+        public async Task<IActionResult> Create([Bind("ServicesId,HService1,DService1,HService2,DService2,HService3,DService3")] Services services)
         {
             if (ModelState.IsValid)
             {
+                var user = HttpContext.Session.GetInt32("ID");
+                CompanyRegistration comp =await _context.CompanyRegistrations.FirstOrDefaultAsync(a => a.UserId == user);
+                services.UserId = comp.CompanyId;
                 _context.Add(services);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

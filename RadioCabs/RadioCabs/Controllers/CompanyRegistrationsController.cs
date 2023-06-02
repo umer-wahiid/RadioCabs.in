@@ -31,9 +31,11 @@ namespace RadioCabs.Controllers
         public async Task<IActionResult> visitor()
         {
             var user = HttpContext.Session.GetInt32("ID");
-              return _context.Visitors != null ? 
-                          View(await _context.CompanyRegistrations.Where(u=>u.UserId==user).ToListAsync()) :
-                          Problem("Entity set 'RCDbContext.CompanyRegistrations'  is null.");
+            CompanyRegistration Compreg = _context.CompanyRegistrations.Where(c => c.UserId == user).FirstOrDefault();
+
+            return _context.Visitors != null ? 
+                          View(await _context.Visitors.Where(u=>u.Compid==Compreg.CompanyId).ToListAsync()) :
+                          Problem("Entity set 'RCDbContext.Visitors'  is null.");
         }
 
         // GET: CompanyRegistrations/Details/5
