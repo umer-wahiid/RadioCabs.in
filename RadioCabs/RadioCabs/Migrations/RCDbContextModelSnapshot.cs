@@ -346,8 +346,8 @@ namespace RadioCabs.Migrations
 
                     b.Property<string>("DService3")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("HService1")
                         .IsRequired()

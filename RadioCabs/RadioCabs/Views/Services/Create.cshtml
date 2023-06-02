@@ -5,12 +5,13 @@
     Layout = "~/Views/Shared/admin_Layout.cshtml";
 }
 
-<h1>Create</h1>
-
-<h4>Services</h4>
+<h4 style="margin-top: 80px;
+    margin-left: 280px;">
+    Services
+</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4" style="margin-left: 285px;">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -43,13 +44,9 @@
                 <input asp-for="DService3" class="form-control" />
                 <span asp-validation-for="DService3" class="text-danger"></span>
             </div>
-@*            <div class="form-group">
-                <label asp-for="UserId" class="control-label"></label>
-                <input asp-for="UserId" class="form-control" />
-                <span asp-validation-for="UserId" class="text-danger"></span>
-            </div>*@
+            <input type="hidden" asp-for="UserId" />
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-warning" />
             </div>
         </form>
     </div>
