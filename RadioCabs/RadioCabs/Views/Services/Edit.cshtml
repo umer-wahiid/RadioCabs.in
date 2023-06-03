@@ -5,7 +5,95 @@
     Layout = "~/Views/Shared/admin_Layout.cshtml";
 }
 
-<h1>Edit</h1>
+
+<div class="am-pagetitle">
+    <h5 class="am-title">Edit Company Services</h5>
+    <form id="searchBar" class="search-bar" action="index.html">
+        <div class="form-control-wrapper">
+            <input type="search" class="form-control bd-0" placeholder="Search...">
+        </div><!-- form-control-wrapper -->
+        <button id="searchBtn" class="btn btn-orange"><i class="fa fa-search"></i></button>
+    </form><!-- search-bar -->
+</div><!-- am-pagetitle -->
+
+
+<div class="am-mainpanel">
+    <div class="am-pagebody">
+        <div class="card pd-20 pd-sm-40">
+            <h5 class="card-body-title">Edit Services</h5>
+            <form asp-action="Edit" method="post"  enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="ServicesId" />
+                <div class="form-layout">
+                    <div class="row mg-b-25">
+                        <div class="col-lg-12">
+                            <h6 class="card-body-title">Service 1</h6>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label">Heading: <span class="tx-danger">*</span></label>
+                                <input class="form-control" asp-for="HService1">
+                                <span asp-validation-for="HService1" class="text-danger"></span>
+                            </div>
+                        </div><!-- col-4 -->
+                        <div class="col-lg-8">
+                            <div class="form-group mg-b-10-force">
+                                <label class="form-control-label">Description: <span class="tx-danger">*</span></label>
+                                <textarea asp-for="DService1" class="form-control"></textarea>
+                                <span asp-validation-for="DService1" class="text-danger"></span>
+                            </div>
+                        </div><!-- col-8 -->
+
+                        <div class="col-lg-12">
+                            <h6 class="card-body-title">Service 2</h6>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label">Heading: <span class="tx-danger">*</span></label>
+                                <input class="form-control" asp-for="HService2">
+                                <span asp-validation-for="HService2" class="text-danger"></span>
+                            </div>
+                        </div><!-- col-4 -->
+                        <div class="col-lg-8">
+                            <div class="form-group mg-b-10-force">
+                                <label class="form-control-label">Description: <span class="tx-danger">*</span></label>
+                                <textarea asp-for="DService2" class="form-control"></textarea>
+                                <span asp-validation-for="DService2" class="text-danger"></span>
+                            </div>
+                        </div><!-- col-8 -->
+
+                        <div class="col-lg-12">
+                            <h6 class="card-body-title">Service 3</h6>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label">Heading: <span class="tx-danger">*</span></label>
+                                <input class="form-control" asp-for="HService3">
+                                <span asp-validation-for="HService3" class="text-danger"></span>
+                            </div>
+                        </div><!-- col-4 -->
+                        <div class="col-lg-8">
+                            <div class="form-group mg-b-10-force">
+                                <label class="form-control-label">Description: <span class="tx-danger">*</span></label>
+                                <textarea asp-for="DService3" class="form-control"></textarea>
+                                <span asp-validation-for="DService3" class="text-danger"></span>
+                            </div>
+                        </div><!-- col-8 -->
+                <input type="hidden" asp-for="UserId" />
+                    </div><!-- row -->
+                    <div class="form-layout-footer">
+                        <input type="submit" class="btn btn-info mg-r-5" value="Submit">
+                        <input type="reset" class="btn btn-secondary" value="Reset">
+                    </div>
+                </div>
+            </form>
+        </div><!-- card -->
+
+    </div><!-- am-pagebody -->
+
+
+
+@*<h1>Edit</h1>
 
 <h4>Services</h4>
 <hr />
@@ -58,5 +146,5 @@
 
 <div>
     <a asp-action="Index">Back to List</a>
-</div>
+</div>*@
 

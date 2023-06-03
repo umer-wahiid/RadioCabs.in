@@ -48,7 +48,19 @@ namespace RadioCabs.Controllers
         // GET: Services/Create
         public IActionResult Create()
         {
-            return View();
+            var ID = HttpContext.Session.GetInt32("ID");
+            CompanyRegistration comp = _context.CompanyRegistrations.FirstOrDefault(a => a.UserId == ID);
+            Services service = _context.Services.FirstOrDefault(s => s.UserId == comp.CompanyId);
+            if (service == null)
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Edit", "Services");
+            }
+           
+
         }
 
         // POST: Services/Create
@@ -71,14 +83,18 @@ namespace RadioCabs.Controllers
         }
 
         // GET: Services/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit()
         {
-            if (id == null || _context.Services == null)
+            var ID = HttpContext.Session.GetInt32("ID");
+            CompanyRegistration comp = _context.CompanyRegistrations.FirstOrDefault(a => a.UserId == ID);
+            Services service = _context.Services.FirstOrDefault(s => s.UserId == comp.CompanyId);
+
+            if (service.ServicesId == null || _context.Services == null)
             {
                 return NotFound();
             }
 
-            var services = await _context.Services.FindAsync(id);
+            var services = await _context.Services.FindAsync(service.ServicesId);
             if (services == null)
             {
                 return NotFound();
