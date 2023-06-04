@@ -12,10 +12,12 @@ namespace RadioCabs.Controllers
     public class DriversRegistrationsController : Controller
     {
         private readonly RCDbContext _context;
+        IWebHostEnvironment iw;
 
-        public DriversRegistrationsController(RCDbContext context)
+        public DriversRegistrationsController(RCDbContext context, IWebHostEnvironment i)
         {
             _context = context;
+            iw = i;
         }
 
         // GET: DriversRegistrations
@@ -87,32 +89,29 @@ namespace RadioCabs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("DriverId,DriverName,ContactPerson,Address,City,Mobile,Telephone,Email,Experience,Description,PaymentType,DriverImg,UserId")] DriversRegistration driversRegistration)
+        public async Task<IActionResult> Edit(int id, DriversRegistration driversRegistration, IFormFile image)
         {
-            if (id != driversRegistration.DriverId)
+            if (image != null)
             {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
+                string ext = Path.GetExtension(image.FileName);
+                if (ext == ".jpg" || ext == ".png" || ext == ".jpeg")
                 {
+                    string d = Path.Combine(iw.WebRootPath, "Image");
+                    var fname = Path.GetFileName(image.FileName);
+                    string filepath = Path.Combine(d, fname);
+                    using (var fs = new FileStream(filepath, FileMode.Create))
+                    {
+                        await image.CopyToAsync(fs);
+                    }
+                    driversRegistration.DriverImg = @"Image/" + fname;
                     _context.Update(driversRegistration);
                     await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
                 }
-                catch (DbUpdateConcurrencyException)
+                else
                 {
-                    if (!DriversRegistrationExists(driversRegistration.DriverId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    ViewBag.m = "Wrong Picture Format";
                 }
-                return RedirectToAction(nameof(Index));
             }
             return View(driversRegistration);
         }

@@ -5,7 +5,121 @@
     Layout = "~/Views/Shared/admin_Layout.cshtml";
 }
 
-<h1>Edit</h1>
+<div class="am-mainpanel">
+    <div class="am-pagebody">
+
+        <div class="card pd-20 pd-sm-40">
+            <h6 class="card-body-title">Edit Detail</h6>
+            <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="DriverId" />
+                <div class="form-layout">
+                <div class="row mg-b-25">
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="form-control-label">Driver Name: <span class="tx-danger">*</span></label>
+                            <input class="form-control" asp-for="DriverName">
+                            <span asp-validation-for="DriverName" class="text-danger"></span>
+                        </div>
+                    </div><!-- col-4 -->
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="form-control-label">ContactPerson: <span class="tx-danger">*</span></label>
+                            <input class="form-control" asp-for="ContactPerson">
+                            <span asp-validation-for="ContactPerson" class="text-danger"></span>
+                        </div>
+                    </div><!-- col-4 -->
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="form-control-label">Experience: <span class="tx-danger">*</span></label>
+                            <input class="form-control" type="text" asp-for="Experience">
+                            <span asp-validation-for="Experience" class="text-danger"></span>
+                        </div>
+                    </div><!-- col-4 -->
+                     <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="form-control-label">Driver Image: <span class="tx-danger">*</span></label>
+                            <input type="file" name="image" class="form-control">
+                            <span asp-validation-for="DriverImg" class="text-danger"></span>
+                        </div>
+                    </div><!-- col-4 -->
+                     <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="form-control-label">Mobile: <span class="tx-danger">*</span></label>
+                            <input class="form-control" asp-for="Mobile">
+                            <span asp-validation-for="Mobile" class="text-danger"></span>
+                        </div>
+                    </div><!-- col-4 -->
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="form-control-label">Telephone: <span class="tx-danger">*</span></label>
+                            <input class="form-control" asp-for="Telephone">
+                            <span asp-validation-for="Telephone" class="text-danger"></span>
+                        </div>
+                    </div><!-- col-4 -->
+                    <div class="col-lg-4">
+                        <div class="form-group mg-b-10-force">
+                            <label class="form-control-label">Payment Type: <span class="tx-danger">*</span></label>
+                            <select asp-for="PaymentType" class="form-control">
+                                <option value="">-- Select Payment Type --</option>
+                                    @foreach (var item in Enum.GetValues(typeof(PaymentType)))
+                                    {
+                                        <option value="@item">@item</option>
+                                    }
+                            </select>
+                            <span asp-validation-for="PaymentType" class="text-danger"></span>
+                        </div>
+                    </div><!-- col-4 -->
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="form-control-label">Email address: <span class="tx-danger">*</span></label>
+                            <input class="form-control" asp-for="Email" >
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div><!-- col-4 -->
+                    <div class="col-lg-4">
+                        <div class="form-group mg-b-10-force">
+                            <label class="form-control-label">city: <span class="tx-danger">*</span></label>
+                            <select asp-for="City" class="form-control select2">
+                                <option value="">-- Select City --</option>
+                                    @foreach (var item in Enum.GetValues(typeof(City)))
+                                    {
+                                        <option value="@item">@item</option>
+                                    }
+                            </select>
+                            <span asp-validation-for="City" class="text-danger"></span>
+                        </div>
+                    </div><!-- col-4 -->
+                    <div class="col-lg-8">
+                        <div class="form-group mg-b-10-force">
+                            <label class="form-control-label">Address: <span class="tx-danger">*</span></label>
+                            <input class="form-control" asp-for="Address">
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+                    </div><!-- col-8 -->
+                    <div class="col-lg-8">
+                        <div class="form-group mg-b-10-force">
+                            <label class="form-control-label">Description: <span class="tx-danger">*</span></label>
+                            <textarea asp-for="Description" class="form-control"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                    </div><!-- col-8 -->
+                </div><!-- row -->
+                            <input type="hidden" class="form-control" asp-for="UserId">
+
+                <div class="form-layout-footer">
+                        @*<button class="btn btn-info mg-r-5">Submit Form</button>*@
+                    <input type="submit" class="btn btn-info mg-r-5" value="Submit">
+                    <input type="reset" class="btn btn-secondary" value="Reset">
+                        @*<button class="btn btn-secondary">Cancel</button>*@
+                </div><!-- form-layout-footer -->
+            </div><!-- form-layout -->
+            </form>
+        </div><!-- card -->
+
+    </div><!-- am-pagebody -->
+
+@*<h1>Edit</h1>
 
 <h4>DriversRegistration</h4>
 <hr />
@@ -83,5 +197,5 @@
 
 <div>
     <a asp-action="Index">Back to List</a>
-</div>
+</div>*@
 
