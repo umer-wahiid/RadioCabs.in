@@ -22,7 +22,8 @@ namespace RadioCabs.Models
         public string Address { get; set; }
 
         [Required]
-        public City City { get; set; }
+        [StringLength(50)]
+        public string City { get; set; }
 
         [MaxLength(11, ErrorMessage = "Only 11 Numbers Are Allowed"), MinLength(11, ErrorMessage = "Only 11 Numbers Are Allowed")]
         [Required]
@@ -47,7 +48,8 @@ namespace RadioCabs.Models
 
         [Required]
         [Display(Name = "Payment Type")]
-        public PaymentType PaymentType { get; set; }
+        [StringLength(25)]
+        public string PaymentType { get; set; }
 
         [StringLength(1000)]
         public string DriverImg { get; set; }

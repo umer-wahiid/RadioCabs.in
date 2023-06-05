@@ -2,32 +2,6 @@
 
 namespace RadioCabs.Models
 {
-    public enum MembershipType
-    {
-        Premium,
-        Basic,
-        Free
-    }
-    public enum City
-    {
-        Karachi,
-        Lahore,
-        Islamabad,
-        Quetta,
-        Peshawar,
-        Multan,
-        Gujaranwala,
-        Hyderabad,
-        Faisalabad,
-        Gujarat,
-        NawabShah
-    }
-
-    public enum PaymentType
-    {
-        Monthly,
-        Quarterly
-    }
     public class CompanyRegistration
     {
         [Key]
@@ -71,20 +45,22 @@ namespace RadioCabs.Models
 
         [Required]
         [Display(Name = "MemberShip Type")]
-        public MembershipType MembershipType { get; set; }
+        [StringLength(25)]
+        public string MembershipType { get; set; }
 
         [Required]
         [Display(Name = "Payment Type")]
-        public PaymentType PaymentType { get; set; }
+        [StringLength(25)]
+        public string PaymentType { get; set; }
 
         [Required]
-        public City City { get; set; }
+        [StringLength(25)]
+        public string City { get; set; }
 
         [Required]
         [StringLength(1000)]
         public string Description { get; set; }
 
-        [Required]
         [StringLength(1000)]
         [Display(Name = "Logo Image")]
         public string LogoImage { get; set; }
