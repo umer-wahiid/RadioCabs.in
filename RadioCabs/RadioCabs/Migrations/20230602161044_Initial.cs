@@ -76,7 +76,7 @@ namespace RadioCabs.Migrations
                     Experience = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Description = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: false),
                     PaymentType = table.Column<int>(type: "int", nullable: false),
-                    DriverImg = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false),
+                    DriverImg = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: true),
                     UserId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

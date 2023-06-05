@@ -62,11 +62,24 @@
 							Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed
 						</p>*@
 					</div>
-@*					<div class="col-lg-12">
-						<div class="quotes">
-							MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.
+			@*Title + Service*@
+					@*@await Component.InvokeAsync("Services")*@
+					@if(Model.ServData!=null){
+						<div class="col-lg-12">
+							<div class="quotes">
+								<h4>@Model.ServData.HService1</h4>
+								@Model.ServData.DService1
+							</div>
+							<div class="quotes">
+								<h4>@Model.ServData.HService2</h4>
+								@Model.ServData.DService2
+							</div>
+							<div class="quotes">
+								<h4>@Model.ServData.HService3</h4>
+								@Model.ServData.DService3
+							</div>
 						</div>
-					</div>*@
+					}
 				</div>
 
 

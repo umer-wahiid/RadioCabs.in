@@ -69,14 +69,17 @@ namespace RadioCabs.Controllers
         }
 
         // GET: DriversRegistrations/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit()
         {
-            if (id == null || _context.DriversRegistrations == null)
+            var v = HttpContext.Session.GetInt32("ID");
+            DriversRegistration Drireg = _context.DriversRegistrations.Where(c => c.UserId == v).FirstOrDefault();
+            
+            if (Drireg.DriverId == null || _context.DriversRegistrations == null)
             {
                 return NotFound();
             }
 
-            var driversRegistration = await _context.DriversRegistrations.FindAsync(id);
+            var driversRegistration = await _context.DriversRegistrations.FindAsync(Drireg.DriverId);
             if (driversRegistration == null)
             {
                 return NotFound();
@@ -104,14 +107,16 @@ namespace RadioCabs.Controllers
                         await image.CopyToAsync(fs);
                     }
                     driversRegistration.DriverImg = @"Image/" + fname;
+                    ViewBag.m = "Updated";
                     _context.Update(driversRegistration);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(Edit));
                 }
                 else
                 {
                     ViewBag.m = "Wrong Picture Format";
                 }
+
             }
             return View(driversRegistration);
         }

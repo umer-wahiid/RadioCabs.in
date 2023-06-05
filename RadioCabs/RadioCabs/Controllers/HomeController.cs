@@ -187,11 +187,13 @@ namespace RadioCabs.Controllers
             var companyRegistration = await _context.CompanyRegistrations
                 .FirstOrDefaultAsync(m => m.CompanyId == id);
             var registration = await _context.Registrations.FirstOrDefaultAsync(m => m.RegistrationId == companyRegistration.UserId);
+            var services = await _context.Services.FirstOrDefaultAsync(s => s.UserId == id);
 
 			var ViewModel = new CompanyDetailVM
 			{
 				CompData = companyRegistration,
 				RegData = registration,
+				ServData = services,
 			};
 
             return View(ViewModel);

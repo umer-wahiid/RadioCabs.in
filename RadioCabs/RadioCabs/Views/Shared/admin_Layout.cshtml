@@ -1,5 +1,7 @@
 ﻿@{
     var ID = Context.Session.GetInt32("ID");
+    var N = Context.Session.GetInt32("N");
+    var IMG = Context.Session.GetString("P");
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -56,7 +58,7 @@
         <div class="am-header-left">
             <a id="naviconLeft" href="" class="am-navicon d-none d-lg-flex"><i class="icon ion-navicon-round"></i></a>
             <a id="naviconLeftMobile" href="" class="am-navicon d-lg-none"><i class="icon ion-navicon-round"></i></a>
-            <a href="index.html" class="am-logo">amanda</a>
+            <a asp-action="Index" asp-controller="Admin" class="am-logo">RadioCabs.in</a>
         </div><!-- am-header-left -->
 
         <div class="am-header-right">
@@ -120,17 +122,13 @@
             </div><!-- dropdown -->
             <div class="dropdown dropdown-profile">
                 <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
-                    <img src="~/admin/img/img3.jpg" class="wd-32 rounded-circle" alt="">
-                    <span class="logged-name"><span class="hidden-xs-down">Jane Doe</span> <i class="fa fa-angle-down mg-l-3"></i></span>
+                    <img src="~/@IMG" class="wd-32 rounded-circle" alt="">
+                    <span class="logged-name"><span class="hidden-xs-down">@N</span> <i class="fa fa-angle-down mg-l-3"></i></span>
                 </a>
                 <div class="dropdown-menu wd-200">
                     <ul class="list-unstyled user-profile-nav">
-                        <li><a href=""><i class="icon ion-ios-person-outline"></i> Edit Profile</a></li>
-                        <li><a href=""><i class="icon ion-ios-gear-outline"></i> Settings</a></li>
-                        <li><a href=""><i class="icon ion-ios-download-outline"></i> Downloads</a></li>
-                        <li><a href=""><i class="icon ion-ios-star-outline"></i> Favorites</a></li>
-                        <li><a href=""><i class="icon ion-ios-folder-outline"></i> Collections</a></li>
-                        <li><a href=""><i class="icon ion-power"></i> Sign Out</a></li>
+                        <li><a asp-controller="Home" asp-action="EditProfile" asp-route-id="@ID"><i class="icon ion-ios-person-outline"></i> Edit Profile</a></li>
+                        <li><a asp-controller="Registrations" asp-action="UserLogout"><i class="icon ion-power"></i> Sign Out</a></li>
                     </ul>
                 </div><!-- dropdown-menu -->
             </div><!-- dropdown -->
@@ -163,15 +161,15 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a asp-controller="CompanyRegistrations" asp-action="Edit"  class="nav-link">
-                            <i class="icon ion-ios-folder-outline"></i>
-                            <span>Edit Company</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a asp-controller="DriversRegistrations" asp-action="Edit"  class="nav-link">
                             <i class="icon ion-ios-folder-outline"></i>
                             <span>Edit Driver</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="CompanyRegistrations" asp-action="Edit"  class="nav-link">
+                            <i class="icon ion-ios-folder-outline"></i>
+                            <span>Edit Company</span>
                         </a>
                     </li>
                     <li class="nav-item">

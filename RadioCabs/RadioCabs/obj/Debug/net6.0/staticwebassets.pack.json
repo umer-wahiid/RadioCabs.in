@@ -49,6 +49,34 @@
       "PackagePath": "staticwebassets\\Image\\abad.png"
     },
     {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\about-img.jpg",
+      "PackagePath": "staticwebassets\\Image\\about-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\b1.jpg",
+      "PackagePath": "staticwebassets\\Image\\b1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\g2.jpg",
+      "PackagePath": "staticwebassets\\Image\\g2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\g3.jpg",
+      "PackagePath": "staticwebassets\\Image\\g3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\g4.jpg",
+      "PackagePath": "staticwebassets\\Image\\g4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\g5.jpg",
+      "PackagePath": "staticwebassets\\Image\\g5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\g6.jpg",
+      "PackagePath": "staticwebassets\\Image\\g6.jpg"
+    },
+    {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\images.jpg",
       "PackagePath": "staticwebassets\\Image\\images.jpg"
     },

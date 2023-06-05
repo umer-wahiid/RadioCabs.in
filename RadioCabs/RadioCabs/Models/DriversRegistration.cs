@@ -49,7 +49,6 @@ namespace RadioCabs.Models
         [Display(Name = "Payment Type")]
         public PaymentType PaymentType { get; set; }
 
-        [Required]
         [StringLength(1000)]
         public string DriverImg { get; set; }
 
