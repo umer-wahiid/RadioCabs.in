@@ -3889,9 +3889,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .contact-page-area .form-area textarea {
-  height: 190px;
-  margin-top: 0px;
-  padding: 15px;
+    height: 305px;
+    margin-top: 0px;
+    padding: 15px;
+    resize: none;
 }
 
 .contact-page-area .form-area .genric-btn {
@@ -3931,6 +3932,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #f9d700;
   margin-right: 30px;
 }
+
+
+
 
 /*-----testimonial------*/
 
@@ -4166,3 +4170,5 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*-------- end footer Area -------------*/
+
+

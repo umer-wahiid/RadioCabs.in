@@ -3,12 +3,6 @@ using System.ComponentModel.DataAnnotations;
 
 namespace RadioCabs.Models
 {
-    public enum Type
-    {
-        Complaint,
-        Suggestion,
-        Compliment
-    }
     public class FeedBack
     {
         [Key]
@@ -32,6 +26,11 @@ namespace RadioCabs.Models
         public string City { get; set; }
 
         [Required]
-        public Type Type { get; set; }
+        [StringLength(15)]
+        public string Type { get; set; }
+
+        [Required]
+        [StringLength(1000)]
+        public string Description { get; set; }
     }
 }
