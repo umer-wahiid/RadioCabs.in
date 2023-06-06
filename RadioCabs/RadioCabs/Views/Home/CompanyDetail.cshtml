@@ -70,14 +70,20 @@
 								<h4>@Model.ServData.HService1</h4>
 								@Model.ServData.DService1
 							</div>
-							<div class="quotes">
-								<h4>@Model.ServData.HService2</h4>
-								@Model.ServData.DService2
-							</div>
+							@if (Model.ServData.HService2 != null && Model.ServData.DService2 != null)
+							{
+								<div class="quotes">
+									<h4>@Model.ServData.HService2</h4>
+									@Model.ServData.DService2
+								</div>
+							}
+							@if (Model.ServData.HService3 != null && Model.ServData.DService3 != null)
+							{
 							<div class="quotes">
 								<h4>@Model.ServData.HService3</h4>
 								@Model.ServData.DService3
 							</div>
+							}
 						</div>
 					}
 				</div>

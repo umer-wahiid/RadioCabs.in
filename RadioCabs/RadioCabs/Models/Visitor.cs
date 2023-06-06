@@ -15,6 +15,7 @@ namespace RadioCabs.Models
 		public string VisitorCity { get; set; }
 		public string VisitorMobile { get; set; }
 		public int Compid { get; set; }
+		public int Driveid { get; set; }
 		
 		//public Visitor() { }
 		//public Visitor(Registration registration)

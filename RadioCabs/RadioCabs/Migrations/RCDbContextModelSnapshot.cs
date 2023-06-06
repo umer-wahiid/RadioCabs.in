@@ -138,8 +138,7 @@ namespace RadioCabs.Migrations
 
                     b.Property<string>("LogoImage")
                         .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MembershipType")
                         .IsRequired()
@@ -199,8 +198,7 @@ namespace RadioCabs.Migrations
 
                     b.Property<string>("DriverImg")
                         .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DriverName")
                         .IsRequired()
@@ -320,8 +318,7 @@ namespace RadioCabs.Migrations
 
                     b.Property<string>("Profile")
                         .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("RoleId")
                         .HasColumnType("int");
@@ -349,33 +346,27 @@ namespace RadioCabs.Migrations
 
                     b.Property<string>("DService1")
                         .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DService2")
                         .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DService3")
                         .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("HService1")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("HService2")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("HService3")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ServicesId");
 
@@ -391,6 +382,9 @@ namespace RadioCabs.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("VisitorId"));
 
                     b.Property<int>("Compid")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Driveid")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("VisitDate")

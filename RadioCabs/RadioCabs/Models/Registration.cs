@@ -46,7 +46,6 @@ namespace RadioCabs.Models
         [Required]
         public string City { get; set; }
 
-        [StringLength(500)]
         public string Profile { get; set; }
 
         [Required]

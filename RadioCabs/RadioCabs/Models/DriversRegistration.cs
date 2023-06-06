@@ -51,7 +51,7 @@ namespace RadioCabs.Models
         [StringLength(25)]
         public string PaymentType { get; set; }
 
-        [StringLength(1000)]
+        [Display(Name = "Driver Profile")]
         public string DriverImg { get; set; }
 
         [Required]

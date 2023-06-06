@@ -61,7 +61,6 @@ namespace RadioCabs.Models
         [StringLength(1000)]
         public string Description { get; set; }
 
-        [StringLength(1000)]
         [Display(Name = "Logo Image")]
         public string LogoImage { get; set; }
 
