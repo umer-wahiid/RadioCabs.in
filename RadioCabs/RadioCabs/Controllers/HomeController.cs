@@ -187,7 +187,7 @@ namespace RadioCabs.Controllers
             var companyRegistration = await _context.CompanyRegistrations
                 .FirstOrDefaultAsync(m => m.CompanyId == id);
             var registration = await _context.Registrations.FirstOrDefaultAsync(m => m.RegistrationId == companyRegistration.UserId);
-            var services = await _context.Services.FirstOrDefaultAsync(s => s.UserId == id);
+            var services = await _context.Services.FirstOrDefaultAsync(s => s.CompanyId == id);
 
 			var ViewModel = new CompanyDetailVM
 			{
@@ -197,6 +197,14 @@ namespace RadioCabs.Controllers
 			};
 
             return View(ViewModel);
+        }
+        
+        public async Task<IActionResult> DriverDetail(int id)
+        {
+            var drivreg = await _context.DriversRegistrations
+                .FirstOrDefaultAsync(m => m.DriverId == id);
+
+            return View(drivreg);
         }
 
             //return View(companyRegistration);

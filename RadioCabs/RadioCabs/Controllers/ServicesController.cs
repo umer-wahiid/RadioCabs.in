@@ -50,7 +50,7 @@ namespace RadioCabs.Controllers
         {
             var ID = HttpContext.Session.GetInt32("ID");
             CompanyRegistration comp = _context.CompanyRegistrations.FirstOrDefault(a => a.UserId == ID);
-            Services service = _context.Services.FirstOrDefault(s => s.UserId == comp.CompanyId);
+            Services service = _context.Services.FirstOrDefault(s => s.CompanyId == comp.CompanyId);
             if (service == null)
             {
                 return View();
@@ -74,7 +74,7 @@ namespace RadioCabs.Controllers
             {
                 var user = HttpContext.Session.GetInt32("ID");
                 CompanyRegistration comp =await _context.CompanyRegistrations.FirstOrDefaultAsync(a => a.UserId == user);
-                services.UserId = comp.CompanyId;
+                services.CompanyId = comp.CompanyId;
                 _context.Add(services);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -87,7 +87,7 @@ namespace RadioCabs.Controllers
         {
             var ID = HttpContext.Session.GetInt32("ID");
             CompanyRegistration comp = _context.CompanyRegistrations.FirstOrDefault(a => a.UserId == ID);
-            Services service = _context.Services.FirstOrDefault(s => s.UserId == comp.CompanyId);
+            Services service = _context.Services.FirstOrDefault(s => s.CompanyId == comp.CompanyId);
 
             if (service.ServicesId == null || _context.Services == null)
             {

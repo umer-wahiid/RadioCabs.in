@@ -16,7 +16,7 @@ namespace RadioCabs.Models
         {
             //var ID = HttpContext.Session.GetInt32("ID");
             //CompanyRegistration comp = _context.CompanyRegistrations.FirstOrDefault(c => c.UserId == ID);
-            var ab = _context.Services.FirstOrDefault(s => s.UserId == id);
+            var ab = _context.Services.FirstOrDefault(s => s.CompanyId == id);
 			return View(ab);
         }
     }

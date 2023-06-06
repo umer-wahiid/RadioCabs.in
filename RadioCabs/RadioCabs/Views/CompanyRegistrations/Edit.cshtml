@@ -81,10 +81,8 @@
                             <label class="form-control-label">Payment Type: <span class="tx-danger">*</span></label>
                             <select asp-for="PaymentType" class="form-control">
                                 <option value="">-- Select Payment Type --</option>
-                                @foreach (var item in Enum.GetValues(typeof(PaymentType)))
-                                {
-                                    <option value="@item">@item</option>
-                                }
+                                    <option value="Monthly">Monthly</option>
+                                    <option value="Quaterly">Quarterly</option>
                             </select>
                             <span asp-validation-for="PaymentType" class="text-danger"></span>
                         </div>
@@ -94,10 +92,9 @@
                             <label class="form-control-label">Membership Type: <span class="tx-danger">*</span></label>
                             <select asp-for="MembershipType" class="form-control">
                                 <option value="">-- Select Membership Type --</option>
-                                @foreach (var item in Enum.GetValues(typeof(MembershipType)))
-                                {
-                                    <option value="@item">@item</option>
-                                }
+                                    <option value="Free">Free</option>
+                                    <option value="Basic">Basic</option>
+                                    <option value="Premium">Premium</option>
                             </select>
                             <span asp-validation-for="MembershipType" class="text-danger"></span>
                         </div>
@@ -114,10 +111,13 @@
                             <label class="form-control-label">city: <span class="tx-danger">*</span></label>
                             <select asp-for="City" class="form-control select2">
                                 <option value="">-- Select City --</option>
-                                @foreach (var item in Enum.GetValues(typeof(City)))
-                                {
-                                    <option value="@item">@item</option>
-                                }
+                                    <option value="Karachi">Karachi</option>
+                                    <option value="Islamabad">Islamabad</option>
+                                    <option value="Rawalpindi">Rawalpindi</option>
+                                    <option value="Hyderabad">Hyderabad</option>
+                                    <option value="Multan">Multan</option>
+                                    <option value="Lahore">Lahore</option>
+                                    <option value="Quetta">Quetta</option>
                             </select>
                             <span asp-validation-for="City" class="text-danger"></span>
                         </div>
