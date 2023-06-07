@@ -1,0 +1,113 @@
+﻿@model IEnumerable<RadioCabs.Models.FeedBack>
+
+@{
+    ViewData["Title"] = "ShowFeed";
+    Layout = "~/Views/Shared/admin_Layout.cshtml";
+}
+
+<div class="am-pagetitle">
+    <h5 class="am-title">Visitors</h5>
+    <form id="searchBar" class="search-bar" action="index.html">
+        <div class="form-control-wrapper">
+            <input type="search" class="form-control bd-0" placeholder="Search...">
+        </div><!-- form-control-wrapper -->
+        <button id="searchBtn" class="btn btn-orange"><i class="fa fa-search"></i></button>
+    </form><!-- search-bar -->
+</div><!-- am-pagetitle -->
+
+<div class="am-mainpanel">
+    <div class="am-pagebody">
+
+        <div class="card pd-20 pd-sm-40">
+            <h6 class="card-body-title">Feedbacks List</h6>
+
+            <div class="table-wrapper">
+                <table id="datatable1" class="table display responsive nowrap">
+                    <thead>
+                        <tr>
+                            <th class="wd-15p">@Html.DisplayNameFor(model => model.Name)</th>
+                            <th class="wd-15p"> @Html.DisplayNameFor(model => model.MobileNo)</th>
+                            <th class="wd-15p">@Html.DisplayNameFor(model => model.Email)</th>
+                            <th class="wd-20p">@Html.DisplayNameFor(model => model.City)</th>
+                            <th class="wd-20p">@Html.DisplayNameFor(model => model.Type)</th>
+                            <th class="wd-20p">@Html.DisplayNameFor(model => model.Description)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Name</td>
+                                <td>@item.MobileNo</td>
+                                <td>@item.Email</td>
+                                <td>@item.City</td>
+                                <td>@item.Type</td>
+                                <td>@item.Description</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div><!-- table-wrapper -->
+        </div><!-- card -->
+
+    </div><!-- am-pagebody -->
+
+@*<h1>ShowFeed</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MobileNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MobileNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FeedId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.FeedId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.FeedId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>*@

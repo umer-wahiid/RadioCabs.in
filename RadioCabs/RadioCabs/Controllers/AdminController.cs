@@ -6,11 +6,22 @@ namespace RadioCabs.Controllers
 {
 	public class AdminController : Controller
 	{
-		// GET: AdminController
-		public ActionResult Index()
+        private readonly RCDbContext _context;
+
+        public AdminController(RCDbContext context)
+        {
+            _context = context;
+        }
+        // GET: AdminController
+        public ActionResult Index()
 		{
             //int count = Visitor.AsEnumerable().Count(row => row.Field<int>("company ") == 2);
             return View();
+		}
+
+		public ActionResult ShowFeed()
+		{
+			return View(_context.FeedBacks.ToList());
 		}
 
 		// GET: AdminController/Details/5
