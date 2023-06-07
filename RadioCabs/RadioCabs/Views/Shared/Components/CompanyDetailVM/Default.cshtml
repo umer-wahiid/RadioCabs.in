@@ -1,0 +1,48 @@
+﻿@using RadioCabs.Models
+@model CompanyDetailVM
+
+@{
+    Layout = null;
+}
+
+@if(Model.DriverData!=null){
+    <li class="nav-item">
+        <a asp-controller="DriversRegistrations" asp-action="Edit"  class="nav-link">
+            <i class="icon ion-ios-folder-outline"></i>
+            <span>Edit Driver</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a asp-controller="Services" asp-action="Create" class="nav-link">
+            <i class="icon ion-ios-folder-outline"></i>
+            <span>Manage Bookings</span>
+        </a>
+    </li>
+}
+@if (Model.CompData != null)
+{
+    <li class="nav-item">
+        <a asp-controller="CompanyRegistrations" asp-action="Edit"  class="nav-link">
+            <i class="icon ion-ios-folder-outline"></i>
+            <span>Edit Company</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a asp-controller="CompanyRegistrations" asp-action="visitor"  class="nav-link">
+            <i class="icon ion-ios-folder-outline"></i>
+            <span>Visitors</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a asp-controller="Services" asp-action="Create"  class="nav-link">
+            <i class="icon ion-ios-folder-outline"></i>
+            <span>Manage Services</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a asp-controller="Services" asp-action="Create"  class="nav-link">
+            <i class="icon ion-ios-folder-outline"></i>
+            <span>Manage Bookings</span>
+        </a>
+    </li>
+}
