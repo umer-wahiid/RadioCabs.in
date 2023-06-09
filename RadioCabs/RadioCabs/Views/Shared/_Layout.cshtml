@@ -69,13 +69,18 @@
 								<a asp-area="" asp-controller="Home" asp-action="Profile">My Account</a>
 								<ul>
 									<li><a asp-area="" asp-action="Profile">Profile</a></li>
-											@if (Context.Session.GetInt32("Co")!=null)
-											{
-									<li><a asp-area="" asp-controller="Admin" asp-action="Index">Manage Company</a></li>
-											}
-									@if (Context.Session.GetInt32("Dr") != null)
+									@if (Context.Session.GetInt32("Co")!=null)
+									{
+										<li><a asp-area="" asp-controller="Admin" asp-action="Index">Manage Company</a></li>
+									}
+									else if (Context.Session.GetInt32("Dr") != null)
 									{
 										<li><a asp-area="" asp-controller="Admin" asp-action="Index">Manage Driver</a></li>
+									}
+									else if (Context.Session.GetInt32("Dr") == null && Context.Session.GetInt32("Co")==null)
+									{
+										<li><a asp-area="" asp-controller="Home" asp-action="CompanyForm">Add Company</a></li>
+										<li><a asp-area="" asp-controller="Home" asp-action="DriverForm">Become a Driver</a></li>
 									}
 									<li><a asp-area="" asp-controller="Registrations" asp-action="UserLogout">Logout</a></li>
 								</ul>

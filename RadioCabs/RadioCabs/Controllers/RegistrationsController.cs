@@ -127,6 +127,7 @@ namespace RadioCabs.Controllers
                     HttpContext.Session.SetString("A", reg.Address);
                     HttpContext.Session.SetString("P", reg.Profile);
                     HttpContext.Session.SetString("C", reg.City);
+                    HttpContext.Session.SetInt32("R", reg.RoleId);
                     if (comp!= null)
                     {
                         HttpContext.Session.SetInt32("Co", comp.CompanyId);

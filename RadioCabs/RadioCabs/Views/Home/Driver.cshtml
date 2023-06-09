@@ -4,6 +4,7 @@
 @{
 	ViewData["Title"] = "DriverView";
 	Layout = "~/Views/Shared/_Layout.cshtml";
+	var Co = Context.Session.GetInt32("Co");
 	var v = Context.Session.GetInt32("ID");
 	var x = from a in Model where a.UserId == v select a;
 }
@@ -31,16 +32,18 @@
 			<h1>Drivers</h1>
 			<p>Who are in extremely love with eco friendly system.</p>
 		</div>
-		<div class="row section-title">
-			@if (x.Any())
-			{
-				<h3><a asp-controller="Admin" asp-action="Index" class="btn btn-warning genric-btn circle">Manage Your Listing</a></h3>
+			@if(Co==null){
+				<div class="row section-title">
+					@if (x.Any())
+					{
+						<h3><a asp-controller="Admin" asp-action="Index" class="btn btn-warning genric-btn circle">Manage Your Listing</a></h3>
+					}
+					else
+					{
+						<h3><a asp-controller="Home" asp-action="DriverForm" class="btn btn-warning genric-btn circle">Register as Driver</a></h3>
+					}
+				</div>
 			}
-			else
-			{
-				<h3><a asp-controller="Home" asp-action="DriverForm" class="btn btn-warning genric-btn circle">Register as Driver</a></h3>
-			}
-		</div>
 		<div class="row">
 			@foreach (var item in Model)
 			{

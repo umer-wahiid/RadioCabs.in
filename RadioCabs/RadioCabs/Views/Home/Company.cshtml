@@ -4,6 +4,7 @@
 @{
     ViewData["Title"] = "Company";
     Layout = "~/Views/Shared/_Layout.cshtml";
+	var Dr = Context.Session.GetInt32("Dr");
 	var v = Context.Session.GetInt32("ID");
 	var x = from a in Model where a.UserId == v select a;
 }
@@ -31,16 +32,18 @@
 			<p>Who are in extremely love with eco friendly system.</p>
 		</div>
 
-		<div class="row section-title">
-			@if (x.Any())
-			{
-				<h3><a asp-controller="Admin" asp-action="Index" class="btn btn-warning genric-btn circle">Manage Your Company</a></h3>
+			@if(Dr==null){
+				<div class="row section-title">
+					@if (x.Any())
+					{
+						<h3><a asp-controller="Admin" asp-action="Index" class="btn btn-warning genric-btn circle">Manage Your Company</a></h3>
+					}
+					else
+					{
+						<h3><a asp-controller="Home" asp-action="CompanyForm" class="btn btn-warning genric-btn circle">Register Your Own Company</a></h3>
+					}
+				</div>
 			}
-			else
-			{
-				<h3><a asp-controller="Home" asp-action="CompanyForm" class="btn btn-warning genric-btn circle">Register Your Own Company</a></h3>
-			}
-		</div>
 
 		<div class="row">
 			@foreach (var item in Model)

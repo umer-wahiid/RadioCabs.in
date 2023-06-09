@@ -69,8 +69,7 @@ namespace RadioCabs.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DriverForm(DriversRegistration driversRegistration, IFormFile image)
         {
-            //int driv = _context.DriversRegistrations.Max(e => e.DriverId);
-            //int s = driv;
+            int driv = _context.DriversRegistrations.Max(e => e.DriverId);
             if (image != null)
             {
                 string ext = Path.GetExtension(image.FileName);
@@ -86,7 +85,7 @@ namespace RadioCabs.Controllers
                     driversRegistration.DriverImg = @"Image/" + fname;
                     _context.Add(driversRegistration);
                     await _context.SaveChangesAsync();
-					//HttpContext.Session.SetInt32("Dr", s);
+                    HttpContext.Session.SetInt32("Dr", driv);
                     return RedirectToAction("Index", "Home");
 				}
                 else
@@ -137,14 +136,15 @@ namespace RadioCabs.Controllers
             {
                 return RedirectToAction("UserLogin", "Registrations");
             }
-
 		}
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CompanyForm(CompanyRegistration companyRegistration, IFormFile image)
         {
             if (image != null)
             {
+            int comp = _context.CompanyRegistrations.Max(e => e.CompanyId);
                 string ext = Path.GetExtension(image.FileName);
                 if (ext == ".jpg" || ext == ".png")
                 {
@@ -158,6 +158,7 @@ namespace RadioCabs.Controllers
                     companyRegistration.LogoImage= @"Image/" + fname;
                     _context.Add(companyRegistration);
                     await _context.SaveChangesAsync();
+                    HttpContext.Session.SetInt32("Co", comp);
                     return RedirectToAction("Index", "Home");
                 }
                 else

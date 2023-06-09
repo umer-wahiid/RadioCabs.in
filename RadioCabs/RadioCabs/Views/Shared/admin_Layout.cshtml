@@ -4,6 +4,9 @@
     var ID = Context.Session.GetInt32("ID");
     var N = Context.Session.GetString("N");
     var IMG = Context.Session.GetString("P");
+    var Dr = Context.Session.GetInt32("Dr");
+    var Co = Context.Session.GetInt32("Co");
+    var R = Context.Session.GetInt32("R");
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -164,38 +167,51 @@
                             <span>Dashboard</span>
                         </a>
                     </li>
-					@await Component.InvokeAsync("CompanyDetailVM")
-
-@*                    <li class="nav-item">
+					@*@await Component.InvokeAsync("CompanyDetailVM")*@
+                    @if (Dr != null) {
+                    <li class="nav-item">
                         <a asp-controller="DriversRegistrations" asp-action="Edit"  class="nav-link">
                             <i class="icon ion-ios-folder-outline"></i>
                             <span>Edit Driver</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a asp-controller="CompanyRegistrations" asp-action="Edit"  class="nav-link">
-                            <i class="icon ion-ios-folder-outline"></i>
-                            <span>Edit Company</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a asp-controller="CompanyRegistrations" asp-action="visitor"  class="nav-link">
-                            <i class="icon ion-ios-folder-outline"></i>
-                            <span>Visitors</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a asp-controller="Services" asp-action="Create"  class="nav-link">
-                            <i class="icon ion-ios-folder-outline"></i>
-                            <span>Manage Services</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a asp-controller="Services" asp-action="Create"  class="nav-link">
-                            <i class="icon ion-ios-folder-outline"></i>
-                            <span>Manage Bookings</span>
-                        </a>
-                    </li>*@
+                    }
+                    @if (Co != null)
+                    {
+                        <li class="nav-item">
+                            <a asp-controller="CompanyRegistrations" asp-action="Edit" class="nav-link">
+                                <i class="icon ion-ios-folder-outline"></i>
+                                <span>Edit Company</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="CompanyRegistrations" asp-action="visitor" class="nav-link">
+                                <i class="icon ion-ios-folder-outline"></i>
+                                <span>Visitors</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Services" asp-action="Create" class="nav-link">
+                                <i class="icon ion-ios-folder-outline"></i>
+                                <span>Manage Services</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Services" asp-action="Create" class="nav-link">
+                                <i class="icon ion-ios-folder-outline"></i>
+                                <span>Manage Bookings</span>
+                            </a>
+                        </li>
+                    }
+                    @if (R != 0)
+                    {
+                        <li class="nav-item">
+                            <a asp-controller="Admin" asp-action="ShowFeed" class="nav-link">
+                                <i class="icon ion-ios-folder-outline"></i>
+                                <span>Feedbacks</span>
+                            </a>
+                        </li>
+                    }
                     <li class="nav-item">
                         <a href="" class="nav-link with-sub">
                             <i class="icon ion-ios-gear-outline"></i>
