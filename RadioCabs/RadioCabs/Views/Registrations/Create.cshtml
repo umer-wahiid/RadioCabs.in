@@ -31,33 +31,33 @@
 					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
 					<div class="mt-10">
-						<label asp-for="Name" class="control-label"></label>
+						@*<label asp-for="Name" class="control-label"></label>*@
 						<input type="text" asp-for="Name" placeholder="Your Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Full Name'" required class="single-input">
 						<span asp-validation-for="Name" class="text-danger"></span>
 					</div>
 					<div class="mt-10">
-						<label asp-for="Email" class="control-label"></label>
+						@*<label asp-for="Email" class="control-label"></label>*@
 						<input type="email" asp-for="Email" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" required class="single-input">
 						<span asp-validation-for="Email" class="text-danger"></span>
 					</div>
 					<div class="mt-10">
-						<label asp-for="Profile" class="control-label"></label>
+						@*<label asp-for="Profile" class="control-label"></label>*@
 						<input type="file" name="image" required class="single-input">
 						<span asp-validation-for="Profile" class="text-danger"></span>
 					</div>
 					<div class="input-group-icon mt-10">
-						<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
-						<label asp-for="Address" class="control-label"></label>
+						@*<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>*@
+						@*<label asp-for="Address" class="control-label"></label>*@
 						<input type="text" asp-for="Address" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'" required class="single-input">
 						<span asp-validation-for="Address" class="text-danger"></span>
 					</div>
 					<div class="mt-10">
-						<label asp-for="Mobile" class="control-label"></label>
+						@*<label asp-for="Mobile" class="control-label"></label>*@
 						<input type="text" asp-for="Mobile" placeholder="Mobile Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mobile'" required class="single-input">
 						<span asp-validation-for="Mobile" class="text-danger"></span>
 					</div>
 					<div class="mt-10">
-						<label asp-for="TelePhone" class="control-label"></label>
+						@*<label asp-for="TelePhone" class="control-label"></label>*@
 						<input type="text" asp-for="TelePhone" placeholder="TelePhone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telephone'" required class="single-input">
 						<span asp-validation-for="TelePhone" class="text-danger"></span>
 					</div>
@@ -77,12 +77,12 @@
 						<span asp-validation-for="City" class="text-danger"></span>
 					</div>
 					<div class="mt-10">
-						<label asp-for="Password" class="control-label"></label>
+						@*<label asp-for="Password" class="control-label"></label>*@
 						<input type="password" asp-for="Password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required class="single-input">
 						<span asp-validation-for="Password" class="text-danger"></span>
 					</div>
 					<div class="mt-10">
-						<label asp-for="ConfirmPassword" class="control-label"></label>
+						@*<label asp-for="ConfirmPassword" class="control-label"></label>*@
 						<input type="password" asp-for="ConfirmPassword" placeholder="Confirm Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'" required class="single-input">
 						<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
 					</div>

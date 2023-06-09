@@ -100,6 +100,8 @@ namespace RadioCabs.Controllers
             if (x.Any())
             {
                 Registration reg = _context.Registrations.Where(c => c.Email == re.Email).FirstOrDefault();
+                CompanyRegistration comp = _context.CompanyRegistrations.FirstOrDefault(cm => cm.UserId ==reg.RegistrationId);
+                DriversRegistration driver = _context.DriversRegistrations.FirstOrDefault(dv => dv.UserId ==reg.RegistrationId);
 
                 if (reg.RoleId == 1)
                 {
@@ -111,6 +113,8 @@ namespace RadioCabs.Controllers
                     HttpContext.Session.SetString("A", reg.Address);
                     HttpContext.Session.SetString("P", reg.Profile);
                     HttpContext.Session.SetString("C", reg.City);
+                    HttpContext.Session.SetInt32("Comp", comp.CompanyId);
+                    HttpContext.Session.SetInt32("driver", driver.DriverId);
                     return RedirectToAction("Index", "Home");
                 }
                 else if (reg.RoleId == 0)
@@ -123,6 +127,14 @@ namespace RadioCabs.Controllers
                     HttpContext.Session.SetString("A", reg.Address);
                     HttpContext.Session.SetString("P", reg.Profile);
                     HttpContext.Session.SetString("C", reg.City);
+                    if (comp!= null)
+                    {
+                        HttpContext.Session.SetInt32("Co", comp.CompanyId);
+                    }
+                    if (driver!= null)
+                    {
+                        HttpContext.Session.SetInt32("Dr", driver.DriverId);
+                    }
                     return RedirectToAction("Index", "Home");
                 }
                 else

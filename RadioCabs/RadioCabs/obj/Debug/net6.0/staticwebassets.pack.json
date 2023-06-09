@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\Image\\Web to App 3.jpg"
     },
     {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\a2.jpg",
+      "PackagePath": "staticwebassets\\Image\\a2.jpg"
+    },
+    {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\abad.png",
       "PackagePath": "staticwebassets\\Image\\abad.png"
     },
@@ -55,6 +59,10 @@
     {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\b1.jpg",
       "PackagePath": "staticwebassets\\Image\\b1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\front-end.jpg",
+      "PackagePath": "staticwebassets\\Image\\front-end.jpg"
     },
     {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\g2.jpg",
@@ -81,8 +89,32 @@
       "PackagePath": "staticwebassets\\Image\\images.jpg"
     },
     {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\post.jpg",
+      "PackagePath": "staticwebassets\\Image\\post.jpg"
+    },
+    {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\profile pi.jpg",
       "PackagePath": "staticwebassets\\Image\\profile pi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\t1.jpg",
+      "PackagePath": "staticwebassets\\Image\\t1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\t2.jpg",
+      "PackagePath": "staticwebassets\\Image\\t2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\t3.jpg",
+      "PackagePath": "staticwebassets\\Image\\t3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\t4.jpg",
+      "PackagePath": "staticwebassets\\Image\\t4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\user2.png",
+      "PackagePath": "staticwebassets\\Image\\user2.png"
     },
     {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\Gruntfile.js",

@@ -57,10 +57,8 @@ namespace RadioCabs.Controllers
             }
             else
             {
-                return RedirectToAction("Edit", "Services");
+                return RedirectToAction("Edit", "Services", new { id = service.ServicesId });
             }
-           
-
         }
 
         // POST: Services/Create
@@ -77,7 +75,7 @@ namespace RadioCabs.Controllers
                 services.CompanyId = comp.CompanyId;
                 _context.Add(services);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return View(services);
             }
             return View(services);
         }
@@ -107,7 +105,7 @@ namespace RadioCabs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ServicesId,HService1,DService1,HService2,DService2,HService3,DService3,UserId")] Services services)
+        public async Task<IActionResult> Edit(int id, [Bind("ServicesId,HService1,DService1,HService2,DService2,HService3,DService3,CompanyId")] Services services)
         {
             if (id != services.ServicesId)
             {
@@ -132,7 +130,7 @@ namespace RadioCabs.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return View(services);
             }
             return View(services);
         }

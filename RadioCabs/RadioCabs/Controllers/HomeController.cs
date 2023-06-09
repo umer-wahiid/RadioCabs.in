@@ -69,6 +69,8 @@ namespace RadioCabs.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DriverForm(DriversRegistration driversRegistration, IFormFile image)
         {
+            //int driv = _context.DriversRegistrations.Max(e => e.DriverId);
+            //int s = driv;
             if (image != null)
             {
                 string ext = Path.GetExtension(image.FileName);
@@ -84,8 +86,9 @@ namespace RadioCabs.Controllers
                     driversRegistration.DriverImg = @"Image/" + fname;
                     _context.Add(driversRegistration);
                     await _context.SaveChangesAsync();
+					//HttpContext.Session.SetInt32("Dr", s);
                     return RedirectToAction("Index", "Home");
-                }
+				}
                 else
                 {
                     ViewBag.m = "Wrong Picture Format";

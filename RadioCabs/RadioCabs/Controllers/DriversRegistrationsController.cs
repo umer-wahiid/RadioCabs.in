@@ -107,7 +107,6 @@ namespace RadioCabs.Controllers
                         await image.CopyToAsync(fs);
                     }
                     driversRegistration.DriverImg = @"Image/" + fname;
-                    ViewBag.m = "Updated";
                     _context.Update(driversRegistration);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Edit));

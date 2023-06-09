@@ -64,6 +64,9 @@
 					</div>
 			@*Title + Service*@
 					@*@await Component.InvokeAsync("Services")*@
+
+
+@*
 					@if(Model.ServData!=null){
 						<div class="col-lg-12">
 							<div class="quotes">
@@ -85,7 +88,7 @@
 							</div>
 							}
 						</div>
-					}
+					}*@
 				</div>
 
 
@@ -121,4 +124,45 @@
 		</div>
 	</div>
 </section>
+@if (Model.ServData != null)
+{
+
+	<section class="services-area pb-120">
+		<div class="container">
+			<div class="row section-title">
+				<h1>What Services we offer to our clients</h1>
+				<p>Who are in extremely love with eco friendly system.</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 single-service">
+					<span class="lnr lnr-car"></span>
+					<a href="#"><h4>@Model.ServData.HService1</h4></a>
+					<p>
+						@Model.ServData.DService1
+					</p>
+				</div>
+				@if (Model.ServData.HService2 != null && Model.ServData.DService2 != null)
+				{
+					<div class="col-lg-4 single-service">
+						<span class="lnr lnr-briefcase"></span>
+					<a href="#"><h4>@Model.ServData.HService2</h4></a>
+					<p>
+						@Model.ServData.DService1
+					</p>
+				</div>
+				}
+				@if (Model.ServData.HService3 != null && Model.ServData.DService3 != null)
+				{
+				<div class="col-lg-4 single-service">
+					<span class="lnr lnr-bus"></span>
+					<a href="#"><h4>@Model.ServData.HService3</h4></a>
+					<p>
+						@Model.ServData.DService3
+					</p>
+				</div>
+			}
+			</div>
+		</div>
+	</section>
+}
 <!-- End post-content Area -->
