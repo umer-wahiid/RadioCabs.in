@@ -15,7 +15,24 @@ namespace RadioCabs.Controllers
         // GET: AdminController
         public ActionResult Index()
 		{
-            //int count = Visitor.AsEnumerable().Count(row => row.Field<int>("company ") == 2);
+            DateTime currentDate = DateTime.Now;
+            DateTime startDate = new DateTime(currentDate.Year, currentDate.Month, 1);
+            DateTime endDate = startDate.AddMonths(1).AddDays(-1);
+            DateTime currentDay = DateTime.Now.Date;
+
+
+
+            var user = HttpContext.Session.GetInt32("ID");
+			var name = HttpContext.Session.GetString("N");
+			var Co = HttpContext.Session.GetInt32("Co");
+			var Dr = HttpContext.Session.GetInt32("Dr");
+			int count = _context.Visitors.Count(z => (z.Compid == Co || z.Compid == Dr) && z.VisitorName != name);
+            int day = _context.Visitors.Count(z => (z.Compid == Co || z.Compid == Dr) && z.VisitorName != name && z.VisitDate.Date == currentDay);
+            int month = _context.Visitors.Count(z => (z.Compid==Co || z.Compid == Dr) && z.VisitorName!=name && z.VisitDate >= startDate && z.VisitDate <= endDate);
+            ViewBag.count = count;
+            ViewBag.day = day;
+            ViewBag.month = month;
+
             return View();
 		}
 

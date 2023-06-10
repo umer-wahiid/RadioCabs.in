@@ -203,15 +203,40 @@ namespace RadioCabs.Controllers
             return View(ViewModel);
         }
         
-        public async Task<IActionResult> DriverDetail(int id)
+        public async Task<IActionResult> DriverDetail(int id, Visitor visitor)
         {
+            var use = HttpContext.Session.GetInt32("ID");
+            if(use!=null)
+            {
+          	    var register = await _context.Registrations
+                    .FirstOrDefaultAsync(m => m.RegistrationId == use);
+                //visitor.VisitorId = 1;
+                visitor.VisitorName= register.Name;
+                visitor.VisitorProfile= register.Profile;
+                visitor.VisitorEmail= register.Email;
+                visitor.VisitorCity= register.City;
+                visitor.VisitorMobile= register.Mobile;
+                visitor.VisitDate= DateTime.Now;
+                visitor.Compid = id;
+                _context.Add(visitor);
+                await _context.SaveChangesAsync();
+            }
+
             var drivreg = await _context.DriversRegistrations
                 .FirstOrDefaultAsync(m => m.DriverId == id);
 
             return View(drivreg);
         }
 
-            //return View(companyRegistration);
+		//public async Task<IActionResult> DriverDetail(int id)
+		//{
+		//    var drivreg = await _context.DriversRegistrations
+		//        .FirstOrDefaultAsync(m => m.DriverId == id);
+
+		//    return View(drivreg);
+		//}
+
+		//return View(companyRegistration);
 
 
 
@@ -230,7 +255,7 @@ namespace RadioCabs.Controllers
 
 
 
-        public IActionResult Feedback()
+		public IActionResult Feedback()
 		{
 			return View();
 		}

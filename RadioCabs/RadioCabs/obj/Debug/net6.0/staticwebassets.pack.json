@@ -37,6 +37,14 @@
       "PackagePath": "staticwebassets\\Image\\HT.png"
     },
     {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\ONLINE QURAN TUTOR.jpg",
+      "PackagePath": "staticwebassets\\Image\\ONLINE QURAN TUTOR.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\Q1.a.png",
+      "PackagePath": "staticwebassets\\Image\\Q1.a.png"
+    },
+    {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\TShirt.jpg",
       "PackagePath": "staticwebassets\\Image\\TShirt.jpg"
     },
@@ -87,6 +95,10 @@
     {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\images.jpg",
       "PackagePath": "staticwebassets\\Image\\images.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\new arrival.jpg",
+      "PackagePath": "staticwebassets\\Image\\new arrival.jpg"
     },
     {
       "Id": "C:\\Users\\HP\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\post.jpg",
