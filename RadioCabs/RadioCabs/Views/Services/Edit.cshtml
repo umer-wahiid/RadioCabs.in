@@ -43,42 +43,44 @@
                                 <span asp-validation-for="DService1" class="text-danger"></span>
                             </div>
                         </div><!-- col-8 -->
-
-                        <div class="col-lg-12">
-                            <h6 class="card-body-title">Service 2</h6>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="form-group">
-                                <label class="form-control-label">Heading: <span class="tx-danger">*</span></label>
-                                <input class="form-control" asp-for="HService2">
-                                <span asp-validation-for="HService2" class="text-danger"></span>
+                        @if(Model.HService2 != null){
+                            <div class="col-lg-12">
+                                <h6 class="card-body-title">Service 2</h6>
                             </div>
-                        </div><!-- col-4 -->
-                        <div class="col-lg-8">
-                            <div class="form-group mg-b-10-force">
-                                <label class="form-control-label">Description: <span class="tx-danger">*</span></label>
-                                <textarea asp-for="DService2" class="form-control"></textarea>
-                                <span asp-validation-for="DService2" class="text-danger"></span>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label class="form-control-label">Heading: <span class="tx-danger">*</span></label>
+                                    <input class="form-control" asp-for="HService2">
+                                    <span asp-validation-for="HService2" class="text-danger"></span>
+                                </div>
+                            </div><!-- col-4 -->
+                            <div class="col-lg-8">
+                                <div class="form-group mg-b-10-force">
+                                    <label class="form-control-label">Description: <span class="tx-danger">*</span></label>
+                                    <textarea asp-for="DService2" class="form-control"></textarea>
+                                    <span asp-validation-for="DService2" class="text-danger"></span>
+                                </div>
+                            </div><!-- col-8 -->
+                        }
+                        @if (Model.HService3 != null) {
+                            <div class="col-lg-12">
+                                <h6 class="card-body-title">Service 3</h6>
                             </div>
-                        </div><!-- col-8 -->
-
-                        <div class="col-lg-12">
-                            <h6 class="card-body-title">Service 3</h6>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="form-group">
-                                <label class="form-control-label">Heading: <span class="tx-danger">*</span></label>
-                                <input class="form-control" asp-for="HService3">
-                                <span asp-validation-for="HService3" class="text-danger"></span>
-                            </div>
-                        </div><!-- col-4 -->
-                        <div class="col-lg-8">
-                            <div class="form-group mg-b-10-force">
-                                <label class="form-control-label">Description: <span class="tx-danger">*</span></label>
-                                <textarea asp-for="DService3" class="form-control"></textarea>
-                                <span asp-validation-for="DService3" class="text-danger"></span>
-                            </div>
-                        </div><!-- col-8 -->
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label class="form-control-label">Heading: <span class="tx-danger">*</span></label>
+                                    <input class="form-control" asp-for="HService3">
+                                    <span asp-validation-for="HService3" class="text-danger"></span>
+                                </div>
+                            </div><!-- col-4 -->
+                            <div class="col-lg-8">
+                                <div class="form-group mg-b-10-force">
+                                    <label class="form-control-label">Description: <span class="tx-danger">*</span></label>
+                                    <textarea asp-for="DService3" class="form-control"></textarea>
+                                    <span asp-validation-for="DService3" class="text-danger"></span>
+                                </div>
+                            </div><!-- col-8 -->
+                        }
                         <input type="hidden" asp-for="CompanyId" />
                     </div><!-- row -->
                     <div class="form-layout-footer">

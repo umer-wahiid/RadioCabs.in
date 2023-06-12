@@ -105,7 +105,7 @@ namespace RadioCabs.Controllers
                 _context.Services.Add(newService);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index", "Admin");
-            //return View(newService);
+                //return View(newService);
             }
             else if (services.HService3==null && services.DService3 == null)
             {
