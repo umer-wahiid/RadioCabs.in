@@ -124,7 +124,7 @@
 		</div>
 	</div>
 </section>
-@if (Model.ServData != null)
+@if (ViewBag.h1 != null)
 {
 
 	<section class="services-area pb-120">
@@ -136,31 +136,31 @@
 			<div class="row">
 				<div class="col-lg-4 single-service">
 					<span class="lnr lnr-car"></span>
-					<a href="#"><h4>@Model.ServData.HService1</h4></a>
+					<a href="#"><h4>@ViewBag.h1</h4></a>
 					<p>
-						@Model.ServData.DService1
+						@ViewBag.d1
 					</p>
 				</div>
-				@if (Model.ServData.HService2 != null && Model.ServData.DService2 != null)
+				@if (ViewBag.h2 != null)
 				{
 					<div class="col-lg-4 single-service">
 						<span class="lnr lnr-briefcase"></span>
-					<a href="#"><h4>@Model.ServData.HService2</h4></a>
+						<a href="#"><h4>@ViewBag.h2</h4></a>
 					<p>
-						@Model.ServData.DService1
+							@ViewBag.d2
 					</p>
 				</div>
 				}
-				@if (Model.ServData.HService3 != null && Model.ServData.DService3 != null)
+				@if (ViewBag.h3 != null)
 				{
 				<div class="col-lg-4 single-service">
 					<span class="lnr lnr-bus"></span>
-					<a href="#"><h4>@Model.ServData.HService3</h4></a>
+					<a href="#"><h4>@ViewBag.h3</h4></a>
 					<p>
-						@Model.ServData.DService3
+							@ViewBag.d3
 					</p>
 				</div>
-			}
+				}
 			</div>
 		</div>
 	</section>

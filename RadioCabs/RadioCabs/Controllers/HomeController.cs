@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using RadioCabs.Models;
+using System.Data.SqlTypes;
 using System.Diagnostics;
 
 namespace RadioCabs.Controllers
@@ -69,7 +71,8 @@ namespace RadioCabs.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DriverForm(DriversRegistration driversRegistration, IFormFile image)
         {
-            int driv = _context.DriversRegistrations.Max(e => e.DriverId);
+            //int driv = _context.DriversRegistrations.Max(e => e.DriverId);
+            int driv = _context.DriversRegistrations.Any()? _context.DriversRegistrations.Max(e => e.DriverId): 0;
             if (image != null)
             {
                 string ext = Path.GetExtension(image.FileName);
@@ -144,7 +147,7 @@ namespace RadioCabs.Controllers
         {
             if (image != null)
             {
-            int comp = _context.CompanyRegistrations.Max(e => e.CompanyId);
+            int comp = _context.CompanyRegistrations.Any() ? _context.CompanyRegistrations.Max(e => e.CompanyId) : 0;
                 string ext = Path.GetExtension(image.FileName);
                 if (ext == ".jpg" || ext == ".png")
                 {
@@ -172,17 +175,16 @@ namespace RadioCabs.Controllers
         public async Task<IActionResult> CompanyDetail(int id, Visitor visitor)
         {
             var use = HttpContext.Session.GetInt32("ID");
-            if(use!=null)
+            if (use != null)
             {
-          	    var register = await _context.Registrations
-                    .FirstOrDefaultAsync(m => m.RegistrationId == use);
+                var register = await _context.Registrations.FirstOrDefaultAsync(m => m.RegistrationId == use);
                 //visitor.VisitorId = 1;
-                visitor.VisitorName= register.Name;
-                visitor.VisitorProfile= register.Profile;
-                visitor.VisitorEmail= register.Email;
-                visitor.VisitorCity= register.City;
-                visitor.VisitorMobile= register.Mobile;
-                visitor.VisitDate= DateTime.Now;
+                visitor.VisitorName = register.Name;
+                visitor.VisitorProfile = register.Profile;
+                visitor.VisitorEmail = register.Email;
+                visitor.VisitorCity = register.City;
+                visitor.VisitorMobile = register.Mobile;
+                visitor.VisitDate = DateTime.Now;
                 visitor.Compid = id;
                 _context.Add(visitor);
                 await _context.SaveChangesAsync();
@@ -191,18 +193,58 @@ namespace RadioCabs.Controllers
             var companyRegistration = await _context.CompanyRegistrations
                 .FirstOrDefaultAsync(m => m.CompanyId == id);
             var registration = await _context.Registrations.FirstOrDefaultAsync(m => m.RegistrationId == companyRegistration.UserId);
-            var services = await _context.Services.FirstOrDefaultAsync(s => s.CompanyId == id);
 
-			var ViewModel = new CompanyDetailVM
-			{
-				CompData = companyRegistration,
-				RegData = registration,
-				ServData = services,
-			};
+            var serv = await _context.Services.FirstOrDefaultAsync(s => s.CompanyId == id);
+            if(serv.HService2==null && serv.HService3 == null)
+            {
+				var services = await _context.Services.Where(s => s.CompanyId == id).Select(s => new { s.HService1, s.DService1, s.HService2, s.DService2, s.HService3, s.DService3 }).FirstOrDefaultAsync();
+				ViewBag.h1 = services.HService1;
+				ViewBag.d2 = services.DService2;
+			}
+            else if(serv.HService3 == null)
+            {
+                var services = await _context.Services.Where(s => s.CompanyId == id).Select(s => new { s.HService1, s.DService1, s.HService2, s.DService2 }).FirstOrDefaultAsync();
+                ViewBag.h1 = services.HService1;
+                ViewBag.h2 = services.HService2;
+                ViewBag.d1 = services.DService1;
+                ViewBag.d2 = services.DService2;
+            }
+            else
+            {
+                var services = await _context.Services.Where(s => s.CompanyId == id).Select(s => new { s.HService1, s.DService1, s.HService2, s.DService2, s.HService3, s.DService3 }).FirstOrDefaultAsync();
+                ViewBag.h1 = services.HService1;
+                ViewBag.h2 = services.HService2;
+                ViewBag.d1 = services.DService1;
+                ViewBag.d2 = services.DService2;
+                ViewBag.h3 = services.HService3;
+                ViewBag.d3 = services.DService3;
+            }
 
+            var ViewModel = new CompanyDetailVM
+            {
+                CompData = companyRegistration,
+                RegData = registration,
+            };
             return View(ViewModel);
+
+
+            //try
+            //{
+            //    var services = await _context.Services.FirstOrDefaultAsync(s => s.CompanyId == id);
+            //    var ViewModel = new CompanyDetailVM
+            //    {
+            //        CompData = companyRegistration,
+            //        RegData =  registration,
+            //        ServData = services
+            //    };
+            //    return View(ViewModel);
+            //}
+            //catch(SqlNullValueException e)
+            //{
+            //}
+            //return View();
         }
-        
+
         public async Task<IActionResult> DriverDetail(int id, Visitor visitor)
         {
             var use = HttpContext.Session.GetInt32("ID");

@@ -53,6 +53,8 @@ namespace RadioCabs.Controllers
             Services service = _context.Services.FirstOrDefault(s => s.CompanyId == comp.CompanyId);
             if (service == null)
             {
+                string mem = comp.MembershipType;
+                ViewBag.mem = mem;
                 return View();
             }
             else
@@ -64,21 +66,111 @@ namespace RadioCabs.Controllers
         // POST: Services/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> Create([Bind("ServicesId,HService1,DService1,HService2,DService2,HService3,DService3")] Services services)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        var user = HttpContext.Session.GetInt32("ID");
+        //        CompanyRegistration comp =await _context.CompanyRegistrations.FirstOrDefaultAsync(a => a.UserId == user);
+        //        services.CompanyId = comp.CompanyId;
+        //        _context.Add(services);
+        //        await _context.SaveChangesAsync();
+        //        return View(services);
+        //    }
+        //    return View(services);
+        //}
+
+
+
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ServicesId,HService1,DService1,HService2,DService2,HService3,DService3")] Services services)
+        public async Task<IActionResult> Create(Services services)
         {
-            if (ModelState.IsValid)
+            var user = HttpContext.Session.GetInt32("ID");
+            CompanyRegistration comp = await _context.CompanyRegistrations.FirstOrDefaultAsync(a => a.UserId == user);
+
+            if (services.HService2==null && services.HService3 == null && services.DService2 == null && services.DService3 == null)
             {
-                var user = HttpContext.Session.GetInt32("ID");
-                CompanyRegistration comp =await _context.CompanyRegistrations.FirstOrDefaultAsync(a => a.UserId == user);
-                services.CompanyId = comp.CompanyId;
-                _context.Add(services);
+                Services newService = new Services
+                {
+
+                    HService1 = services.HService1,
+                    DService1 = services.DService1,
+                    CompanyId = comp.CompanyId
+                };
+                _context.Services.Add(newService);
                 await _context.SaveChangesAsync();
-                return View(services);
+                return RedirectToAction("Index", "Admin");
+            //return View(newService);
             }
+            else if (services.HService3==null && services.DService3 == null)
+            {
+                Services newService = new Services
+                {
+
+                    HService1 = services.HService1,
+                    DService1 = services.DService1,
+                    HService2 = services.HService2,
+                    DService2 = services.DService2,
+                    CompanyId = comp.CompanyId
+                };
+                _context.Services.Add(newService);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index", "Admin");
+                
+            }
+            else
+            {
+                Services newService = new Services
+                {
+
+                    HService1 = services.HService1,
+                    DService1 = services.DService1,
+                    HService2 = services.HService2,
+                    DService2 = services.DService2,
+                    HService3 = services.HService3,
+                    DService3 = services.DService3,
+                    CompanyId = comp.CompanyId
+                };
+                _context.Services.Add(newService);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index", "Admin");
+            }
+
             return View(services);
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         // GET: Services/Edit/5
         public async Task<IActionResult> Edit()
