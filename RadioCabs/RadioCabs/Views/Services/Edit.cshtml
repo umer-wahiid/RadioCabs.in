@@ -22,7 +22,7 @@
         <div class="card pd-20 pd-sm-40">
             <h5 class="card-body-title">Edit Services</h5>
             <form asp-action="Edit" >
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                @*<div asp-validation-summary="ModelOnly" class="text-danger"></div>*@
                 <input type="hidden" asp-for="ServicesId" />
                 <div class="form-layout">
                     <div class="row mg-b-25">
@@ -33,17 +33,19 @@
                             <div class="form-group">
                                 <label class="form-control-label">Heading: <span class="tx-danger">*</span></label>
                                 <input class="form-control" asp-for="HService1">
-                                <span asp-validation-for="HService1" class="text-danger"></span>
+                                @*<span asp-validation-for="HService1" class="text-danger"></span>*@
                             </div>
                         </div><!-- col-4 -->
                         <div class="col-lg-8">
                             <div class="form-group mg-b-10-force">
                                 <label class="form-control-label">Description: <span class="tx-danger">*</span></label>
                                 <textarea asp-for="DService1" class="form-control"></textarea>
-                                <span asp-validation-for="DService1" class="text-danger"></span>
+                                @*<span asp-validation-for="DService1" class="text-danger"></span>*@
                             </div>
                         </div><!-- col-8 -->
-                        @if(Model.HService2 != null){
+                        @*@if(Model.HService2 != "nll"){*@
+                        @if (ViewBag.mem == "Basic" || ViewBag.mem == "Premium")
+                        {
                             <div class="col-lg-12">
                                 <h6 class="card-body-title">Service 2</h6>
                             </div>
@@ -51,18 +53,19 @@
                                 <div class="form-group">
                                     <label class="form-control-label">Heading: <span class="tx-danger">*</span></label>
                                     <input class="form-control" asp-for="HService2">
-                                    <span asp-validation-for="HService2" class="text-danger"></span>
+                                    @*<span asp-validation-for="HService2" class="text-danger"></span>*@
                                 </div>
                             </div><!-- col-4 -->
                             <div class="col-lg-8">
                                 <div class="form-group mg-b-10-force">
                                     <label class="form-control-label">Description: <span class="tx-danger">*</span></label>
                                     <textarea asp-for="DService2" class="form-control"></textarea>
-                                    <span asp-validation-for="DService2" class="text-danger"></span>
+                                    @*<span asp-validation-for="DService2" class="text-danger"></span>*@
                                 </div>
                             </div><!-- col-8 -->
                         }
-                        @if (Model.HService3 != null) {
+                        @if (ViewBag.mem == "Premium")
+                        {
                             <div class="col-lg-12">
                                 <h6 class="card-body-title">Service 3</h6>
                             </div>
@@ -70,14 +73,14 @@
                                 <div class="form-group">
                                     <label class="form-control-label">Heading: <span class="tx-danger">*</span></label>
                                     <input class="form-control" asp-for="HService3">
-                                    <span asp-validation-for="HService3" class="text-danger"></span>
+                                    @*<span asp-validation-for="HService3" class="text-danger"></span>*@
                                 </div>
                             </div><!-- col-4 -->
                             <div class="col-lg-8">
                                 <div class="form-group mg-b-10-force">
                                     <label class="form-control-label">Description: <span class="tx-danger">*</span></label>
                                     <textarea asp-for="DService3" class="form-control"></textarea>
-                                    <span asp-validation-for="DService3" class="text-danger"></span>
+                                    @*<span asp-validation-for="DService3" class="text-danger"></span>*@
                                 </div>
                             </div><!-- col-8 -->
                         }

@@ -93,55 +93,55 @@ namespace RadioCabs.Controllers
             var user = HttpContext.Session.GetInt32("ID");
             CompanyRegistration comp = await _context.CompanyRegistrations.FirstOrDefaultAsync(a => a.UserId == user);
 
-            if (services.HService2==null && services.HService3 == null && services.DService2 == null && services.DService3 == null)
-            {
-                Services newService = new Services
-                {
+            //if (services.HService2==null && services.HService3 == null && services.DService2 == null && services.DService3 == null)
+            //{
+            //    Services newService = new Services
+            //    {
 
-                    HService1 = services.HService1,
-                    DService1 = services.DService1,
-                    CompanyId = comp.CompanyId
-                };
-                _context.Services.Add(newService);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index", "Admin");
-                //return View(newService);
-            }
-            else if (services.HService3==null && services.DService3 == null)
-            {
-                Services newService = new Services
-                {
+            //        HService1 = services.HService1 ?? "Default value",
+            //        DService1 = services.DService1,
+            //        CompanyId = comp.CompanyId
+            //    };
+            //    _context.Services.Add(newService);
+            //    await _context.SaveChangesAsync();
+            //    return RedirectToAction("Index", "Admin");
+            //    //return View(newService);
+            //}
+            //else if (services.HService3==null && services.DService3 == null)
+            //{
+            //    Services newService = new Services
+            //    {
 
-                    HService1 = services.HService1,
-                    DService1 = services.DService1,
-                    HService2 = services.HService2,
-                    DService2 = services.DService2,
-                    CompanyId = comp.CompanyId
-                };
-                _context.Services.Add(newService);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index", "Admin");
+            //        HService1 = services.HService1,
+            //        DService1 = services.DService1,
+            //        HService2 = services.HService2,
+            //        DService2 = services.DService2,
+            //        CompanyId = comp.CompanyId
+            //    };
+            //    _context.Services.Add(newService);
+            //    await _context.SaveChangesAsync();
+            //    return RedirectToAction("Index", "Admin");
                 
-            }
-            else
-            {
+            //}
+            //else
+            //{
                 Services newService = new Services
                 {
 
-                    HService1 = services.HService1,
-                    DService1 = services.DService1,
-                    HService2 = services.HService2,
-                    DService2 = services.DService2,
-                    HService3 = services.HService3,
-                    DService3 = services.DService3,
+                    HService1 = services.HService1 ?? "nll",
+                    DService1 = services.DService1 ?? "nll",
+                    HService2 = services.HService2 ?? "nll",
+                    DService2 = services.DService2 ?? "nll",
+                    HService3 = services.HService3 ?? "nll",
+                    DService3 = services.DService3 ?? "nll",
                     CompanyId = comp.CompanyId
                 };
                 _context.Services.Add(newService);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index", "Admin");
-            }
+            //}
 
-            return View(services);
+            //return View(services);
         }
 
 
@@ -183,7 +183,8 @@ namespace RadioCabs.Controllers
             {
                 return NotFound();
             }
-
+            string mem = comp.MembershipType;
+            ViewBag.mem = mem;
             var services = await _context.Services.FindAsync(service.ServicesId);
             if (services == null)
             {
@@ -204,11 +205,19 @@ namespace RadioCabs.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
+            
                 try
                 {
-                    _context.Update(services);
+                    Services newService = new Services
+                    {
+                        HService1 = services.HService1 ?? "nll",
+                        DService1 = services.DService1 ?? "nll",
+                        HService2 = services.HService2 ?? "nll",
+                        DService2 = services.DService2 ?? "nll",
+                        HService3 = services.HService3 ?? "nll",
+                        DService3 = services.DService3 ?? "nll",
+                    };
+                    _context.Update(newService);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -223,8 +232,7 @@ namespace RadioCabs.Controllers
                     }
                 }
                 return View(services);
-            }
-            return View(services);
+            //return View(services);
         }
 
         // GET: Services/Delete/5
