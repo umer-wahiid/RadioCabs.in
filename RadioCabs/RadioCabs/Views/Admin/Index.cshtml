@@ -22,12 +22,12 @@
                     <div class="d-flex justify-content-between">
                         <div>
                             <h6 class="tx-12 tx-uppercase tx-inverse tx-bold mg-b-5">Total Visitors</h6>
-                            <p class="tx-12">@DateTime.Now</p>
+                                <p class="tx-12">@DateTime.Now.Date.ToString("dd-MM-yyyy")</p>
                         </div>
                         <a href="" class="tx-gray-600 hover-info"><i class="icon ion-more tx-16 lh-0"></i></a>
                     </div><!-- d-flex -->
                     <h2 class="mg-b-5 tx-inverse tx-lato">@ViewBag.count</h2>
-                    <p class="tx-12 mg-b-0">Earnings before taxes.</p>
+                    <p class="tx-12 mg-b-0">Total Visits This Week.</p>
                 </div>
             </div><!-- card -->
         </div><!-- col-4 -->
@@ -38,12 +38,12 @@
                     <div class="d-flex justify-content-between">
                         <div>
                             <h6 class="tx-12 tx-uppercase tx-inverse tx-bold mg-b-5">This Month's Visitors</h6>
-                            <p class="tx-12">November 20 - 27, 2017</p>
+                                <p class="tx-12">@DateTime.Now.Date.ToString("dd-MM-yyyy")</p>
                         </div>
                         <a href="" class="tx-gray-600 hover-info"><i class="icon ion-more tx-16 lh-0"></i></a>
                     </div><!-- d-flex -->
                     <h2 class="mg-b-5 tx-inverse tx-lato">@ViewBag.month</h2>
-                    <p class="tx-12 mg-b-0">Earnings before taxes.</p>
+                    <p class="tx-12 mg-b-0">Total Visits This Month</p>
                 </div>
             </div><!-- card -->
         </div><!-- col-4 -->
@@ -54,12 +54,12 @@
                     <div class="d-flex justify-content-between">
                         <div>
                             <h6 class="tx-12 tx-uppercase tx-inverse tx-bold mg-b-5">Today's Visitors</h6>
-                            <p class="tx-12">November 1 - 30, 2017</p>
+                                <p class="tx-12">@DateTime.Now.Date.ToString("dd-MM-yyyy")</p>
                         </div>
                         <a href="" class="tx-gray-600 hover-info"><i class="icon ion-more tx-16 lh-0"></i></a>
                     </div><!-- d-flex -->
                     <h2 class="mg-b-5 tx-inverse tx-lato">@ViewBag.day</h2>
-                    <p class="tx-12 mg-b-0">Earnings before taxes.</p>
+                    <p class="tx-12 mg-b-0">Today's Visitors.</p>
                 </div>
             </div><!-- card -->
         </div><!-- col-4 -->
