@@ -15,23 +15,37 @@ namespace RadioCabs.Controllers
         // GET: AdminController
         public ActionResult Index()
 		{
-            DateTime currentDate = DateTime.Now;
-            DateTime startDate = new DateTime(currentDate.Year, currentDate.Month, 1);
+			var role = HttpContext.Session.GetInt32("R");
+
+			DateTime currentDate = DateTime.Now.Date;
+			DateTime startDate = new DateTime(currentDate.Year, currentDate.Month, 1);
             DateTime endDate = startDate.AddMonths(1).AddDays(-1);
-            DateTime currentDay = DateTime.Now.Date;
-
-
+            //DateTime currentDay = DateTime.Now.Date;
 
             var user = HttpContext.Session.GetInt32("ID");
 			var name = HttpContext.Session.GetString("N");
 			var Co = HttpContext.Session.GetInt32("Co");
 			var Dr = HttpContext.Session.GetInt32("Dr");
 			int count = _context.Visitors.Count(z => (z.Compid == Co || z.Compid == Dr) && z.VisitorName != name);
-            int day = _context.Visitors.Count(z => (z.Compid == Co || z.Compid == Dr) && z.VisitorName != name && z.VisitDate.Date == currentDay);
+            int day = _context.Visitors.Count(z => (z.Compid == Co || z.Compid == Dr) && z.VisitorName != name && z.VisitDate.Date == currentDate);
             int month = _context.Visitors.Count(z => (z.Compid==Co || z.Compid == Dr) && z.VisitorName!=name && z.VisitDate >= startDate && z.VisitDate <= endDate);
-            ViewBag.count = count;
-            ViewBag.day = day;
-            ViewBag.month = month;
+			int Allcount = _context.Visitors.Count(z => z.Compid != null);
+            int Allday = _context.Visitors.Count(z => z.Compid != null && z.VisitDate.Date == currentDate);
+            int Allmonth = _context.Visitors.Count(z => z.Compid!=null && z.VisitDate >= startDate && z.VisitDate <= endDate);
+            ViewBag.SD = startDate;
+            ViewBag.ED = endDate;
+			if (role == 0)
+			{
+				ViewBag.count = count;
+				ViewBag.day = day;
+				ViewBag.month = month;
+			}
+			else
+			{
+				ViewBag.count = Allcount;
+				ViewBag.day = Allday;
+				ViewBag.month = Allmonth;
+			}
 
             return View();
 		}
@@ -39,6 +53,22 @@ namespace RadioCabs.Controllers
 		public ActionResult ShowFeed()
 		{
 			return View(_context.FeedBacks.ToList());
+		}
+		public ActionResult ShowCompanies()
+		{
+			return View(_context.CompanyRegistrations.ToList());
+		}
+		public ActionResult ShowDrivers()
+		{
+			return View(_context.DriversRegistrations.ToList());
+		}
+		public ActionResult ShowUsers()
+		{
+			return View(_context.Registrations.ToList());
+		}
+		public ActionResult ShowAds()
+		{
+			return View(_context.AdvertiseRegistrations.ToList());
 		}
 
 		// GET: AdminController/Details/5

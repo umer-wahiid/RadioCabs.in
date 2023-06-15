@@ -102,22 +102,7 @@ namespace RadioCabs.Controllers
                 Registration reg = _context.Registrations.Where(c => c.Email == re.Email).FirstOrDefault();
                 CompanyRegistration comp = _context.CompanyRegistrations.FirstOrDefault(cm => cm.UserId ==reg.RegistrationId);
                 DriversRegistration driver = _context.DriversRegistrations.FirstOrDefault(dv => dv.UserId ==reg.RegistrationId);
-
-                if (reg.RoleId == 1)
-                {
-                    HttpContext.Session.SetString("E", re.Email);
-                    HttpContext.Session.SetInt32("ID", reg.RegistrationId);
-                    HttpContext.Session.SetString("N", reg.Name);
-                    HttpContext.Session.SetString("M", reg.Mobile);
-                    HttpContext.Session.SetString("T", reg.TelePhone);
-                    HttpContext.Session.SetString("A", reg.Address);
-                    HttpContext.Session.SetString("P", reg.Profile);
-                    HttpContext.Session.SetString("C", reg.City);
-                    HttpContext.Session.SetInt32("Comp", comp.CompanyId);
-                    HttpContext.Session.SetInt32("driver", driver.DriverId);
-                    return RedirectToAction("Index", "Home");
-                }
-                else if (reg.RoleId == 0)
+                if (reg.RoleId == 0)
                 {
                     HttpContext.Session.SetString("E", re.Email);
                     HttpContext.Session.SetInt32("ID", reg.RegistrationId);
