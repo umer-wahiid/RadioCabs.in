@@ -178,7 +178,6 @@ namespace RadioCabs.Controllers
             if (use != null)
             {
                 var register = await _context.Registrations.FirstOrDefaultAsync(m => m.RegistrationId == use);
-                //visitor.VisitorId = 1;
                 visitor.VisitorName = register.Name;
                 visitor.VisitorProfile = register.Profile;
                 visitor.VisitorEmail = register.Email;
@@ -253,14 +252,13 @@ namespace RadioCabs.Controllers
             {
           	    var register = await _context.Registrations
                     .FirstOrDefaultAsync(m => m.RegistrationId == use);
-                //visitor.VisitorId = 1;
                 visitor.VisitorName= register.Name;
                 visitor.VisitorProfile= register.Profile;
                 visitor.VisitorEmail= register.Email;
                 visitor.VisitorCity= register.City;
                 visitor.VisitorMobile= register.Mobile;
                 visitor.VisitDate= DateTime.Now;
-                visitor.Compid = id;
+                visitor.Driveid = id;
                 _context.Add(visitor);
                 await _context.SaveChangesAsync();
             }

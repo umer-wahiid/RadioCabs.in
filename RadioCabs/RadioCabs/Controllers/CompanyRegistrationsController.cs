@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -30,18 +31,22 @@ namespace RadioCabs.Controllers
         
         public async Task<IActionResult> visitor()
         {
+            var role = HttpContext.Session.GetInt32("R");
             var user = HttpContext.Session.GetInt32("ID");
             var name = HttpContext.Session.GetString("N");
             CompanyRegistration Compreg = _context.CompanyRegistrations.Where(c => c.UserId == user).FirstOrDefault();
             DriversRegistration Drireg = _context.DriversRegistrations.Where(c => c.UserId == user).FirstOrDefault();
-
-            if (Compreg != null)
+            if (role!=0)
+            {
+                return View(await _context.Visitors.Where(u => u.Compid != 0 || u.Driveid!=0).ToListAsync());
+            }
+            else if (role == 0 && Compreg != null)
             {
                 return View(await _context.Visitors.Where(u=>u.Compid==Compreg.CompanyId && u.VisitorName != name).ToListAsync());
             }
-            else if (Drireg!=null)
+            else if (role == 0 && Drireg !=null)
             {
-                return View(await _context.Visitors.Where(u=>u.Compid==Drireg.DriverId && u.VisitorName != name).ToListAsync());
+                return View(await _context.Visitors.Where(u=>u.Driveid==Drireg.DriverId && u.VisitorName != name).ToListAsync());
             }
             else
             {
@@ -93,23 +98,28 @@ namespace RadioCabs.Controllers
         }
 
         // GET: CompanyRegistrations/Edit/5
-        public async Task<IActionResult> Edit()
+        public async Task<IActionResult> Edit(int? id)
         {
             var v = HttpContext.Session.GetInt32("ID");
-            //var x = from a in _context.CompanyRegistrations where a.UserId == v select a;
 
             CompanyRegistration Compreg = _context.CompanyRegistrations.Where(c => c.UserId == v).FirstOrDefault();
-            if (Compreg.CompanyId == null || _context.CompanyRegistrations == null)
-            {
-                return NotFound();
+            if (id!=null) {
+                var companyRegistration = await _context.CompanyRegistrations.FindAsync(id);
+                if (companyRegistration == null)
+                {
+                    return NotFound();
+                }
+                return View(companyRegistration);
             }
-
-            var companyRegistration = await _context.CompanyRegistrations.FindAsync(Compreg.CompanyId);
-            if (companyRegistration == null)
+            else
             {
-                return NotFound();
+                var companyRegistration = await _context.CompanyRegistrations.FindAsync(Compreg.CompanyId);
+                if (companyRegistration == null)
+                {
+                    return NotFound();
+                }
+                return View(companyRegistration);
             }
-            return View(companyRegistration);
         }
 
         // POST: CompanyRegistrations/Edit/5
@@ -134,7 +144,8 @@ namespace RadioCabs.Controllers
                     companyRegistration.LogoImage = @"Image/" + fname;
                     _context.Update(companyRegistration);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
+                    return RedirectToAction("Index", "Admin");
+                    //return RedirectToAction(nameof(Index));
                 }
                 else
                 {
@@ -172,13 +183,17 @@ namespace RadioCabs.Controllers
                 return Problem("Entity set 'RCDbContext.CompanyRegistrations'  is null.");
             }
             var companyRegistration = await _context.CompanyRegistrations.FindAsync(id);
+            var service = await _context.Services.FirstOrDefaultAsync(a=> a.CompanyId==id);
+            var visit = await _context.Visitors.FirstOrDefaultAsync(a=> a.Compid==id);
             if (companyRegistration != null)
             {
                 _context.CompanyRegistrations.Remove(companyRegistration);
+                _context.Services.Remove(service);
+                _context.Visitors.Remove(visit);
             }
             
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index","Admin");
         }
 
         private bool CompanyRegistrationExists(int id)

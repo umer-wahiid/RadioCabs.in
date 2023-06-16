@@ -39,7 +39,7 @@
                         <div>
                             <h6 class="tx-12 tx-uppercase tx-inverse tx-bold mg-b-5">This Month's Visitors</h6>
                                 @*<p class="tx-12">@DateTime.Now.Date.ToString("dd-MM-yyyy")</p>*@
-                                <p class="tx-12">@ViewBag.SD  to  @ViewBag.ED</p>
+                                <p class="tx-12">@ViewBag.SD.Date.ToString("dd-MM-yyyy")  to  @ViewBag.ED.Date.ToString("dd-MM-yyyy")</p>
                         </div>
                         <a href="" class="tx-gray-600 hover-info"><i class="icon ion-more tx-16 lh-0"></i></a>
                     </div><!-- d-flex -->

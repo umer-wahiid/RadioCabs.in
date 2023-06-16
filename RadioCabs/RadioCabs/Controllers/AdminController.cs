@@ -26,12 +26,12 @@ namespace RadioCabs.Controllers
 			var name = HttpContext.Session.GetString("N");
 			var Co = HttpContext.Session.GetInt32("Co");
 			var Dr = HttpContext.Session.GetInt32("Dr");
-			int count = _context.Visitors.Count(z => (z.Compid == Co || z.Compid == Dr) && z.VisitorName != name);
-            int day = _context.Visitors.Count(z => (z.Compid == Co || z.Compid == Dr) && z.VisitorName != name && z.VisitDate.Date == currentDate);
-            int month = _context.Visitors.Count(z => (z.Compid==Co || z.Compid == Dr) && z.VisitorName!=name && z.VisitDate >= startDate && z.VisitDate <= endDate);
-			int Allcount = _context.Visitors.Count(z => z.Compid != null);
-            int Allday = _context.Visitors.Count(z => z.Compid != null && z.VisitDate.Date == currentDate);
-            int Allmonth = _context.Visitors.Count(z => z.Compid!=null && z.VisitDate >= startDate && z.VisitDate <= endDate);
+			int count = _context.Visitors.Count(z => (z.Compid == Co || z.Driveid == Dr) && z.VisitorName != name);
+            int day = _context.Visitors.Count(z => (z.Compid == Co || z.Driveid == Dr) && z.VisitorName != name && z.VisitDate.Date == currentDate);
+            int month = _context.Visitors.Count(z => (z.Compid==Co || z.Driveid == Dr) && z.VisitorName!=name && z.VisitDate >= startDate && z.VisitDate <= endDate);
+			int Allcount = _context.Visitors.Count(z => z.Compid != null  || z.Driveid != null);
+            int Allday = _context.Visitors.Count(z => (z.Compid != null || z.Driveid != null) && z.VisitDate.Date == currentDate);
+            int Allmonth = _context.Visitors.Count(z => (z.Compid != null || z.Driveid != null) && z.VisitDate >= startDate && z.VisitDate <= endDate);
             ViewBag.SD = startDate;
             ViewBag.ED = endDate;
 			if (role == 0)

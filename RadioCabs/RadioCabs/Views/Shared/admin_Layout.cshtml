@@ -135,6 +135,16 @@
                 <div class="dropdown-menu wd-200">
                     <ul class="list-unstyled user-profile-nav">
                         <li><a asp-controller="Home" asp-action="EditProfile" asp-route-id="@ID"><i class="icon ion-ios-person-outline"></i> Edit Profile</a></li>
+                        @if (Co != null)
+                        {
+                            <li><a asp-controller="Home" asp-action="CompanyDetail" asp-route-id="@Co"><i class="icon ion-ios-person-outline"></i> Preview Company</a></li>
+                            <li><a asp-action="Delete" asp-controller="CompanyRegistrations" asp-route-id="@Co"><i class="icon ion-ios-person-outline"></i> Delete Company</a></li>
+                        }
+                        @if (Dr != null)
+                        {
+                            <li><a asp-controller="Home" asp-action="DriverDetail" asp-route-id="@Dr"><i class="icon ion-ios-person-outline"></i> Preview Listing</a></li>
+                            <li><a asp-action="Delete" asp-controller="DriversRegistrations" asp-route-id="@Dr"><i class="icon ion-ios-person-outline"></i> Delete Listing</a></li>
+                        }
                         <li><a asp-controller="Registrations" asp-action="UserLogout"><i class="icon ion-power"></i> Sign Out</a></li>
                     </ul>
                 </div><!-- dropdown-menu -->
@@ -179,6 +189,12 @@
                         <a asp-controller="CompanyRegistrations" asp-action="visitor" class="nav-link">
                             <i class="icon ion-ios-folder-outline"></i>
                             <span>Visitors</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="Services" asp-action="Create" class="nav-link">
+                            <i class="icon ion-ios-folder-outline"></i>
+                            <span>Manage Bookings</span>
                         </a>
                     </li>
                     }
@@ -241,8 +257,14 @@
                                 <span>Manage Advertisements</span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a asp-controller="CompanyRegistrations" asp-action="visitor" class="nav-link">
+                                <i class="icon ion-ios-folder-outline"></i>
+                                <span>Visitors</span>
+                            </a>
+                        </li>
                     }
-                    <li class="nav-item">
+@*                    <li class="nav-item">
                         <a href="" class="nav-link with-sub">
                             <i class="icon ion-ios-gear-outline"></i>
                             <span>Forms</span>
@@ -325,7 +347,7 @@
                             <i class="icon ion-ios-briefcase-outline"></i>
                             <span>Widgets</span>
                         </a>
-                    </li><!-- nav-item -->
+                    </li><!-- nav-item -->*@
                 </ul>
             </div><!-- #mainMenu -->
             <div id="emailMenu" class="tab-pane">

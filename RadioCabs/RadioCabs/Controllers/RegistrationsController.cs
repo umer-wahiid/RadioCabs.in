@@ -125,6 +125,15 @@ namespace RadioCabs.Controllers
                 }
                 else
                 {
+                    HttpContext.Session.SetString("E", re.Email);
+                    HttpContext.Session.SetInt32("ID", reg.RegistrationId);
+                    HttpContext.Session.SetString("N", reg.Name);
+                    HttpContext.Session.SetString("M", reg.Mobile);
+                    HttpContext.Session.SetString("T", reg.TelePhone);
+                    HttpContext.Session.SetString("A", reg.Address);
+                    HttpContext.Session.SetString("P", reg.Profile);
+                    HttpContext.Session.SetString("C", reg.City);
+                    HttpContext.Session.SetInt32("R", reg.RoleId);
                     return RedirectToAction("Index", "Admin");
                 }
             }

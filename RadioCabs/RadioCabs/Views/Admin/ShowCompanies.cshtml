@@ -1,114 +1,61 @@
 ﻿@model IEnumerable<RadioCabs.Models.CompanyRegistration>
 
 @{
-    ViewData["Title"] = "ShowCompanies";
+    ViewData["Title"] = "ShowFeed";
     Layout = "~/Views/Shared/admin_Layout.cshtml";
 }
 
-<h1>ShowCompanies</h1>
+<div class="am-pagetitle">
+    <h5 class="am-title">Companies</h5>
+    <form id="searchBar" class="search-bar" action="index.html">
+        <div class="form-control-wrapper">
+            <input type="search" class="form-control bd-0" placeholder="Search...">
+        </div><!-- form-control-wrapper -->
+        <button id="searchBtn" class="btn btn-orange"><i class="fa fa-search"></i></button>
+    </form><!-- search-bar -->
+</div><!-- am-pagetitle -->
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.CompanyName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ContactPerson)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Designation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Address)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Mobile)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Telephone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FaxNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MembershipType)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PaymentType)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.City)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LogoImage)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UserId)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CompanyName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ContactPerson)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Designation)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Address)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Mobile)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telephone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FaxNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MembershipType)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PaymentType)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.City)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LogoImage)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.CompanyId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CompanyId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CompanyId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="am-mainpanel">
+    <div class="am-pagebody">
+
+        <div class="card pd-20 pd-sm-40">
+            <h6 class="card-body-title">Companies List</h6>
+
+            <div class="table-wrapper">
+                <table id="datatable1" class="table display responsive nowrap">
+                    <thead>
+                        <tr>
+                            <th class="wd-15p">@Html.DisplayNameFor(model => model.CompanyName)</th>
+                            <th class="wd-20p">@Html.DisplayNameFor(model => model.City)</th>
+                            <th class="wd-15p">@Html.DisplayNameFor(model => model.Email)</th>
+                            <th class="wd-15p">@Html.DisplayNameFor(model => model.ContactPerson)</th>
+                            <th class="wd-20p">@Html.DisplayNameFor(model => model.Mobile)</th>
+                            <th class="wd-20p">Membership</th>
+                            <th class="wd-20p">@Html.DisplayNameFor(model => model.PaymentType)</th>
+                            <th class="wd-20p">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.CompanyName</td>
+                                <td>@item.City</td>
+                                <td>@item.Email</td>
+                                <td>@item.ContactPerson</td>
+                                <td>@item.Mobile</td>
+                                <td>@item.MembershipType</td>
+                                <td>@item.PaymentType</td>
+                                <td>
+                                    <a class="btn btn-primary p-1" asp-action="CompanyDetail" asp-controller="Home" asp-route-id="@item.CompanyId">Details</a>
+                                    <a class="btn btn-warning p-1" asp-action="Edit" asp-controller="CompanyRegistrations" asp-route-id="@item.CompanyId">Edit</a>
+                                    <a class="btn btn-danger p-1" asp-action="Delete" asp-controller="CompanyRegistrations" asp-route-id="@item.CompanyId">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div><!-- table-wrapper -->
+        </div><!-- card -->
+
+    </div><!-- am-pagebody -->
