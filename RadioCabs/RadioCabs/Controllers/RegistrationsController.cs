@@ -100,13 +100,17 @@ namespace RadioCabs.Controllers
             if (x.Any())
             {
                 Registration reg = _context.Registrations.Where(c => c.Email == re.Email).FirstOrDefault();
-                CompanyRegistration comp = _context.CompanyRegistrations.FirstOrDefault(cm => cm.UserId ==reg.RegistrationId);
-                DriversRegistration driver = _context.DriversRegistrations.FirstOrDefault(dv => dv.UserId ==reg.RegistrationId);
+                CompanyRegistration comp = _context.CompanyRegistrations.FirstOrDefault(cm => cm.UserId == reg.RegistrationId);
+                DriversRegistration driver = _context.DriversRegistrations.FirstOrDefault(dv => dv.UserId == reg.RegistrationId);
                 if (reg.RoleId == 0)
                 {
                     HttpContext.Session.SetString("E", re.Email);
                     HttpContext.Session.SetInt32("ID", reg.RegistrationId);
                     HttpContext.Session.SetString("N", reg.Name);
+                    HttpContext.Session.SetString("CN", comp.CompanyName);
+                    HttpContext.Session.SetString("D", comp.Description);
+                    HttpContext.Session.SetString("DG", comp.Designation);
+                    HttpContext.Session.SetString("F", comp.FaxNumber);
                     HttpContext.Session.SetString("M", reg.Mobile);
                     HttpContext.Session.SetString("T", reg.TelePhone);
                     HttpContext.Session.SetString("A", reg.Address);

@@ -5,7 +5,59 @@
     Layout = "~/Views/Shared/admin_Layout.cshtml";
 }
 
-<h1>ShowUsers</h1>
+<div class="am-pagetitle">
+    <h5 class="am-title">Companies</h5>
+    <form id="searchBar" class="search-bar" action="index.html">
+        <div class="form-control-wrapper">
+            <input type="search" class="form-control bd-0" placeholder="Search...">
+        </div><!-- form-control-wrapper -->
+        <button id="searchBtn" class="btn btn-orange"><i class="fa fa-search"></i></button>
+    </form><!-- search-bar -->
+</div><!-- am-pagetitle -->
+
+<div class="am-mainpanel">
+    <div class="am-pagebody">
+
+        <div class="card pd-20 pd-sm-40">
+            <h6 class="card-body-title">Companies List</h6>
+
+            <div class="table-wrapper">
+                <table id="datatable1" class="table display responsive nowrap">
+                    <thead>
+                        <tr>
+                            <th class="wd-15p">@Html.DisplayNameFor(model => model.Name)</th>
+                            <th class="wd-20p">@Html.DisplayNameFor(model => model.City)</th>
+                            <th class="wd-15p">@Html.DisplayNameFor(model => model.Email)</th>
+                            <th class="wd-15p">@Html.DisplayNameFor(model => model.Password)</th>
+                            <th class="wd-20p">@Html.DisplayNameFor(model => model.Mobile)</th>
+                            <th class="wd-20p">@Html.DisplayNameFor(model => model.TelePhone)</th>
+                            <th class="wd-20p">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Name</td>
+                                <td>@item.City</td>
+                                <td>@item.Email</td>
+                                <td>@item.Password</td>
+                                <td>@item.Mobile</td>
+                                <td>@item.TelePhone</td>
+                                <td>
+                                    <a class="btn btn-warning p-1" asp-action="Edit" asp-controller="CompanyRegistrations" asp-route-id="@item.RegistrationId">Edit</a>
+                                    <a class="btn btn-danger p-1" asp-action="Delete" asp-controller="CompanyRegistrations" asp-route-id="@item.RegistrationId">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div><!-- table-wrapper -->
+        </div><!-- card -->
+
+    </div><!-- am-pagebody -->
+
+@*<h1>ShowUsers</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -87,4 +139,4 @@
         </tr>
 }
     </tbody>
-</table>
+</table>*@

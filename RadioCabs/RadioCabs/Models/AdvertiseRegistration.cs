@@ -8,7 +8,7 @@ namespace RadioCabs.Models
         [Key]
         public int AdvId { get; set; }
 
-        [StringLength(50, ErrorMessage = "Max 50 Characters Allowed"), MinLength(10, ErrorMessage = "Min 10 Characters Allowed")]
+        [StringLength(50, ErrorMessage = "Max 50 Characters Allowed")]
         [Required]
         public string CompanyName { get; set; }
 
@@ -33,7 +33,7 @@ namespace RadioCabs.Models
         public string TelePhone { get; set; }
 
         [Required]
-        [MaxLength(10, ErrorMessage = "Only 10 Numbers Are Allowed"), MinLength(10, ErrorMessage = "Only 10 Numbers Are Allowed")]
+        [MaxLength(10, ErrorMessage = "Only 10 Numbers Are Allowed")]
         public string FaxNumber { get; set; }
 
         [StringLength(25)]

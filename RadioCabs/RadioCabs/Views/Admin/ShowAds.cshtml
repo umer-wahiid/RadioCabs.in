@@ -5,7 +5,63 @@
     Layout = "~/Views/Shared/admin_Layout.cshtml";
 }
 
-<h1>ShowAds</h1>
+<div class="am-pagetitle">
+    <h5 class="am-title">Companies</h5>
+    <form id="searchBar" class="search-bar" action="index.html">
+        <div class="form-control-wrapper">
+            <input type="search" class="form-control bd-0" placeholder="Search...">
+        </div><!-- form-control-wrapper -->
+        <button id="searchBtn" class="btn btn-orange"><i class="fa fa-search"></i></button>
+    </form><!-- search-bar -->
+</div><!-- am-pagetitle -->
+
+<div class="am-mainpanel">
+    <div class="am-pagebody">
+
+        <div class="card pd-20 pd-sm-40">
+            <h6 class="card-body-title">Companies List</h6>
+
+            <div class="table-wrapper">
+                <table id="datatable1" class="table display responsive nowrap">
+                    <thead>
+                        <tr>
+                            <th class="wd-15p">@Html.DisplayNameFor(model => model.CompanyName)</th>
+                            <th class="wd-20p">@Html.DisplayNameFor(model => model.Destination)</th>
+                            <th class="wd-15p">@Html.DisplayNameFor(model => model.Email)</th>
+                            <th class="wd-15p">@Html.DisplayNameFor(model => model.TelePhone)</th>
+                            <th class="wd-20p">@Html.DisplayNameFor(model => model.Mobile)</th>
+                            <th class="wd-20p">@Html.DisplayNameFor(model => model.FaxNumber)</th>
+                            <th class="wd-20p">@Html.DisplayNameFor(model => model.PaymentType)</th>
+                            <th class="wd-20p">@Html.DisplayNameFor(model => model.Description)</th>
+                            <th class="wd-20p">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.CompanyName</td>
+                                <td>@item.Destination</td>
+                                <td>@item.Email</td>
+                                <td>@item.TelePhone</td>
+                                <td>@item.Mobile</td>
+                                <td>@item.FaxNumber</td>
+                                <td>@item.PaymentType</td>
+                                <td>@item.Description</td>
+                                <td>
+                                    <a class="btn btn-warning p-1" asp-action="Edit" asp-controller="CompanyRegistrations" asp-route-id="@item.AdvId">Edit</a>
+                                    <a class="btn btn-danger p-1" asp-action="Delete" asp-controller="CompanyRegistrations" asp-route-id="@item.AdvId">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div><!-- table-wrapper -->
+        </div><!-- card -->
+
+    </div><!-- am-pagebody -->
+
+@*<h1>ShowAds</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -93,4 +149,4 @@
         </tr>
 }
     </tbody>
-</table>
+</table>*@
