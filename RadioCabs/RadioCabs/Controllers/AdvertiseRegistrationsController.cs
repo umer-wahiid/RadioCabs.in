@@ -47,28 +47,27 @@ namespace RadioCabs.Controllers
         // GET: AdvertiseRegistrations/Create
         public IActionResult Create()
         {
-            var id = HttpContext.Session.GetString("ID");
-            var c = HttpContext.Session.GetString("CN");
-            var dt = HttpContext.Session.GetString("C");
-            var d = HttpContext.Session.GetString("D");
-            var dg = HttpContext.Session.GetString("DG");
-            var m = HttpContext.Session.GetString("M");
-            var t = HttpContext.Session.GetString("T");
-            var ad = HttpContext.Session.GetString("A");
-            var f = HttpContext.Session.GetString("F");
-            var e = HttpContext.Session.GetString("E");
-            ViewBag.id = id;
-            ViewBag.cnam = c;
-            ViewBag.destination = dt;
-            ViewBag.description = d;
-            ViewBag.designation = dg;
-            ViewBag.Mobile = m;
-            ViewBag.Telephone = t;
-            ViewBag.Address = ad;
-            ViewBag.FaxNumber = f;
-            ViewBag.Email = e;
+            var id = HttpContext.Session.GetInt32("Co");
+            var ad = _context.AdvertiseRegistrations.FirstOrDefault(a => a.CompId == id);
+            if (ad==null) {
+                var comp = _context.CompanyRegistrations.FirstOrDefault(a => a.CompanyId == id);
+                ViewBag.id = comp.CompanyId;
+                ViewBag.cnam = comp.CompanyName;
+                ViewBag.PaymentStatus = "Pending";
+                ViewBag.description = comp.Description;
+                ViewBag.designation = comp.Designation;
+                ViewBag.Mobile = comp.Mobile;
+                ViewBag.Telephone = comp.Telephone;
+                ViewBag.Address = comp.Address;
+                ViewBag.FaxNumber = comp.FaxNumber;
+                ViewBag.Email = comp.Email;
 
-            return View();
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Index","Admin");
+            }
         }
 
         // POST: AdvertiseRegistrations/Create
@@ -78,10 +77,12 @@ namespace RadioCabs.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(AdvertiseRegistration advertiseRegistration)
         {
-            _context.Add(advertiseRegistration);
-            await _context.SaveChangesAsync(); 
-
-            return View(advertiseRegistration);
+            if (ModelState.IsValid)
+            {
+                _context.Add(advertiseRegistration);
+                await _context.SaveChangesAsync();
+            }
+            return RedirectToAction("Index","Admin");
         }
 
         // GET: AdvertiseRegistrations/Edit/5
@@ -105,7 +106,7 @@ namespace RadioCabs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("AdvId,CompanyName,Destination,Designation,Address,Mobile,TelePhone,FaxNumber,Email,Description,PaymentType,UserId")] AdvertiseRegistration advertiseRegistration)
+        public async Task<IActionResult> Edit(int id, [Bind("AdvId,CompanyName,PaymentStatus,Designation,Address,Mobile,TelePhone,FaxNumber,Email,Description,PaymentType,UserId")] AdvertiseRegistration advertiseRegistration)
         {
             if (id != advertiseRegistration.AdvId)
             {
@@ -171,6 +172,81 @@ namespace RadioCabs.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+
+
+
+
+
+
+
+        // GET: AdvertiseRegistrations/Edit/5
+        public async Task<IActionResult> PaymentEdit(int? id)
+        {
+            if (id == null || _context.AdvertiseRegistrations == null)
+            {
+                return NotFound();
+            }
+
+            var advertiseRegistration = await _context.AdvertiseRegistrations.FindAsync(id);
+            if (advertiseRegistration == null)
+            {
+                return NotFound();
+            }
+            return View(advertiseRegistration);
+        }
+
+
+
+        // POST: AdvertiseRegistrations/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> PaymentEdit(int id,AdvertiseRegistration advertiseRegistration)
+        {
+            var existingAdv = await _context.AdvertiseRegistrations.FindAsync(id);
+            if (existingAdv != null)
+            {
+                //var adv = await _context.AdvertiseRegistrations.FirstOrDefault(a=>a.AdvId==id);
+                existingAdv.CompanyName = advertiseRegistration.CompanyName ?? existingAdv.CompanyName;
+                existingAdv.Designation = advertiseRegistration.Designation ?? existingAdv.Designation;
+                existingAdv.Address = advertiseRegistration.Address ?? existingAdv.Address;
+                existingAdv.Mobile = advertiseRegistration.Mobile ?? existingAdv.Mobile;
+                existingAdv.TelePhone = advertiseRegistration.TelePhone ?? existingAdv.TelePhone;
+                existingAdv.FaxNumber = advertiseRegistration.FaxNumber ?? existingAdv.FaxNumber;
+                existingAdv.Email = advertiseRegistration.Email ?? existingAdv.Email;
+                existingAdv.Description = advertiseRegistration.Description ?? existingAdv.Description;
+                existingAdv.PaymentType = advertiseRegistration.PaymentType ?? existingAdv.PaymentType;
+                existingAdv.CompId = existingAdv.CompId;
+                if (existingAdv.PaymentStatus=="Pending")
+                {
+                    existingAdv.PaymentStatus = "Received";
+                }
+                else
+                {
+                    existingAdv.PaymentStatus = "Pending";
+                }
+
+                _context.Update(existingAdv);
+                await _context.SaveChangesAsync();
+            }
+            return RedirectToAction("Index","Admin");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         private bool AdvertiseRegistrationExists(int id)
         {

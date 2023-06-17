@@ -5,8 +5,18 @@
     Layout = "~/Views/Shared/admin_Layout.cshtml";
 }
 
-<h1>Delete</h1>
+<div class="am-pagetitle">
+    <h5 class="am-title">Delete Driver</h5>
+    <form id="searchBar" class="search-bar" action="index.html">
+        <div class="form-control-wrapper">
+            <input type="search" class="form-control bd-0" placeholder="Search...">
+        </div><!-- form-control-wrapper -->
+        <button id="searchBtn" class="btn btn-orange"><i class="fa fa-search"></i></button>
+    </form><!-- search-bar -->
+</div><!-- am-pagetitle -->
 
+<div class="am-mainpanel">
+    <div class="am-pagebody">
 <h3>Are you sure you want to delete this?</h3>
 <div>
     <h4>DriversRegistration</h4>
@@ -88,7 +98,8 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="DriverId" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <input type="submit" value="Delete" class="btn btn-danger" /> 
         <a asp-action="Index">Back to List</a>
     </form>
+</div>
 </div>

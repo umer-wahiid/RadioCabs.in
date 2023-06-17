@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\imran\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\RadioCabs.csproj": {}
+    "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\RadioCabs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\imran\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\RadioCabs.csproj": {
+    "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\RadioCabs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\imran\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\RadioCabs.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\RadioCabs.csproj",
         "projectName": "RadioCabs",
-        "projectPath": "C:\\Users\\imran\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\RadioCabs.csproj",
-        "packagesPath": "C:\\Users\\imran\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\imran\\source\\repos\\RadioCabs.in\\RadioCabs\\RadioCabs\\obj\\",
+        "projectPath": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\RadioCabs.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\imran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -84,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

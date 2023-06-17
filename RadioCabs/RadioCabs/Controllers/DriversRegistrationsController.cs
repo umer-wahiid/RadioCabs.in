@@ -69,22 +69,28 @@ namespace RadioCabs.Controllers
         }
 
         // GET: DriversRegistrations/Edit/5
-        public async Task<IActionResult> Edit()
+        public async Task<IActionResult> Edit(int? Id)
         {
             var v = HttpContext.Session.GetInt32("ID");
             DriversRegistration Drireg = _context.DriversRegistrations.Where(c => c.UserId == v).FirstOrDefault();
-            
-            if (Drireg.DriverId == null || _context.DriversRegistrations == null)
+            if (Id != null)
             {
-                return NotFound();
+                var driversRegistration = await _context.DriversRegistrations.FindAsync(Id);
+                if (driversRegistration == null)
+                {
+                    return NotFound();
+                }
+                return View(driversRegistration);
             }
-
-            var driversRegistration = await _context.DriversRegistrations.FindAsync(Drireg.DriverId);
-            if (driversRegistration == null)
+            else
             {
-                return NotFound();
+                var driversRegistration = await _context.DriversRegistrations.FindAsync(Drireg.DriverId);
+                if (driversRegistration == null)
+                {
+                    return NotFound();
+                }
+                return View(driversRegistration);
             }
-            return View(driversRegistration);
         }
 
         // POST: DriversRegistrations/Edit/5
@@ -109,7 +115,7 @@ namespace RadioCabs.Controllers
                     driversRegistration.DriverImg = @"Image/" + fname;
                     _context.Update(driversRegistration);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Edit));
+                    return RedirectToAction("Index","Admin");
                 }
                 else
                 {
@@ -148,13 +154,16 @@ namespace RadioCabs.Controllers
                 return Problem("Entity set 'RCDbContext.DriversRegistrations'  is null.");
             }
             var driversRegistration = await _context.DriversRegistrations.FindAsync(id);
+            var visit = await _context.Visitors.FirstOrDefaultAsync(a => a.Driveid == id);
+            var vis = await _context.Visitors.FindAsync(visit.VisitorId);
             if (driversRegistration != null)
             {
                 _context.DriversRegistrations.Remove(driversRegistration);
+                _context.Visitors.Remove(vis);
             }
-            
+
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index", "Admin");
         }
 
         private bool DriversRegistrationExists(int id)

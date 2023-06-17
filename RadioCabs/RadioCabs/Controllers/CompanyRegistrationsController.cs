@@ -185,11 +185,12 @@ namespace RadioCabs.Controllers
             var companyRegistration = await _context.CompanyRegistrations.FindAsync(id);
             var service = await _context.Services.FirstOrDefaultAsync(a=> a.CompanyId==id);
             var visit = await _context.Visitors.FirstOrDefaultAsync(a=> a.Compid==id);
+            var vis = await _context.Visitors.FindAsync(visit.VisitorId);
             if (companyRegistration != null)
             {
                 _context.CompanyRegistrations.Remove(companyRegistration);
                 _context.Services.Remove(service);
-                _context.Visitors.Remove(visit);
+                _context.Visitors.Remove(vis);
             }
             
             await _context.SaveChangesAsync();

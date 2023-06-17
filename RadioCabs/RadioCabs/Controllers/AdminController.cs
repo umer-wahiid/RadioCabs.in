@@ -52,7 +52,11 @@ namespace RadioCabs.Controllers
 
 		public ActionResult ShowFeed()
 		{
-			return View(_context.FeedBacks.ToList());
+            return View(_context.FeedBacks.Where(a => a.Type != "nll").ToList());
+		}
+		public ActionResult ShowContact()
+		{
+			return View(_context.FeedBacks.Where(a=>a.Type=="nll").ToList());
 		}
 		public ActionResult ShowCompanies()
 		{

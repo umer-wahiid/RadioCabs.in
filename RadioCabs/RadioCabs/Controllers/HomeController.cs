@@ -309,7 +309,7 @@ namespace RadioCabs.Controllers
             {
                 _context.Add(feedBack);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index","Home");
             }
             return View();
         }

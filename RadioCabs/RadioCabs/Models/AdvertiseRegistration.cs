@@ -14,7 +14,7 @@ namespace RadioCabs.Models
 
         [Required]
         [StringLength(300)]
-        public string Destination { get; set; }
+        public string PaymentStatus { get; set; }
 
         [StringLength(20)]
         [Required]
@@ -50,6 +50,6 @@ namespace RadioCabs.Models
         public string PaymentType { get; set; }
 
         [Required]
-        public int UserId { get; set; }
+        public int CompId { get; set; }
     }
 }

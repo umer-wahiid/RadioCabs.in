@@ -27,15 +27,8 @@
                         <div class="col-lg-4">
                             <div class="form-group">
                                 <label class="form-control-label">CompanyName: <span class="tx-danger">*</span></label>
-                                <input class="form-control" asp-for="CompanyName" value="@ViewBag.cname">
+                                <input class="form-control" asp-for="CompanyName" value="@ViewBag.cnam">
                                 <span asp-validation-for="CompanyName" class="text-danger"></span>
-                            </div>
-                        </div><!-- col-4 -->
-                        <div class="col-lg-4">
-                            <div class="form-group">
-                                <label class="form-control-label">Destination: <span class="tx-danger">*</span></label>
-                                <input class="form-control" type="text" asp-for="Destination" value="@ViewBag.destination">
-                                <span asp-validation-for="Destination" class="text-danger"></span>
                             </div>
                         </div><!-- col-4 -->
                         <div class="col-lg-4">
@@ -99,7 +92,9 @@
                             </div>
                         </div><!-- col-8 -->
                     </div><!-- row -->
-                    <input type="hidden" asp-for="UserId" value="@ViewBag.id">
+
+                    <input type="hidden" asp-for="PaymentStatus" value="@ViewBag.PaymentStatus">
+                    <input type="hidden" asp-for="CompId" value="@ViewBag.id">
 
                     <div class="form-layout-footer">
                         @*<button class="btn btn-info mg-r-5">Submit Form</button>*@

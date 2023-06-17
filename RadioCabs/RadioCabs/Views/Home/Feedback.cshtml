@@ -58,35 +58,42 @@
 						</div>
 						<div class="col-lg-8">
 							<form asp-action="Feedback" class="form-area contact-form text-right" method="post">
+								<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 								<div class="row">	
 									<div class="col-lg-6 form-group">
 										<input asp-for="Name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="">
-									
+										<span asp-validation-for="Name" class="text-danger"></span>
+
 										<input asp-for="Email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="">
+										<span asp-validation-for="Email" class="text-danger"></span>
 
 										<input asp-for="MobileNo" placeholder="Enter your Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Number'" class="common-input mb-20 form-control" required="">
+										<span asp-validation-for="MobileNo" class="text-danger"></span>
 
-                                        <select asp-for="Type" class="common-input mb-20 form-control">
-                                            <option value="">-- Select Type --</option>
-                                            <option value="Complaint">Complaint</option>
-                                            <option value="Suggestion">Suggestion</option>
-                                            <option value="Compliment">Compliment</option>
-                                        </select>
+										<select asp-for="Type" class="common-input mb-20 form-control">
+											<option value="">-- Select Type --</option>
+											<option value="Complaint">Complaint</option>
+											<option value="Suggestion">Suggestion</option>
+											<option value="Compliment">Compliment</option>
+										</select>
+										<span asp-validation-for="Type" class="text-danger"></span>
 
-                            <select asp-for="City" class="common-input mb-20 form-control">
-                                            <option value="">-- Select City --</option>
-                                            <option value="Karachi">Karachi</option>
-                                            <option value="Islamabad">Islamabad</option>
-                                            <option value="Rawalpindi">Rawalpindi</option>
-                                            <option value="Hyderabad">Hyderabad</option>
-                                            <option value="Multan">Multan</option>
-                                            <option value="Lahore">Lahore</option>
-                                            <option value="Quetta">Quetta</option>
-                                         </select>
+										<select asp-for="City" class="common-input mb-20 form-control">
+											<option value="">-- Select City --</option>
+											<option value="Karachi">Karachi</option>
+											<option value="Islamabad">Islamabad</option>
+											<option value="Rawalpindi">Rawalpindi</option>
+											<option value="Hyderabad">Hyderabad</option>
+											<option value="Multan">Multan</option>
+											<option value="Lahore">Lahore</option>
+											<option value="Quetta">Quetta</option>
+										</select>
+										<span asp-validation-for="City" class="text-danger"></span>
 									</div>
 									<div class="col-lg-6 form-group">
-							<textarea style="height: 305px;margin-top: 0px;padding: 15px;resize: none;" class="common-textarea form-control" asp-for="Description" placeholder="Enter Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Messege'" required=""></textarea>
-						</div>
+									<textarea style="height: 305px;margin-top: 0px;padding: 15px;resize: none;" class="common-textarea form-control" asp-for="Description" placeholder="Enter Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Messege'" required=""></textarea>
+									<span asp-validation-for="Description" class="text-danger"></span>
+									</div>
 									<div class="col-lg-12">
 										<div class="alert-msg" style="text-align: left;"></div>
 										@*<input type="submit" value="Submit" class="genric-btn primary" />*@

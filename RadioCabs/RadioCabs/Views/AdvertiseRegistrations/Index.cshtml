@@ -17,7 +17,7 @@
                 @Html.DisplayNameFor(model => model.CompanyName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Destination)
+                @Html.DisplayNameFor(model => model.PaymentStatus)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Designation)
@@ -44,7 +44,7 @@
                 @Html.DisplayNameFor(model => model.PaymentType)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.UserId)
+                @Html.DisplayNameFor(model => model.CompId)
             </th>
             <th></th>
         </tr>
@@ -56,7 +56,7 @@
                 @Html.DisplayFor(modelItem => item.CompanyName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Destination)
+                    @Html.DisplayFor(modelItem => item.PaymentStatus)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Designation)
@@ -83,7 +83,7 @@
                 @Html.DisplayFor(modelItem => item.PaymentType)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.UserId)
+                    @Html.DisplayFor(modelItem => item.CompId)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.AdvId">Edit</a> |

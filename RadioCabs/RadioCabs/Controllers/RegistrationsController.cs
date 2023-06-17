@@ -107,10 +107,10 @@ namespace RadioCabs.Controllers
                     HttpContext.Session.SetString("E", re.Email);
                     HttpContext.Session.SetInt32("ID", reg.RegistrationId);
                     HttpContext.Session.SetString("N", reg.Name);
-                    HttpContext.Session.SetString("CN", comp.CompanyName);
-                    HttpContext.Session.SetString("D", comp.Description);
-                    HttpContext.Session.SetString("DG", comp.Designation);
-                    HttpContext.Session.SetString("F", comp.FaxNumber);
+                    //HttpContext.Session.SetString("CN", comp.CompanyName);
+                    //HttpContext.Session.SetString("D", comp.Description);
+                    //HttpContext.Session.SetString("DG", comp.Designation);
+                    //HttpContext.Session.SetString("F", comp.FaxNumber);
                     HttpContext.Session.SetString("M", reg.Mobile);
                     HttpContext.Session.SetString("T", reg.TelePhone);
                     HttpContext.Session.SetString("A", reg.Address);
