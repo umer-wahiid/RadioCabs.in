@@ -211,19 +211,21 @@
 			var selectedOption = $(this).val();
 
 			if (selectedOption === 'Monthly') {
-			  $('#Mon').show(); // Show the paragraph
-			  $('#Qua').hide(); // Show the paragraph
+				$('#Mon').show(); // Show the paragraph
+				$('#Qua').hide(); // Show the paragraph
 			}
 			else if (selectedOption === 'Quarterly') {
-			  $('#Mon').hide(); // Show the paragraph
-			  $('#Qua').show(); // Show the paragraph
+				$('#Mon').hide(); // Show the paragraph
+				$('#Qua').show(); // Show the paragraph
 			}
 			else if (selectedOption === '') {
-			  $('#Mon').hide(); // Show the paragraph
-			  $('#Qua').hide(); // Show the paragraph
+				$('#Mon').hide(); // Show the paragraph
+				$('#Qua').hide(); // Show the paragraph
 			} 
 			else {
-			  $('#type').hide(); // Hide the paragraph
+				$('#Mon').hide(); // Show the paragraph
+				$('#Qua').hide(); // Show the paragraph
+
 			}
 		  });
 		});

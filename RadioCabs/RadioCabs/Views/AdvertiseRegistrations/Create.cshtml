@@ -62,11 +62,13 @@
                         <div class="col-lg-4">
                             <div class="form-group mg-b-10-force">
                                 <label class="form-control-label">Payment Type: <span class="tx-danger">*</span></label>
-                                <select asp-for="PaymentType" class="form-control">
+                                <select id="type" asp-for="PaymentType" class="form-control">
                                     <option value="">-- Select Payment Type --</option>
                                     <option value="Monthly">Monthly</option>
-                                    <option value="Quaterly">Quarterly</option>
+                                    <option value="Quarterly">Quarterly</option>
                                 </select>
+                                <p id="Mon">$. 15.00</p>
+                                <p id="Qua">$. 40.00</p>
                                 <span asp-validation-for="PaymentType" class="text-danger"></span>
                             </div>
                         </div><!-- col-4 -->

@@ -12,7 +12,7 @@
 		<div class="row d-flex align-items-center justify-content-center">
 			<div class="about-content col-lg-12">
 				<h1 class="text-white">
-					Register Your Company
+					Register As Driver
 				</h1>
 				<p class="text-white link-nav"><a asp-area="" asp-controller="Home" asp-action="Index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="elements.html"> Elements</a></p>
 			</div>
@@ -70,11 +70,13 @@
 						<span asp-validation-for="City" class="text-danger"></span>
 					</div>
 					<div class="mt-10">
-						<select asp-for="PaymentType" class="form-control">
+						<select id="type" asp-for="PaymentType" class="form-control">
 							<option value="">-- Select Payment Type --</option>
 							<option value="Monthly">Monthly</option>
-							<option value="Quaterly">Quarterly</option>
+							<option value="Quarterly">Quarterly</option>
 						</select>
+						<p id="Mon">$. 10.00</p>
+						<p id="Qua">$. 25.00</p>
 						<span asp-validation-for="PaymentType" class="text-danger"></span>
 					</div>
 					<div class="mt-10">
