@@ -46,19 +46,28 @@
 					<ul class="nav-menu">
 						<li class="menu-active"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
 						<li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-						<li><a asp-area="" asp-controller="Home" asp-action="Driver">Drivers</a></li>
+						<li class="menu-has-children">
+							<a asp-area="" asp-controller="Home" asp-action="Driver">Drivers</a>
+							<ul>
+								<li><a asp-area="" asp-controller="Home" asp-action="Driver" asp-route-city="Karachi">Karachi</a></li>
+								<li><a asp-area="" asp-controller="Home" asp-action="Driver" asp-route-city="Islamabad">Islamabad</a></li>
+								<li><a asp-area="" asp-controller="Home" asp-action="Driver" asp-route-city="Rawalpindi">Rawalpindi</a></li>
+								<li><a asp-area="" asp-controller="Home" asp-action="Driver" asp-route-city="Hyderabad">Hyderabad</a></li>
+								<li><a asp-area="" asp-controller="Home" asp-action="Driver" asp-route-city="Multan">Multan</a></li>
+								<li><a asp-area="" asp-controller="Home" asp-action="Driver" asp-route-city="Lahore">Lahore</a></li>
+								<li><a asp-area="" asp-controller="Home" asp-action="Driver" asp-route-city="Quetta">Quetta</a></li>
+							</ul>
+							</li>
 						<li class="menu-has-children">
 							<a asp-area="" asp-controller="Home" asp-action="Company">Cab's Companies</a>
 							<ul>
-								<li><a asp-area="" asp-controller="Home" asp-action="Company">Karachi</a></li>
-								<li><a asp-area="" asp-controller="Home" asp-action="Company">Hyderabad</a></li>
-								<li class="menu-has-children">
-									<a asp-area="" asp-controller="Home" asp-action="Company">Multan</a>
-									<ul>
-										<li><a asp-area="" asp-controller="Home" asp-action="Company">Company One</a></li>
-										<li><a asp-area="" asp-controller="Home" asp-action="Company">Company Two</a></li>
-									</ul>
-								</li>
+								<li><a asp-area="" asp-controller="Home" asp-action="Company" asp-route-city="Karachi">Karachi</a></li>
+								<li><a asp-area="" asp-controller="Home" asp-action="Company" asp-route-city="Islamabad">Islamabad</a></li>
+								<li><a asp-area="" asp-controller="Home" asp-action="Company" asp-route-city="Rawalpindi">Rawalpindi</a></li>
+								<li><a asp-area="" asp-controller="Home" asp-action="Company" asp-route-city="Hyderabad">Hyderabad</a></li>
+								<li><a asp-area="" asp-controller="Home" asp-action="Company" asp-route-city="Multan">Multan</a></li>
+								<li><a asp-area="" asp-controller="Home" asp-action="Company" asp-route-city="Lahore">Lahore</a></li>
+								<li><a asp-area="" asp-controller="Home" asp-action="Company" asp-route-city="Quetta">Quetta</a></li>
 							</ul>
 						</li>
 						<li><a asp-area="" asp-controller="Home" asp-action="Feedback">Feedback</a></li>

@@ -99,20 +99,27 @@ namespace RadioCabs.Controllers
 
             return View(driversRegistration);
         }
-        public IActionResult Company()
+        public IActionResult Company(string? city)
 		{
-   //         var id = HttpContext.Session.GetInt32("ID");
-			//CompanyRegistration reg = _context.CompanyRegistrations.Where(c => c.UserId == id).FirstOrDefault();
-			//var CompanyRegistration = _context.CompanyRegistrations.ToList();
+            //         var id = HttpContext.Session.GetInt32("ID");
+            //CompanyRegistration reg = _context.CompanyRegistrations.Where(c => c.UserId == id).FirstOrDefault();
+            //var CompanyRegistration = _context.CompanyRegistrations.ToList();
 
-   //         var ViewModel = new CompanyViewModel
-   //         {
-   //             CompanyRegistrations = CompanyRegistration,
-   //             CompanyRegistration = reg
-   //         };
+            //         var ViewModel = new CompanyViewModel
+            //         {
+            //             CompanyRegistrations = CompanyRegistration,
+            //             CompanyRegistration = reg
+            //         };
 
-			//return View(ViewModel);
-			return View(_context.CompanyRegistrations.ToList());
+            //return View(ViewModel);
+            if (city==null)
+            {
+			    return View(_context.CompanyRegistrations.ToList());
+            }
+            else
+            {
+			    return View(_context.CompanyRegistrations.Where(a=>a.City==city).ToList());
+            }
         }
 		public IActionResult CompanyForm()
 		{

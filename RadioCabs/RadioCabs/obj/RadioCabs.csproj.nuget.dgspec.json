@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\RadioCabs\\RadioCabs\\RadioCabs.csproj": {}
+    "D:\\console\\RadioCabs.in\\RadioCabs\\RadioCabs\\RadioCabs.csproj": {}
   },
   "projects": {
-    "D:\\RadioCabs\\RadioCabs\\RadioCabs.csproj": {
+    "D:\\console\\RadioCabs.in\\RadioCabs\\RadioCabs\\RadioCabs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RadioCabs\\RadioCabs\\RadioCabs.csproj",
+        "projectUniqueName": "D:\\console\\RadioCabs.in\\RadioCabs\\RadioCabs\\RadioCabs.csproj",
         "projectName": "RadioCabs",
-        "projectPath": "D:\\RadioCabs\\RadioCabs\\RadioCabs.csproj",
+        "projectPath": "D:\\console\\RadioCabs.in\\RadioCabs\\RadioCabs\\RadioCabs.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\RadioCabs\\RadioCabs\\obj\\",
+        "outputPath": "D:\\console\\RadioCabs.in\\RadioCabs\\RadioCabs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
