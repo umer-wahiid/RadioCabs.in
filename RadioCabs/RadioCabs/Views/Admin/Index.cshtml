@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<RadioCabs.Models.Visitor>
+
+@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/admin_Layout.cshtml";
 }
@@ -92,20 +94,23 @@
                 <div class="table-responsive">
                     <table class="table table-white mg-b-0 tx-12">
                         <tbody>
+                            @foreach(var item in Model)
+                            {
                             <tr>
                                 <td class="pd-l-20 tx-center">
                                     <img src="~/admin/img/img1.jpg" class="wd-36 rounded-circle" alt="Image">
                                 </td>
                                 <td>
-                                    <a href="" class="tx-inverse tx-14 tx-medium d-block">Mark K. Peters</a>
+                                    <a href="" class="tx-inverse tx-14 tx-medium d-block">@item.VisitorName</a>
                                     <span class="tx-11 d-block">TRANSID: 1234567890</span>
                                 </td>
                                 <td class="tx-12">
                                     <span class="square-8 bg-success mg-r-5 rounded-circle"></span> Email verified
                                 </td>
-                                <td>Just Now</td>
+                                <td>@item.VisitDate</td>
                             </tr>
-                            <tr>
+                            }
+                            @*<tr>
                                 <td class="pd-l-20 tx-center">
                                     <img src="~/admin/img/img2.jpg" class="wd-36 rounded-circle" alt="Image">
                                 </td>
@@ -169,7 +174,7 @@
                                     <span class="square-8 bg-pink mg-r-5 rounded-circle"></span> Account deactivated
                                 </td>
                                 <td>Mar 30, 2017 10:30am</td>
-                            </tr>
+                            </tr>*@
                         </tbody>
                     </table>
                 </div><!-- table-responsive -->

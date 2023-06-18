@@ -47,7 +47,7 @@ namespace RadioCabs.Controllers
 				ViewBag.month = Allmonth;
 			}
 
-            return View();
+            return View(_context.Visitors.ToList());
 		}
 
 		public ActionResult ShowFeed()
