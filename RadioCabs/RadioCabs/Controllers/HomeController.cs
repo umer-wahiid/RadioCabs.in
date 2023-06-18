@@ -33,12 +33,19 @@ namespace RadioCabs.Controllers
 
 		public IActionResult About()
 		{
-			return View();
+			return View(_context.FeedBacks.ToList());
 		}
 
-		public IActionResult Driver()
+		public IActionResult Driver(string? city)
 		{
-            return View(_context.DriversRegistrations.ToList());
+            if (city == null)
+            {
+                return View(_context.DriversRegistrations.ToList());
+            }
+            else
+            {
+                return View(_context.DriversRegistrations.Where(a => a.City == city).ToList());
+            }
         }
 		public IActionResult DriverForm()
 		{
