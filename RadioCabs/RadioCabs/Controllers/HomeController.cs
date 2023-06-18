@@ -28,12 +28,13 @@ namespace RadioCabs.Controllers
 
         public IActionResult Index()
 		{
-			return View();
+            return View(_context.FeedBacks.Where(a => a.Type == "Compliment").ToList());
+            //return View();
 		}
 
 		public IActionResult About()
 		{
-			return View(_context.FeedBacks.ToList());
+            return View(_context.FeedBacks.Where(a => a.Type == "Compliment").ToList());
 		}
 
 		public IActionResult Driver(string? city)
