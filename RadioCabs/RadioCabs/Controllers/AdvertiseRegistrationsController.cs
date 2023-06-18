@@ -61,6 +61,8 @@ namespace RadioCabs.Controllers
                 ViewBag.Address = comp.Address;
                 ViewBag.FaxNumber = comp.FaxNumber;
                 ViewBag.Email = comp.Email;
+                ViewBag.LI = comp.LogoImage;
+                ViewBag.City = comp.City;
 
                 return View();
             }
@@ -81,8 +83,23 @@ namespace RadioCabs.Controllers
             {
                 _context.Add(advertiseRegistration);
                 await _context.SaveChangesAsync();
+                return RedirectToAction("Index","Admin");
             }
-            return RedirectToAction("Index","Admin");
+            var id = HttpContext.Session.GetInt32("Co");
+            var comp = _context.CompanyRegistrations.FirstOrDefault(a => a.CompanyId == id);
+            ViewBag.id = comp.CompanyId;
+            ViewBag.cnam = comp.CompanyName;
+            ViewBag.PaymentStatus = "Pending";
+            ViewBag.description = comp.Description;
+            ViewBag.designation = comp.Designation;
+            ViewBag.Mobile = comp.Mobile;
+            ViewBag.Telephone = comp.Telephone;
+            ViewBag.Address = comp.Address;
+            ViewBag.FaxNumber = comp.FaxNumber;
+            ViewBag.Email = comp.Email;
+            ViewBag.LI = comp.LogoImage;
+            ViewBag.City = comp.City;
+            return View();
         }
 
         // GET: AdvertiseRegistrations/Edit/5
@@ -170,7 +187,8 @@ namespace RadioCabs.Controllers
             }
             
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index", "Admin");
+            //return RedirectToAction(nameof(Index));
         }
 
 

@@ -596,7 +596,36 @@
 
         });
     </script>
+    	<script>
+		$(document).ready(function() {
+		  // Hide the paragraph initially
+		  $('#Mon').hide();
+		  $('#Qua').hide();
 
+		  // Attach the change event handler to the select element
+		  $('#type').change(function() {
+			var selectedOption = $(this).val();
+
+			if (selectedOption === 'Monthly') {
+				$('#Mon').show(); // Show the paragraph
+				$('#Qua').hide(); // Show the paragraph
+			}
+			else if (selectedOption === 'Quarterly') {
+				$('#Mon').hide(); // Show the paragraph
+				$('#Qua').show(); // Show the paragraph
+			}
+			else if (selectedOption === '') {
+				$('#Mon').hide(); // Show the paragraph
+				$('#Qua').hide(); // Show the paragraph
+			} 
+			else {
+				$('#Mon').hide(); // Show the paragraph
+				$('#Qua').hide(); // Show the paragraph
+
+			}
+		  });
+		});
+	</script>
 </body>
 </html>
 

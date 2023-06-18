@@ -50,6 +50,13 @@ namespace RadioCabs.Models
         public string PaymentType { get; set; }
 
         [Required]
+        [StringLength(25)]
+        public string City { get; set; }
+
+        [Display(Name = "Logo Image")]
+        public string LogoImage { get; set; }
+
+        [Required]
         public int CompId { get; set; }
     }
 }
