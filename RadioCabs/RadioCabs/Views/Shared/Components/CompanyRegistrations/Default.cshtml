@@ -1,0 +1,36 @@
+﻿@using RadioCabs.Models
+@model IEnumerable<CompanyRegistration>
+@{
+    Layout = null;
+}
+
+
+
+<div class="row section-title">
+		<h3>FEATURED COMPANIES</h3>
+</div>
+
+<div class="row" >
+	@foreach (var item in Model)
+	{
+		<div class="col-lg-4">
+			<div class="single-latest-blog">
+				<div class="thumb" style="height:250px;">
+					<img class="img-fluid" src="~/@item.LogoImage" height="250px" alt="">
+				</div>
+				<ul class="tags">
+					<li><a asp-controller="Home" asp-action="CompanyDetail" asp-route-id="@item.CompanyId">Details</a></li>
+					<li><a href="#">Book Now !</a></li>
+				</ul>
+				<a href="#">
+					<h4>@item.CompanyName</h4>
+				</a>
+				<p>
+					@item.Description
+				</p>
+				<p class="date">City : @item.City</p>
+			</div>
+		</div>
+	}
+</div>
+
