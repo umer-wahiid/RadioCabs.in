@@ -104,7 +104,6 @@ namespace RadioCabs.Controllers
                     ViewBag.m = "Wrong Picture Format";
                 }
             }
-
             return View(driversRegistration);
         }
         public IActionResult Company(string? city)
