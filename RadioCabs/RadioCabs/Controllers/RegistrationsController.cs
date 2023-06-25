@@ -153,6 +153,10 @@ namespace RadioCabs.Controllers
         {
             HttpContext.Session.Clear();
 
+            Response.Headers.Add("Cache-Control", "no-cache, no-store, must-revalidate");
+            Response.Headers.Add("Pragma", "no-cache");
+            Response.Headers.Add("Expires", "0");
+
             return RedirectToAction("Index", "Home");
         }
 
