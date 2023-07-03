@@ -1,0 +1,43 @@
+﻿.slider-container {
+    position: relative;
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+    .slide img {
+        width: 305px;
+    }
+
+    .slide h3 {
+        margin-top: 10px;
+    }
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f9d700;
+    text-decoration: none;
+}
+
+.prev {
+    left: 35%;
+}
+
+.next {
+    right: 35%;
+}

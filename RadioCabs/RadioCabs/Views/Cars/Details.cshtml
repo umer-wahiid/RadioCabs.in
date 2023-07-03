@@ -1,0 +1,49 @@
+﻿@model RadioCabs.Models.Cars
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/admin_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Cars</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CarsName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CarsName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CarsImage)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CarsImage)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CarsModel)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CarsModel)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CarsNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CarsNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CompanyId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CompanyId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.CarsId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,52 @@
+﻿@model RadioCabs.Models.Cars
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/admin_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Cars</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CarsId" />
+            <div class="form-group">
+                <label asp-for="CarsName" class="control-label"></label>
+                <input asp-for="CarsName" class="form-control" />
+                <span asp-validation-for="CarsName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CarsImage" class="control-label"></label>
+                <input asp-for="CarsImage" class="form-control" />
+                <span asp-validation-for="CarsImage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CarsModel" class="control-label"></label>
+                <input asp-for="CarsModel" class="form-control" />
+                <span asp-validation-for="CarsModel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CarsNumber" class="control-label"></label>
+                <input asp-for="CarsNumber" class="form-control" />
+                <span asp-validation-for="CarsNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CompanyId" class="control-label"></label>
+                <input asp-for="CompanyId" class="form-control" />
+                <span asp-validation-for="CompanyId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

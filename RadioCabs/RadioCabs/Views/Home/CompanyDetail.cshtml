@@ -1,6 +1,7 @@
 ﻿@*@model RadioCabs.Models.CompanyRegistration*@
 @model CompanyDetailVM
 
+
 @{
 	ViewData["Title"] = "CompanyDetail";
 	Layout = "~/Views/Shared/_Layout.cshtml";
@@ -98,6 +99,43 @@
 		</div>
 	</div>
 </section>
+
+
+
+<div class="slider-container">
+<h1>Our Cars</h1>
+  <div class="slider">
+	  @*@foreach(var item in Model.CarsData)
+	  {
+		<div class="slide">
+		  <img src="~/@Model.CarsData.CarsImage" alt="Product 1">
+		  <h3>@Model.CarsData.CarsName</h3>
+		  <h4>@Model.CarsData.CarsModel</h4>
+		  <h5>@Model.CarsData.CarsNumber</h5>
+		</div>
+	  }*@
+		@*<div class="slide">
+			<img src="~/Image/165635031077668847f4b-d903-46b9-9aee-6bed6ad60fe0.jpg" alt="Product 1">
+			<h3>@Model.CarsData.CarsName</h3>
+			<h4>@Model.CarsData.CarsModel</h4>
+			<h5>@Model.CarsData.CarsNumber</h5>
+		</div>*@
+   @* <div class="slide">
+      <img src="~/Image/165635031077668847f4b-d903-46b9-9aee-6bed6ad60fe0.jpg" alt="Product 2">
+      <h3>Product 2</h3>
+    </div>
+    <div class="slide">
+			<img src="~/web/img/g2.jpg" alt="Product 3">
+      <h3>Product 3</h3>
+    </div>*@
+  </div>
+  <a class="prev" onclick="prevSlide()">&#10094;</a>
+  <a class="next" onclick="nextSlide()">&#10095;</a>
+</div>
+
+
+
+
 @if (Model.ServData != null)
 {
 
@@ -140,3 +178,10 @@
 	</section>
 }
 <!-- End post-content Area -->
+
+
+
+
+
+
+

@@ -13,5 +13,6 @@ namespace RadioCabs.Models
 		public DbSet<Registration> Registrations { get; set; }
 		public DbSet<Services> Services { get; set; }
 		public DbSet<Visitor> Visitors { get; set; }
+		public DbSet<Cars> Cars { get; set; }
 	}
 }

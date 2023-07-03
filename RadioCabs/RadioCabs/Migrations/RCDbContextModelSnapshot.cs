@@ -97,6 +97,43 @@ namespace RadioCabs.Migrations
                     b.ToTable("AdvertiseRegistrations");
                 });
 
+            modelBuilder.Entity("RadioCabs.Models.Cars", b =>
+                {
+                    b.Property<int>("CarsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CarsId"));
+
+                    b.Property<string>("CarsImage")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("CarsModel")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("CarsName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("CarsNumber")
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
+                    b.Property<string>("CompanyId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CarsId");
+
+                    b.ToTable("Cars");
+                });
+
             modelBuilder.Entity("RadioCabs.Models.CompanyRegistration", b =>
                 {
                     b.Property<int>("CompanyId")

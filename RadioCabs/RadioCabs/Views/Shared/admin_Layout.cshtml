@@ -59,6 +59,7 @@
     <link href="https://cdn.datatables.net/buttons/2.3.6/css/buttons.dataTables.min.css" rel="stylesheet">
 </head>
 
+
 <body>
 
     <div class="am-header">
@@ -224,12 +225,12 @@
                                 <span>Manage Services</span>
                             </a>
                         </li>
-                        @*<li class="nav-item">
-                            <a asp-controller="Services" asp-action="Create" class="nav-link">
+                        <li class="nav-item">
+                            <a asp-controller="Cars" asp-action="Create" class="nav-link">
                                 <i class="icon ion-ios-folder-outline"></i>
-                                <span>Manage Bookings</span>
+                                <span>Add Cars</span>
                             </a>
-                        </li>*@
+                        </li>
                     }
                     @if (R != 0)
                     {
@@ -625,6 +626,9 @@
 			}
 		  });
 		});
+
+        
+        }
 	</script>
 </body>
 </html>
