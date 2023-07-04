@@ -205,58 +205,19 @@ namespace RadioCabs.Controllers
 
             var companyRegistration = await _context.CompanyRegistrations
                 .FirstOrDefaultAsync(m => m.CompanyId == id);
+            var cars = await _context.Cars.Where(m => m.CompanyId == id).ToListAsync();
             var registration = await _context.Registrations.FirstOrDefaultAsync(m => m.RegistrationId == companyRegistration.UserId);
 
             var serv = await _context.Services.FirstOrDefaultAsync(s => s.CompanyId == id);
-   //         if(serv.HService2==null && serv.HService3 == null)
-   //         {
-			//	var services = await _context.Services.Where(s => s.CompanyId == id).Select(s => new { s.HService1, s.DService1, s.HService2, s.DService2, s.HService3, s.DService3 }).FirstOrDefaultAsync();
-			//	ViewBag.h1 = services.HService1;
-			//	ViewBag.d2 = services.DService2;
-			//}
-   //         else if(serv.HService3 == null)
-   //         {
-   //             var services = await _context.Services.Where(s => s.CompanyId == id).Select(s => new { s.HService1, s.DService1, s.HService2, s.DService2 }).FirstOrDefaultAsync();
-   //             ViewBag.h1 = services.HService1;
-   //             ViewBag.h2 = services.HService2;
-   //             ViewBag.d1 = services.DService1;
-   //             ViewBag.d2 = services.DService2;
-   //         }
-   //         else
-   //         {
-                //var services = await _context.Services.Where(s => s.CompanyId == id).Select(s => new { s.HService1, s.DService1, s.HService2, s.DService2, s.HService3, s.DService3 }).FirstOrDefaultAsync();
-                //ViewBag.h1 = services.HService1;
-                //ViewBag.h2 = services.HService2;
-                //ViewBag.d1 = services.DService1;
-                //ViewBag.d2 = services.DService2;
-                //ViewBag.h3 = services.HService3;
-                //ViewBag.d3 = services.DService3;
-            //}
 
             var ViewModel = new CompanyDetailVM
             {
                 CompData = companyRegistration,
                 RegData = registration,
+                CarsData = cars,
                 ServData = serv
             };
             return View(ViewModel);
-
-
-            //try
-            //{
-            //    var services = await _context.Services.FirstOrDefaultAsync(s => s.CompanyId == id);
-            //    var ViewModel = new CompanyDetailVM
-            //    {
-            //        CompData = companyRegistration,
-            //        RegData =  registration,
-            //        ServData = services
-            //    };
-            //    return View(ViewModel);
-            //}
-            //catch(SqlNullValueException e)
-            //{
-            //}
-            //return View();
         }
 
         public async Task<IActionResult> DriverDetail(int id, Visitor visitor)

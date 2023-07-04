@@ -9,6 +9,6 @@ namespace RadioCabs.Models
 		public CompanyRegistration CompData { get; set; }
 		public DriversRegistration DriverData { get; set; }
 		public Services ServData { get; set; }
-		public Cars CarsData { get; set; }
+		public IEnumerable<Cars> CarsData { get; set; }
 	}
 }
