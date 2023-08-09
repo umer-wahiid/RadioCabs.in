@@ -205,6 +205,8 @@ namespace RadioCabs.Controllers
 
             var companyRegistration = await _context.CompanyRegistrations
                 .FirstOrDefaultAsync(m => m.CompanyId == id);
+            
+            var cars = await _context.Cars.Where(a => a.CompanyId == id);
             var registration = await _context.Registrations.FirstOrDefaultAsync(m => m.RegistrationId == companyRegistration.UserId);
 
             var serv = await _context.Services.FirstOrDefaultAsync(s => s.CompanyId == id);
@@ -237,6 +239,7 @@ namespace RadioCabs.Controllers
             {
                 CompData = companyRegistration,
                 RegData = registration,
+                CarsData = cars,
                 ServData = serv
             };
             return View(ViewModel);
