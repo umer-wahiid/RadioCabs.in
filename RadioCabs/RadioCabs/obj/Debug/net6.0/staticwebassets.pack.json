@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\RadioCabs.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\165635031077668847f4b-d903-46b9-9aee-6bed6ad60fe0.jpg",
+      "PackagePath": "staticwebassets\\Image\\165635031077668847f4b-d903-46b9-9aee-6bed6ad60fe0.jpg"
+    },
+    {
       "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\1680248527612_pxfy06_2_0.jpg",
       "PackagePath": "staticwebassets\\Image\\1680248527612_pxfy06_2_0.jpg"
     },
@@ -17,14 +21,6 @@
       "PackagePath": "staticwebassets\\Image\\340490177_180083421539757_1517230450057413380_n.jpg"
     },
     {
-      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\ASF Housing Scheme I.jpg",
-      "PackagePath": "staticwebassets\\Image\\ASF Housing Scheme I.jpg"
-    },
-    {
-      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\ASF Housing Scheme S.jpg",
-      "PackagePath": "staticwebassets\\Image\\ASF Housing Scheme S.jpg"
-    },
-    {
       "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\Ammar.jpg",
       "PackagePath": "staticwebassets\\Image\\Ammar.jpg"
     },
@@ -33,32 +29,16 @@
       "PackagePath": "staticwebassets\\Image\\Ansari's.png"
     },
     {
-      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\HT.png",
-      "PackagePath": "staticwebassets\\Image\\HT.png"
-    },
-    {
-      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\ONLINE QURAN TUTOR.jpg",
-      "PackagePath": "staticwebassets\\Image\\ONLINE QURAN TUTOR.jpg"
-    },
-    {
       "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\Q1.a.png",
       "PackagePath": "staticwebassets\\Image\\Q1.a.png"
     },
     {
-      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\TShirt.jpg",
-      "PackagePath": "staticwebassets\\Image\\TShirt.jpg"
-    },
-    {
-      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\Web to App 3.jpg",
-      "PackagePath": "staticwebassets\\Image\\Web to App 3.jpg"
+      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\Radiocabsold.png",
+      "PackagePath": "staticwebassets\\Image\\Radiocabsold.png"
     },
     {
       "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\a2.jpg",
       "PackagePath": "staticwebassets\\Image\\a2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\abad.png",
-      "PackagePath": "staticwebassets\\Image\\abad.png"
     },
     {
       "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\about-img.jpg",
@@ -67,10 +47,6 @@
     {
       "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\b1.jpg",
       "PackagePath": "staticwebassets\\Image\\b1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\front-end.jpg",
-      "PackagePath": "staticwebassets\\Image\\front-end.jpg"
     },
     {
       "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\g2.jpg",
@@ -93,16 +69,12 @@
       "PackagePath": "staticwebassets\\Image\\g6.jpg"
     },
     {
+      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\header-bg.jpg",
+      "PackagePath": "staticwebassets\\Image\\header-bg.jpg"
+    },
+    {
       "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\images.jpg",
       "PackagePath": "staticwebassets\\Image\\images.jpg"
-    },
-    {
-      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\new arrival.jpg",
-      "PackagePath": "staticwebassets\\Image\\new arrival.jpg"
-    },
-    {
-      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\post.jpg",
-      "PackagePath": "staticwebassets\\Image\\post.jpg"
     },
     {
       "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\profile pi.jpg",
@@ -123,10 +95,6 @@
     {
       "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\t4.jpg",
       "PackagePath": "staticwebassets\\Image\\t4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\Image\\user2.png",
-      "PackagePath": "staticwebassets\\Image\\user2.png"
     },
     {
       "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\admin\\Gruntfile.js",
@@ -2013,6 +1981,10 @@
       "PackagePath": "staticwebassets\\login\\scss\\style.scss"
     },
     {
+      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\css\\Stylet.css",
+      "PackagePath": "staticwebassets\\web\\css\\Stylet.css"
+    },
+    {
       "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\css\\animate.min.css",
       "PackagePath": "staticwebassets\\web\\css\\animate.min.css"
     },
@@ -2063,6 +2035,10 @@
     {
       "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\css\\nice-select.css",
       "PackagePath": "staticwebassets\\web\\css\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\css\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\web\\css\\swiper-bundle.min.css"
     },
     {
       "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\fonts\\FontAwesome.otf",
@@ -2417,8 +2393,16 @@
       "PackagePath": "staticwebassets\\web\\img\\ui-icons_444444_256x240.png"
     },
     {
+      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\js\\JavaScript.js",
+      "PackagePath": "staticwebassets\\web\\js\\JavaScript.js"
+    },
+    {
       "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\js\\easing.min.js",
       "PackagePath": "staticwebassets\\web\\js\\easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\js\\glider.min.js",
+      "PackagePath": "staticwebassets\\web\\js\\glider.min.js"
     },
     {
       "Id": "C:\\Users\\hp\\Documents\\GitHub\\RadioCabs.in\\RadioCabs\\RadioCabs\\wwwroot\\web\\js\\hoverIntent.js",

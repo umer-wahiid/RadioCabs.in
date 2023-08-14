@@ -26,6 +26,6 @@ namespace RadioCabs.Models
         [Required]
         public string CarsNumber { get; set; }
 
-        public string CompanyId { get; set; }
+        public int CompanyId { get; set; }
     }
 }
