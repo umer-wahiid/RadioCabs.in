@@ -206,7 +206,7 @@ namespace RadioCabs.Controllers
             var companyRegistration = await _context.CompanyRegistrations
                 .FirstOrDefaultAsync(m => m.CompanyId == id);
             
-            var cars = await _context.Cars.Where(a => a.CompanyId == id);
+            var cars = await _context.Cars.Where(a => a.CompanyId == id).ToListAsync();
             var registration = await _context.Registrations.FirstOrDefaultAsync(m => m.RegistrationId == companyRegistration.UserId);
 
             var serv = await _context.Services.FirstOrDefaultAsync(s => s.CompanyId == id);
